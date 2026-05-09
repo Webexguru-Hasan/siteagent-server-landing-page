@@ -2730,10 +2730,12 @@
       background: #0d1424;
       padding: 100px 0;
     }
+    .token-generator__header {
+      margin-bottom: var(--space-20);
+    }
     .token-generator__inner {
       max-width: 1200px;
       margin: 0 auto;
-      text-align: center;
     }
     .token-card {
       max-width: 580px;
@@ -3435,10 +3437,10 @@ Webexguru-Hasan/siteagent-widget
         <div class="token-generator__inner">
 
           <!-- Section Header -->
-          <div class="section-header">
-            <div class="section-label" style="color: #00D4FF; text-transform: uppercase; letter-spacing: 1px;">GET YOUR TOKEN</div>
-            <h2 class="section-headline">Generate Your Widget Token Instantly</h2>
-            <p class="section-subtext" style="color: #94A3B8;">No terminal needed. Enter your MCPize API key and website URL — get your chatbot snippet in seconds.</p>
+          <div class="token-generator__header">
+            <div class="section-label">✦ &nbsp;Get Token</div>
+            <h2 class="section-title">Generate Your Widget Token Instantly</h2>
+            <p class="section-subtitle">No terminal needed. Enter your MCPize API key and website URL — get your chatbot snippet in seconds.</p>
           </div>
 
           <!-- Widget Card -->
@@ -4108,7 +4110,7 @@ Webexguru-Hasan/siteagent-widget
       /* -------------------------------------------------------
          NAVBAR — ACTIVE LINK on scroll
          ------------------------------------------------------- */
-      const sections = ['features', 'how-it-works', 'pricing', 'contact'];
+      const sections = ['features', 'how-it-works', 'get-token', 'pricing', 'contact'];
       const navLinks = document.querySelectorAll('.navbar__link');
 
       const sectionObserver = new IntersectionObserver(
