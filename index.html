@@ -2723,6 +2723,240 @@
       color: var(--color-accent);
     }
 
+    /* =====================================================
+       TOKEN GENERATOR SECTION
+       ===================================================== */
+    .token-generator {
+      background: #0d1424;
+      padding: 100px 0;
+    }
+    .token-generator__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .token-card {
+      max-width: 580px;
+      margin: 0 auto;
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 0 40px #00D4FF10;
+    }
+    .form-field {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .form-label {
+      display: block;
+      margin-bottom: 8px;
+      color: #94A3B8;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .input-wrapper {
+      position: relative;
+    }
+    .form-input {
+      width: 100%;
+      background: #0d1424;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 14px 16px;
+      color: white;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: #00D4FF;
+      box-shadow: 0 0 0 3px #00D4FF20;
+    }
+    .toggle-btn {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .helper-text {
+      margin-top: 4px;
+      font-size: 13px;
+      color: #94A3B8;
+    }
+    .helper-text a {
+      color: #00D4FF;
+      text-decoration: none;
+    }
+    .gen-btn {
+      width: 100%;
+      background: #00D4FF;
+      color: #0A0F1E;
+      font-weight: 700;
+      padding: 16px;
+      border-radius: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: all 0.2s ease;
+    }
+    .gen-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+    .gen-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .btn-spinner {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #0A0F1E30;
+      border-top: 2px solid #0A0F1E;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .error-msg {
+      display: none;
+      margin-top: 12px;
+      color: #ef4444;
+      font-size: 14px;
+      text-align: center;
+      padding: 12px;
+      background: #ef444410;
+      border-radius: 8px;
+      border: 1px solid #ef444430;
+    }
+    .result-area {
+      display: none;
+      margin-top: 24px;
+      text-align: left;
+    }
+    .result-header h3 {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .result-header p {
+      color: #94A3B8;
+      font-size: 14px;
+      margin: 8px 0 0 0;
+    }
+    .token-row {
+      margin-top: 20px;
+    }
+    .token-label {
+      color: #94A3B8;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .token-input-row {
+      display: flex;
+    }
+    .token-input {
+      flex: 1;
+      background: #0d1424;
+      border: 1px solid #1e293b;
+      border-radius: 8px 0 0 8px;
+      padding: 12px 16px;
+      color: #e2e8f0;
+      font-family: monospace;
+      font-size: 12px;
+      box-sizing: border-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .copy-btn {
+      background: #1e293b;
+      border: 1px solid #1e293b;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      color: #94A3B8;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+    .copy-btn:hover {
+      background: #00D4FF;
+      color: #0A0F1E;
+    }
+    .snippet-row {
+      margin-top: 20px;
+    }
+    .snippet-label {
+      color: #94A3B8;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .snippet-code {
+      display: block;
+      background: #0d1424;
+      border-left: 3px solid #00D4FF;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: monospace;
+      font-size: 12px;
+      color: #e2e8f0;
+      line-height: 1.6;
+      white-space: pre;
+      margin-bottom: 12px;
+    }
+    .copy-snippet-btn {
+      width: 100%;
+      padding: 12px;
+      background: transparent;
+      border: 1px solid #00D4FF;
+      border-radius: 8px;
+      color: #00D4FF;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .copy-snippet-btn:hover {
+      background: #00D4FF;
+      color: #0A0F1E;
+    }
+    .reset-link {
+      display: block;
+      text-align: center;
+      margin-top: 16px;
+      color: #94A3B8;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .token-generator {
+        padding: 60px 0;
+      }
+      .token-card {
+        max-width: 100%;
+        padding: 24px;
+      }
+    }
+
   </style>
 
   <!-- JSON-LD SEO Structured Data -->
@@ -2809,6 +3043,7 @@
       <nav class="navbar__links" aria-label="Primary navigation">
         <a href="#features"     class="navbar__link" id="nav-link-features">Features</a>
         <a href="#how-it-works" class="navbar__link" id="nav-link-howitworks"><span data-i18n="nav_how_it_works">How It Works</span></a>
+        <a href="#get-token" data-i18n="nav_get_token">Get Token</a>
         <a href="#pricing"      class="navbar__link" id="nav-link-pricing">Pricing</a>
         <a href="#contact"      class="navbar__link" id="nav-link-contact">Contact</a>
       </nav>
@@ -2843,6 +3078,7 @@
   <div class="navbar__mobile" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
     <a href="#features"     class="navbar__mobile-link" id="mob-link-features">Features</a>
     <a href="#how-it-works" class="navbar__mobile-link" id="mob-link-howitworks"><span data-i18n="nav_how_it_works">How It Works</span></a>
+    <a href="#get-token" class="navbar__mobile-link" data-i18n="nav_get_token">Get Token</a>
     <a href="#pricing"      class="navbar__mobile-link" id="mob-link-pricing">Pricing</a>
     <a href="#contact"      class="navbar__mobile-link" id="mob-link-contact">Contact</a>
     <div class="navbar__mobile-cta">
@@ -3189,6 +3425,79 @@ Webexguru-Hasan/siteagent-widget
 
         </div><!-- /.steps -->
       </div><!-- /.container -->
+    </section>
+
+    <!-- =====================================================
+         TOKEN GENERATOR SECTION
+         ===================================================== -->
+    <section class="token-generator" id="get-token">
+      <div class="container">
+        <div class="token-generator__inner">
+
+          <!-- Section Header -->
+          <div class="section-header">
+            <div class="section-label" style="color: #00D4FF; text-transform: uppercase; letter-spacing: 1px;">GET YOUR TOKEN</div>
+            <h2 class="section-headline">Generate Your Widget Token Instantly</h2>
+            <p class="section-subtext" style="color: #94A3B8;">No terminal needed. Enter your MCPize API key and website URL — get your chatbot snippet in seconds.</p>
+          </div>
+
+          <!-- Widget Card -->
+          <div class="token-card">
+            <div id="gen-form-fields">
+
+              <!-- API Key Field -->
+              <div class="form-field">
+                <label for="gen-api-key" class="form-label">Your MCPize API Key</label>
+                <div class="input-wrapper">
+                  <input type="password" id="gen-api-key" placeholder="sk_xxxxxxxxxxxxxxxxxxxxxxxx" class="form-input">
+                  <button type="button" id="gen-key-toggle" class="toggle-btn">👁</button>
+                </div>
+                <div class="helper-text">
+                  Get your free key at <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer">mcpize.com/mcp/siteagent-server</a>
+                </div>
+              </div>
+
+              <!-- Website URL Field -->
+              <div class="form-field">
+                <label for="gen-website-url" class="form-label">Your Website URL</label>
+                <input type="url" id="gen-website-url" placeholder="https://yourwebsite.com" class="form-input">
+              </div>
+
+            </div>
+
+            <!-- Generate Button -->
+            <button id="gen-btn" class="gen-btn">Generate My Token →</button>
+
+            <!-- Error Message -->
+            <div id="gen-error" class="error-msg"></div>
+
+            <!-- Result Area -->
+            <div id="gen-result" class="result-area">
+              <div class="result-header">
+                <h3>✅ Your token is ready!</h3>
+                <p>Copy the snippet below and paste it into your website's &lt;head&gt; tag.</p>
+              </div>
+
+              <div class="token-row">
+                <div class="token-label">YOUR TOKEN</div>
+                <div class="token-input-row">
+                  <input type="text" id="gen-token-value" readonly class="token-input">
+                  <button id="gen-copy-token" class="copy-btn">Copy</button>
+                </div>
+              </div>
+
+              <div class="snippet-row">
+                <div class="snippet-label">PASTE INTO YOUR WEBSITE'S &lt;HEAD&gt; TAG</div>
+                <pre id="gen-snippet-code" class="snippet-code"></pre>
+                <button id="gen-copy-snippet" class="copy-snippet-btn">Copy Snippet</button>
+              </div>
+
+              <a href="#" id="gen-reset" class="reset-link">← Generate another token</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!-- =====================================================
@@ -4118,6 +4427,7 @@ Webexguru-Hasan/siteagent-widget
           announcement_cta: "Get Started →",
           nav_features: "Features",
           nav_how_it_works: "How It Works",
+          nav_get_token: "Get Token",
           nav_pricing: "Pricing",
           nav_contact: "Contact",
           nav_cta: "Start Free",
@@ -4263,6 +4573,7 @@ Webexguru-Hasan/siteagent-widget
           announcement_cta: "শুরু করুন &rarr;",
           nav_features: "ফিচার",
           nav_how_it_works: "কীভাবে কাজ করে",
+          nav_get_token: "টোকেন পান",
           nav_pricing: "মূল্য",
           nav_contact: "যোগাযোগ",
           nav_cta: "বিনামূল্যে শুরু",
@@ -4440,7 +4751,7 @@ Webexguru-Hasan/siteagent-widget
 
         // ── NAVBAR ──
         const navLinks = qa('a.navbar__link');
-        const navKeys = ['nav_features','nav_how_it_works','nav_pricing','nav_contact'];
+        const navKeys = ['nav_features','nav_how_it_works','nav_get_token','nav_pricing','nav_contact'];
         navLinks.forEach((el, i) => { if (navKeys[i]) el.innerHTML = get(navKeys[i]); });
 
         const mobileLinks = qa('a.navbar__mobile-link');
@@ -4720,6 +5031,141 @@ Webexguru-Hasan/siteagent-widget
           switchLanguage(currentLang === 'en' ? 'bn' : 'en');
         });
       }
+
+      // Token Generator Logic
+      document.getElementById("gen-btn").addEventListener("click", async () => {
+        const apiKey = document.getElementById("gen-api-key").value.trim();
+        const websiteUrl = document.getElementById("gen-website-url").value.trim();
+        const errorEl = document.getElementById("gen-error");
+        const resultEl = document.getElementById("gen-result");
+        const btn = document.getElementById("gen-btn");
+
+        errorEl.style.display = "none";
+
+        if (!apiKey || !apiKey.startsWith("sk_")) {
+          errorEl.textContent = "❌ Please enter a valid MCPize API key (must start with sk_)";
+          errorEl.style.display = "block";
+          return;
+        }
+        if (!websiteUrl || !websiteUrl.startsWith("http")) {
+          errorEl.textContent = "❌ Please enter a valid website URL (e.g. https://yoursite.com)";
+          errorEl.style.display = "block";
+          return;
+        }
+
+        btn.disabled = true;
+        btn.innerHTML = '<span class="btn-spinner"></span>Generating...';
+
+        try {
+          const controller = new AbortController();
+          const timeout = setTimeout(() => controller.abort(), 10000);
+
+          const response = await fetch(
+            "https://wazidhasan-siteagent-mcp.hf.space/api/token",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "x-api-key": apiKey
+              },
+              body: JSON.stringify({ website_url: websiteUrl }),
+              signal: controller.signal
+            }
+          );
+
+          clearTimeout(timeout);
+          const data = await response.json();
+
+          if (!response.ok || !data.token) {
+            throw new Error(data.message || "Token generation failed. Check your API key.");
+          }
+
+          const snippet = `<script>
+  window.SiteAgent = {
+    token: "${data.token}",
+    position: "bottom-right",
+    theme: "auto"
+  };
+<\/script>
+<script src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js" async><\/script>`;
+
+          document.getElementById("gen-token-value").value = data.token;
+          document.getElementById("gen-snippet-code").textContent = snippet;
+
+          document.getElementById("gen-form-fields").style.display = "none";
+          btn.style.display = "none";
+          errorEl.style.display = "none";
+          resultEl.style.display = "block";
+          resultEl.style.opacity = "0";
+          setTimeout(() => {
+            resultEl.style.transition = "opacity 0.5s ease";
+            resultEl.style.opacity = "1";
+          }, 10);
+
+        } catch (err) {
+          errorEl.textContent = err.name === "AbortError"
+            ? "❌ Request timed out. Please try again."
+            : `❌ ${err.message || "Something went wrong. Please try again."}`;
+          errorEl.style.display = "block";
+        } finally {
+          btn.disabled = false;
+          btn.innerHTML = "Generate My Token →";
+        }
+      });
+
+      // Copy token
+      document.getElementById("gen-copy-token").addEventListener("click", () => {
+        const token = document.getElementById("gen-token-value").value;
+        navigator.clipboard.writeText(token).then(() => {
+          const btn = document.getElementById("gen-copy-token");
+          const original = btn.textContent;
+          btn.textContent = "Copied! ✓";
+          btn.style.background = "#10b981";
+          btn.style.color = "white";
+          setTimeout(() => {
+            btn.textContent = original;
+            btn.style.background = "";
+            btn.style.color = "";
+          }, 2000);
+        });
+      });
+
+      // Copy snippet
+      document.getElementById("gen-copy-snippet").addEventListener("click", () => {
+        const snippet = document.getElementById("gen-snippet-code").textContent;
+        navigator.clipboard.writeText(snippet).then(() => {
+          const btn = document.getElementById("gen-copy-snippet");
+          btn.textContent = "Snippet Copied! ✓";
+          btn.style.background = "#10b981";
+          btn.style.color = "white";
+          btn.style.borderColor = "#10b981";
+          setTimeout(() => {
+            btn.textContent = "Copy Snippet";
+            btn.style.background = "";
+            btn.style.color = "";
+            btn.style.borderColor = "";
+          }, 2000);
+        });
+      });
+
+      // Reset form
+      document.getElementById("gen-reset").addEventListener("click", () => {
+        document.getElementById("gen-result").style.display = "none";
+        document.getElementById("gen-form-fields").style.display = "block";
+        document.getElementById("gen-btn").style.display = "block";
+        document.getElementById("gen-btn").style.opacity = "1";
+        document.getElementById("gen-api-key").value = "";
+        document.getElementById("gen-website-url").value = "";
+        document.getElementById("gen-error").style.display = "none";
+      });
+
+      // Show/hide API key
+      document.getElementById("gen-key-toggle").addEventListener("click", () => {
+        const input = document.getElementById("gen-api-key");
+        const btn = document.getElementById("gen-key-toggle");
+        input.type = input.type === "password" ? "text" : "password";
+        btn.textContent = input.type === "password" ? "👁" : "🙈";
+      });
 
     }); // end DOMContentLoaded
   </script>
