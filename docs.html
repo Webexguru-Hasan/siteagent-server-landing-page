@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Documentation — SiteAgent</title>
+  <meta name="description"
+    content="SiteAgent adds an AI-powered chatbot to any website in under 5 minutes. Auto-crawls your content, answers visitor questions instantly. Works on WordPress, Shopify, Webflow, and more.">
+  <meta name="keywords"
+    content="AI chatbot, website chatbot, chatbot widget, SiteAgent, AI customer support, website AI">
+  <meta name="author" content="SiteAgent">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://wazidhasan-siteagent-mcp.hf.space">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SiteAgent — AI Chatbot for Any Website">
+  <meta property="og:description" content="Add an AI-powered chatbot to your website in 5 minutes. No coding required.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wazidhasan-siteagent-mcp.hf.space">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SiteAgent — AI Chatbot for Any Website">
+  <meta name="twitter:description" content="Add an AI chatbot to your website in 5 minutes. No coding required.">
+
+  <!-- Favicon placeholder -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>✦</text></svg>" />
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- JSON-LD SEO Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SiteAgent",
+    "description": "AI-powered chatbot widget for any website. Auto-crawls content and answers visitor questions instantly.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": [
+      { "@type": "Offer", "name": "Free Plan", "price": "0", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Pro Plan", "price": "19", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Agency Plan", "price": "49", "priceCurrency": "USD" }
+    ],
+    "url": "https://wazidhasan-siteagent-mcp.hf.space",
+    "author": { "@type": "Person", "email": "webexguruhasan95@gmail.com" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need coding skills to use SiteAgent?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No coding skills required. Just copy and paste one snippet." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does setup take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Under 5 minutes." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- SiteAgent Live Chatbot -->
+  <script>
+    window.SiteAgent = {
+      token: "sa_pub_v1.eyJzaXRlVXJsIjoiaHR0cHM6Ly9zaXRlYWdlbnQtc2VydmVyLWxhbmRpbmctcGFnZS52ZXJjZWwuYXBwIiwiZG9tYWluIjoic2l0ZWFnZW50LXNlcnZlci1sYW5kaW5nLXBhZ2UudmVyY2VsLmFwcCIsImlzc3VlZEF0IjoxNzc4Mzg3MDY3ODc3LCJleHBpcmVzQXQiOjE4MDk5MjMwNjc4NzcsInBsYW4iOiJmcmVlIn0.Mi5yfrrmJhkVdJTg64cpyOMXJxvsXTpwC_zWKo91wpw",
+      position: "bottom-right",
+      theme: "dark",
+      primaryColor: "#00D4FF",
+      greeting: "👋 Hi! Ask me anything about SiteAgent — pricing, setup, or features.",
+      placeholder: "Ask about pricing, setup, features...",
+      leadCapture: true
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js" async></script>
+  <!-- End SiteAgent -->
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+<header id="navbar" class="navbar" role="banner">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="navbar__logo" id="nav-logo" aria-label="SiteAgent home">
+        <span class="navbar__logo-icon" aria-hidden="true">✦</span>
+        <span>Site<span class="navbar__logo-word">Agent</span></span>
+      </a>
+
+      <!-- Center Links (desktop) -->
+      <nav class="navbar__links" aria-label="Primary navigation">
+        <a href="#features" class="navbar__link" id="nav-link-features">Features</a>
+          <a href="docs.html" class="navbar__link active">Docs</a>
+        <a href="#get-token" data-i18n="nav_get_token">Get Token</a>
+        <a href="#pricing" class="navbar__link" id="nav-link-pricing">Pricing</a>
+        <a href="#contact" class="navbar__link" id="nav-link-contact">Contact</a>
+      </nav>
+
+      <!-- Right CTA -->
+      <div class="navbar__cta">
+        <button id="lang-switcher" class="lang-switcher">🇬🇧 EN</button>
+        <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary btn-sm" id="nav-cta-btn">Start Free ↗</a>
+        <!-- Hamburger (mobile) -->
+        <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+<div class="navbar__mobile" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="#features" class="navbar__mobile-link" id="mob-link-features">Features</a>
+    <a href="docs.html" class="navbar__mobile-link">Docs</a>
+    <a href="#get-token" class="navbar__mobile-link" data-i18n="nav_get_token">Get Token</a>
+    <a href="#pricing" class="navbar__mobile-link" id="mob-link-pricing">Pricing</a>
+    <a href="#contact" class="navbar__mobile-link" id="mob-link-contact">Contact</a>
+    <div class="navbar__mobile-cta">
+      <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+        class="btn btn-primary" id="mob-cta-btn">Start Free ↗</a>
+    </div>
+
+  <main>
+    <!-- Section 1 - Hero -->
+    <section class="docs-hero" id="docs-hero">
+      <div class="container">
+        <div class="docs-hero__inner">
+          <div class="docs-hero__text">
+            <div class="docs-eyebrow">DOCUMENTATION</div>
+            <h1 class="docs-headline">Get Started with SiteAgent</h1>
+            <p class="docs-subtext">Everything you need to add an AI chatbot to your website in under 5 minutes.</p>
+          </div>
+          <div class="docs-hero__video">
+            <div class="video-card">
+              <div class="video-placeholder" id="docs-play-btn">
+                <div class="play-btn">
+                  <span class="play-icon">▶</span>
+                </div>
+              </div>
+            </div>
+            <div class="video-caption">▶ Watch: Full Setup Tutorial (5 min)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 - TOC -->
+    <section class="docs-toc" id="docs-toc">
+      <div class="container">
+        <div class="toc-links">
+          <a href="#quick-start" class="toc-pill">Quick Start</a>
+          <a href="#get-token-docs" class="toc-pill">Generate Token</a>
+          <a href="#add-to-website" class="toc-pill">Add to Website</a>
+          <a href="#platforms" class="toc-pill">Platforms</a>
+          <a href="#customize" class="toc-pill">Customize</a>
+          <a href="#plans" class="toc-pill">Plans & Pricing</a>
+          <a href="#troubleshooting" class="toc-pill">Troubleshooting</a>
+          <a href="#server-status" class="toc-pill">Server Status</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 - Content -->
+    
+    <!-- 3a Quick Start -->
+    <section class="docs-section bg-dark" id="quick-start">
+      <div class="container docs-container">
+        <div class="step-badge">01</div>
+        <h2>Subscribe on MCPize</h2>
+        <ol class="docs-list">
+          <li>Go to: <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="docs-link">https://mcpize.com/mcp/siteagent-server</a></li>
+          <li>Choose your plan — Free, Pro, or Agency</li>
+          <li>Click Start Free or Subscribe</li>
+          <li>After signup, your MCPize API Key appears on screen — starts with sk_</li>
+        </ol>
+        <div class="note-box note-box--blue">
+          💾 Save this key — you need it in Step 2.
+        </div>
+      </div>
+    </section>
+
+    <!-- 3b Generate Token -->
+    <section class="docs-section bg-surface" id="get-token-docs">
+      <div class="container docs-container">
+        <div class="step-badge">02</div>
+        <h2>Generate Your Widget Token</h2>
+        <p class="docs-intro">Your token links the chatbot to your specific website.</p>
+        
+        <div class="option-card option-card--green">
+          <div class="option-label">✅ Option A — Using the Landing Page (No terminal needed)</div>
+          <ol class="docs-list">
+            <li>Go to: <a href="https://siteagent-server-landing-page.vercel.app/" target="_blank" rel="noopener noreferrer" class="docs-link">https://siteagent-server-landing-page.vercel.app/</a></li>
+            <li>Scroll to "Generate Your Widget Token Instantly" section</li>
+            <li>Enter your MCPize API Key (sk_...) and your website URL</li>
+            <li>Click "Generate My Token →"</li>
+            <li>Copy the ready-made snippet — token already filled in</li>
+          </ol>
+        </div>
+
+        <!-- Token Generator Widget -->
+        <div class="token-card" id="docs-token-widget">
+
+            <div id="gen-form-fields-docs">
+
+              <!-- API Key Field -->
+              <div class="form-field">
+                <label for="gen-api-key" class="form-label">Your MCPize API Key</label>
+                <div class="input-wrapper">
+                  <input type="password" id="gen-api-key-docs" placeholder="sk_xxxxxxxxxxxxxxxxxxxxxxxx" class="form-input">
+                  <button type="button" id="gen-key-toggle" class="toggle-btn">👁</button>
+                </div>
+                <div class="helper-text">
+                  Get your free key at <a href="https://mcpize.com/mcp/siteagent-server" target="_blank"
+                    rel="noopener noreferrer">mcpize.com/mcp/siteagent-server</a>
+                </div>
+              </div>
+
+              <!-- Website URL Field -->
+              <div class="form-field">
+                <label for="gen-website-url" class="form-label">Your Website URL</label>
+                <input type="url" id="gen-website-url-docs" placeholder="https://yourwebsite.com" class="form-input">
+              </div>
+
+            </div>
+
+            <!-- Generate Button -->
+            <button id="gen-btn-docs" class="gen-btn">Generate My Token →</button>
+
+            <!-- Error Message -->
+            <div id="gen-error-docs" class="error-msg"></div>
+
+            <!-- Result Area -->
+            <div id="gen-result-docs" class="result-area">
+              <div class="result-header">
+                <h3>✅ Your token is ready!</h3>
+                <p>Copy the snippet below and paste it into your website's &lt;head&gt; tag.</p>
+              </div>
+
+              <div class="token-row">
+                <div class="token-label">YOUR TOKEN</div>
+                <div class="token-input-row">
+                  <input type="text" id="gen-token-value-docs" readonly class="token-input">
+                  <button id="gen-copy-token" class="copy-btn">Copy</button>
+                </div>
+              </div>
+
+              <div class="snippet-row">
+                <div class="snippet-label">PASTE INTO YOUR WEBSITE'S &lt;HEAD&gt; TAG</div>
+                <pre id="gen-snippet-code-docs" class="snippet-code"></pre>
+                <button id="gen-copy-snippet" class="copy-snippet-btn">Copy Snippet</button>
+              </div>
+
+              <a href="#" id="gen-reset" class="reset-link">← Generate another token</a>
+            </div>
+          </div>
+
+        
+</div>
+
+        <div class="option-card option-card--blue">
+          <div class="option-label">⌨️ Option B — Using Terminal</div>
+          <div class="snippet-row">
+            <div class="snippet-label">PowerShell</div>
+            <div class="code-wrapper">
+              <button class="copy-btn" data-copy-target="code-ps-docs">Copy</button>
+              <pre class="snippet-code" id="code-ps-docs">$response = Invoke-RestMethod -Uri "https://wazidhasan-siteagent-mcp.hf.space/api/token" -Method POST -Headers @{"Content-Type"="application/json"; "x-api-key"="YOUR_MCPIZE_API_KEY"} -Body '{"website_url":"https://yourwebsite.com"}'; $response.token</pre>
+            </div>
+          </div>
+          <div class="snippet-row">
+            <div class="snippet-label">cURL</div>
+            <div class="code-wrapper">
+              <button class="copy-btn" data-copy-target="code-curl-docs">Copy</button>
+              <pre class="snippet-code" id="code-curl-docs">curl -s -X POST https://wazidhasan-siteagent-mcp.hf.space/api/token -H "Content-Type: application/json" -H "x-api-key: YOUR_MCPIZE_API_KEY" -d '{"website_url":"https://yourwebsite.com"}' | python3 -m json.tool</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3c Add to Website -->
+    <section class="docs-section bg-dark" id="add-to-website">
+      <div class="container docs-container">
+        <div class="step-badge">03</div>
+        <h2>Add Snippet to Your Website</h2>
+        <p>Paste this into your website's &lt;head&gt; tag.</p>
+        <div class="code-wrapper">
+          <button class="copy-btn" data-copy-target="code-snippet-docs">Copy</button>
+          <pre class="snippet-code" id="code-snippet-docs">&lt;!-- SiteAgent AI Chatbot --&gt;
+&lt;script&gt;
+  window.SiteAgent = {
+    token: "sa_pub_v1_YOUR_FULL_TOKEN_HERE",
+    position: "bottom-right",
+    theme: "auto"
+  };
+&lt;/script&gt;
+&lt;script
+  src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js"
+  async&gt;
+&lt;/script&gt;
+&lt;!-- End SiteAgent --&gt;</pre>
+        </div>
+        <div class="note-box note-box--yellow">
+          ⚠️ If the snippet is not working, try removing async from the script tag.
+        </div>
+        
+        <br>
+        <div class="step-badge" style="position:relative; margin-bottom: 20px;">04</div>
+        <h2 style="display:inline-block; vertical-align:middle; margin-bottom: 20px;">Done</h2>
+        <p>Refresh your website. The chat bubble appears in the bottom-right corner.</p>
+        <div class="pills-row">
+          <div class="pill">⏱ First visit: 30–60 seconds to crawl</div>
+          <div class="pill">⚡ After that: instant from cache</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3d Platforms -->
+    <section class="docs-section bg-surface" id="platforms">
+      <div class="container docs-container">
+        <h2 class="docs-title">Platform-Specific Instructions</h2>
+        <p class="docs-subtitle">Step-by-step for every major platform</p>
+        
+        <div class="docs-accordion">
+          <div class="faq-item open docs-accordion-item">
+            <div class="faq-item__question">WordPress<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>1. Go to Appearance > Theme File Editor > header.php</p>
+              <p>2. Paste the snippet right before the closing &lt;/head&gt; tag</p>
+              <p>3. Update File</p>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">Shopify<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>1. Go to Online Store > Themes > Edit code</p>
+              <p>2. Open theme.liquid</p>
+              <p>3. Paste the snippet before &lt;/head&gt;</p>
+              <p>4. Click Save</p>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">Webflow<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>1. Go to Project Settings > Custom Code</p>
+              <p>2. Paste into the Head Code section</p>
+              <p>3. Save Changes and Publish</p>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">Wix<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>1. Go to Settings > Advanced > Custom Code</p>
+              <p>2. Click + Add Custom Code</p>
+              <p>3. Paste the snippet, set to load on All Pages, in the Head</p>
+              <p>4. Click Apply</p>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">Squarespace<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>1. Go to Settings > Advanced > Code Injection</p>
+              <p>2. Paste snippet into the Header box</p>
+              <p>3. Save</p>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">React / Next.js<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>Add the scripts to your _document.js or layout component inside the Head component.</p>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">Plain HTML<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>Simply copy and paste the snippet directly into your &lt;head&gt; tag.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3e Customize -->
+    <section class="docs-section bg-dark" id="customize">
+      <div class="container docs-container">
+        <h2 class="docs-title">Customize Your Chatbot</h2>
+        <p class="docs-subtitle">Match your brand with these optional settings.</p>
+
+        <div class="code-wrapper">
+          <button class="copy-btn" data-copy-target="code-config-docs">Copy</button>
+          <pre class="snippet-code" id="code-config-docs">&lt;script&gt;
+  window.SiteAgent = {
+    token: "sa_pub_v1_YOUR_TOKEN",
+    position: "bottom-right", // bottom-right, bottom-left
+    theme: "auto", // auto, light, dark
+    primaryColor: "#00D4FF", // any valid CSS color
+    greeting: "👋 Hi! Ask me anything...",
+    placeholder: "Type a message...",
+    leadCapture: true // enables asking for email after 2 messages
+  };
+&lt;/script&gt;</pre>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="docs-table">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>token</td>
+                <td>String</td>
+                <td>(Required)</td>
+                <td>Your unique widget token.</td>
+              </tr>
+              <tr>
+                <td>position</td>
+                <td>String</td>
+                <td>bottom-right</td>
+                <td>Sets chatbot position.</td>
+              </tr>
+              <tr>
+                <td>theme</td>
+                <td>String</td>
+                <td>auto</td>
+                <td>auto matches system pref. light or dark forces theme.</td>
+              </tr>
+              <tr>
+                <td>primaryColor</td>
+                <td>String</td>
+                <td>#000000</td>
+                <td>Accent color for headers, bubbles, and send button.</td>
+              </tr>
+              <tr>
+                <td>greeting</td>
+                <td>String</td>
+                <td>"👋 Hi..."</td>
+                <td>Initial message shown to users.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px;">Examples</h3>
+        <div class="example-grid">
+          <div class="example-card">
+            <h4>Online Shop</h4>
+            <pre>theme: "light",
+primaryColor: "#f97316",
+greeting: "👋 Need help finding a product?"</pre>
+          </div>
+          <div class="example-card">
+            <h4>Developer / Docs</h4>
+            <pre>theme: "dark",
+primaryColor: "#8b5cf6",
+greeting: "Search the docs..."</pre>
+          </div>
+          <div class="example-card">
+            <h4>Agency / Portfolio</h4>
+            <pre>theme: "auto",
+primaryColor: "#10b981",
+leadCapture: true</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3f Plans -->
+    <section class="docs-section bg-surface" id="plans">
+      <div class="container docs-container">
+        <h2 class="docs-title">Plans and Features</h2>
+        
+        <div class="table-wrapper">
+          <table class="docs-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Free</th>
+                <th>Pro</th>
+                <th>Agency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly Requests</td>
+                <td>200</td>
+                <td>5,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>Max Pages Crawled</td>
+                <td>10</td>
+                <td>100</td>
+                <td>1,000</td>
+              </tr>
+              <tr>
+                <td>Auto Re-Crawl</td>
+                <td>Weekly</td>
+                <td>Daily</td>
+                <td>Hourly</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <h3 style="margin-bottom: 16px;">Ready to get started?</h3>
+          <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Subscribe on MCPize &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3g Troubleshooting -->
+    <section class="docs-section bg-dark" id="troubleshooting">
+      <div class="container docs-container">
+        <h2 class="docs-title">Troubleshooting</h2>
+        
+        <div class="docs-accordion">
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">Chat bubble is not appearing<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>Verify that your snippet is placed correctly in the &lt;head&gt; tag and your token is valid.</p>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">"Could not extract content" error<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>Your website might be blocking bots. Ensure your robots.txt allows generic crawlers.</p>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">Chatbot is giving wrong or outdated answers<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>You can force a manual re-crawl using our API.</p>
+              <div class="code-wrapper" style="margin-top: 10px;">
+                <button class="copy-btn" data-copy-target="code-recrawl">Copy</button>
+                <pre class="snippet-code" id="code-recrawl">curl -X POST https://wazidhasan-siteagent-mcp.hf.space/api/recrawl -H "x-api-key: YOUR_API_KEY"</pre>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">"Sorry, something went wrong"<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>This usually indicates a temporary server issue. Check the server status below.</p>
+            </div>
+          </div>
+          <div class="faq-item docs-accordion-item">
+            <div class="faq-item__question">Rate limit reached<span class="faq-item__icon" aria-hidden="true">+</span></div>
+            <div class="faq-item__answer">
+              <p>You have exceeded your plan's monthly requests. Please upgrade your plan on MCPize.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3h Server Status -->
+    <section class="docs-section bg-surface" id="server-status">
+      <div class="container docs-container">
+        <h2 class="docs-title">Server Status</h2>
+        <p>Check if the server is running:</p>
+
+        <div class="status-check-card">
+          <div class="server-status" id="docsServerStatus" style="display:inline-flex; align-items:center; margin-bottom: 12px; gap: 8px;">
+            <div class="status-dot"></div>
+            <span class="status-text">Checking status...</span>
+          </div>
+          <br>
+          <a href="https://wazidhasan-siteagent-mcp.hf.space/api/health" target="_blank" rel="noopener noreferrer" class="docs-link" style="font-size: 14px;">https://wazidhasan-siteagent-mcp.hf.space/api/health</a>
+          <div class="code-wrapper" style="margin-top: 16px;">
+            <pre class="snippet-code">{ "status": "ok", "service": "siteagent-mcp" }</pre>
+          </div>
+        </div>
+
+        <div class="support-card" style="margin-top: 40px;">
+          <h3>Need more help?</h3>
+          <p style="margin-top: 8px;">Email: <a href="mailto:webexguruhasan95@gmail.com" class="docs-link">webexguruhasan95@gmail.com</a></p>
+          <p>Website: <a href="https://siteagent-server-landing-page.vercel.app/" target="_blank" rel="noopener noreferrer" class="docs-link">siteagent-server-landing-page.vercel.app</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Video Modal -->
+  <div class="docs-modal" id="docs-modal" style="display:none;">
+    <button class="docs-modal-close" id="docs-modal-close">✕</button>
+    <iframe id="docs-iframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+    <div class="mobile-cta-bar">
+      <span><span data-i18n="mobile_cta">Free plan available</span></span>
+      <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+        class="btn btn-primary"><span data-i18n="mobile_cta_btn">Start Free &rarr;</span></a>
+    </div>
+
+    <footer class="footer" id="footer" role="contentinfo">
+      <div class="container">
+
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="#hero" class="footer__logo">✦ SiteAgent</a>
+            <p class="footer__tagline"><span data-i18n="footer_tagline">AI chatbot for every website.</span></p>
+
+            <!-- Live Server Status -->
+            <div class="server-status" id="serverStatus">
+              <div class="status-dot"></div>
+              <span class="status-text"><span data-i18n="footer_status_checking">Checking status...</span></span>
+            </div>
+
+          </div>
+
+          <div class="footer__links-grid">
+            <div class="footer-col">
+              <h4 class="footer-col__title">Product</h4>
+              <nav class="footer-col__list" aria-label="Product Links">
+                <a href="#features" class="footer-col__link">Features</a>
+                <a href="#pricing" class="footer-col__link">Pricing</a>
+                <a href="#live-demo" class="footer-col__link">Demo</a>
+              </nav>
+            </div>
+            <div class="footer-col">
+              <h4 class="footer-col__title">Support</h4>
+              <nav class="footer-col__list" aria-label="Support Links">
+                <a href="docs.html" class="footer-col__link">Documentation</a>
+                <a href="#contact" class="footer-col__link">Contact</a>
+                <a href="#" class="footer-col__link">User Guide</a>
+                <a href="#faq" class="footer-col__link">FAQ</a>
+                <a href="#" class="footer-col__link">Server Status</a>
+              </nav>
+            </div>
+            <div class="footer-col">
+              <h4 class="footer-col__title">Legal</h4>
+              <nav class="footer-col__list" aria-label="Legal Links">
+                <a href="#" class="footer-col__link">Privacy Policy</a>
+                <a href="#" class="footer-col__link">Terms of Service</a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="footer__subscribe">
+            <span class="footer__subscribe-text">Start building for free</span>
+            <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+              class="btn-footer">Get Started →</a>
+          </div>
+        </div>
+
+        <div class="footer__divider"></div>
+
+        <div class="footer__bottom">
+          <p>© 2026 SiteAgent. All rights reserved.</p>
+          <p>Built with ❤️ for website owners everywhere.</p>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- Vercel Speed Insights -->
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <!-- Vercel Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/view.js"></script>
+
