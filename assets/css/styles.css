@@ -3355,12 +3355,10 @@
 
 #docs-token-widget { max-width: 580px; margin: 40px auto; }
 
-/* === MOBILE STICKY CTA PADDING (index.html only) === */
+
+
+body { padding-bottom: 0; }
 @media (max-width: 768px) {
-  body.has-mobile-cta {
-    padding-bottom: 70px;
-  }
-  body.has-mobile-cta footer {
-    margin-bottom: 70px;
-  }
+  body { padding-bottom: 70px; }
+  footer { margin-bottom: 70px; }
 }
