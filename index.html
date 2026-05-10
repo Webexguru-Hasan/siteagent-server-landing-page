@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta Tags -->
   <title>SiteAgent — Add AI Chatbot to Any Website in 5 Minutes</title>
-  <meta name="description" content="SiteAgent adds an AI-powered chatbot to any website in under 5 minutes. Auto-crawls your content, answers visitor questions instantly. Works on WordPress, Shopify, Webflow, and more.">
-  <meta name="keywords" content="AI chatbot, website chatbot, chatbot widget, SiteAgent, AI customer support, website AI">
+  <meta name="description"
+    content="SiteAgent adds an AI-powered chatbot to any website in under 5 minutes. Auto-crawls your content, answers visitor questions instantly. Works on WordPress, Shopify, Webflow, and more.">
+  <meta name="keywords"
+    content="AI chatbot, website chatbot, chatbot widget, SiteAgent, AI customer support, website AI">
   <meta name="author" content="SiteAgent">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://wazidhasan-siteagent-mcp.hf.space">
@@ -24,12 +27,15 @@
   <meta name="twitter:description" content="Add an AI chatbot to your website in 5 minutes. No coding required.">
 
   <!-- Favicon placeholder -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>✦</text></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>✦</text></svg>" />
 
   <!-- Google Fonts: Syne (display) + DM Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <style>
     /* =========================================================
@@ -37,54 +43,65 @@
        ========================================================= */
     :root {
       /* Colors */
-      --color-bg:           #0A0F1E;
-      --color-surface:      #111827;
-      --color-surface-2:    #1a2235;
-      --color-border:       rgba(255, 255, 255, 0.07);
+      --color-bg: #0A0F1E;
+      --color-surface: #111827;
+      --color-surface-2: #1a2235;
+      --color-border: rgba(255, 255, 255, 0.07);
       --color-border-hover: rgba(0, 212, 255, 0.35);
 
-      --color-accent:       #00D4FF;
-      --color-accent-2:     #3B82F6;
-      --color-accent-glow:  rgba(0, 212, 255, 0.15);
+      --color-accent: #00D4FF;
+      --color-accent-2: #3B82F6;
+      --color-accent-glow: rgba(0, 212, 255, 0.15);
 
-      --color-text:         #F1F5F9;
-      --color-text-muted:   #94A3B8;
-      --color-text-faint:   #4B5563;
+      --color-text: #F1F5F9;
+      --color-text-muted: #94A3B8;
+      --color-text-faint: #4B5563;
 
-      --color-success:      #10B981;
-      --color-warning:      #F59E0B;
-      --color-error:        #EF4444;
+      --color-success: #10B981;
+      --color-warning: #F59E0B;
+      --color-error: #EF4444;
 
       /* Gradients */
-      --gradient-hero:      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0,212,255,0.18) 0%, transparent 70%);
-      --gradient-accent:    linear-gradient(135deg, #00D4FF 0%, #3B82F6 100%);
-      --gradient-surface:   linear-gradient(135deg, #111827 0%, #1a2235 100%);
-      --gradient-card-glow: linear-gradient(135deg, rgba(0,212,255,0.05) 0%, rgba(59,130,246,0.05) 100%);
+      --gradient-hero: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0, 212, 255, 0.18) 0%, transparent 70%);
+      --gradient-accent: linear-gradient(135deg, #00D4FF 0%, #3B82F6 100%);
+      --gradient-surface: linear-gradient(135deg, #111827 0%, #1a2235 100%);
+      --gradient-card-glow: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
 
       /* Typography */
       --font-display: 'Syne', sans-serif;
-      --font-body:    'DM Sans', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
 
-      --text-xs:   0.75rem;    /* 12px */
-      --text-sm:   0.875rem;   /* 14px */
-      --text-base: 1rem;       /* 16px */
-      --text-lg:   1.125rem;   /* 18px */
-      --text-xl:   1.25rem;    /* 20px */
-      --text-2xl:  1.5rem;     /* 24px */
-      --text-3xl:  1.875rem;   /* 30px */
-      --text-4xl:  2.25rem;    /* 36px */
-      --text-5xl:  3rem;       /* 48px */
-      --text-6xl:  3.75rem;    /* 60px */
-      --text-7xl:  4.5rem;     /* 72px */
+      --text-xs: 0.75rem;
+      /* 12px */
+      --text-sm: 0.875rem;
+      /* 14px */
+      --text-base: 1rem;
+      /* 16px */
+      --text-lg: 1.125rem;
+      /* 18px */
+      --text-xl: 1.25rem;
+      /* 20px */
+      --text-2xl: 1.5rem;
+      /* 24px */
+      --text-3xl: 1.875rem;
+      /* 30px */
+      --text-4xl: 2.25rem;
+      /* 36px */
+      --text-5xl: 3rem;
+      /* 48px */
+      --text-6xl: 3.75rem;
+      /* 60px */
+      --text-7xl: 4.5rem;
+      /* 72px */
 
       /* Spacing */
-      --space-1:  0.25rem;
-      --space-2:  0.5rem;
-      --space-3:  0.75rem;
-      --space-4:  1rem;
-      --space-5:  1.25rem;
-      --space-6:  1.5rem;
-      --space-8:  2rem;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
       --space-10: 2.5rem;
       --space-12: 3rem;
       --space-16: 4rem;
@@ -93,35 +110,37 @@
       --space-32: 8rem;
 
       /* Borders */
-      --radius-sm:  6px;
-      --radius-md:  12px;
-      --radius-lg:  16px;
-      --radius-xl:  24px;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
       --radius-2xl: 32px;
       --radius-full: 9999px;
 
       /* Shadows */
-      --shadow-sm:     0 1px 3px rgba(0,0,0,0.4);
-      --shadow-md:     0 4px 20px rgba(0,0,0,0.5);
-      --shadow-lg:     0 8px 40px rgba(0,0,0,0.6);
-      --shadow-accent: 0 0 40px rgba(0,212,255,0.2);
-      --shadow-accent-strong: 0 0 80px rgba(0,212,255,0.35);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.5);
+      --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.6);
+      --shadow-accent: 0 0 40px rgba(0, 212, 255, 0.2);
+      --shadow-accent-strong: 0 0 80px rgba(0, 212, 255, 0.35);
 
       /* Transitions */
-      --transition-fast:   150ms ease;
-      --transition-base:   250ms ease;
-      --transition-slow:   400ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+      --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
       --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
 
       /* Layout */
       --container-max: 1200px;
-      --nav-height:    72px;
+      --nav-height: 72px;
     }
 
     /* =========================================================
        CSS RESET & BASE STYLES
        ========================================================= */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -144,7 +163,8 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    img, video {
+    img,
+    video {
       max-width: 100%;
       height: auto;
       display: block;
@@ -155,7 +175,8 @@
       text-decoration: none;
     }
 
-    ul, ol {
+    ul,
+    ol {
       list-style: none;
     }
 
@@ -166,7 +187,9 @@
       background: none;
     }
 
-    input, textarea, select {
+    input,
+    textarea,
+    select {
       font-family: var(--font-body);
       font-size: var(--text-base);
     }
@@ -174,10 +197,20 @@
     /* =========================================================
        TYPOGRAPHY UTILITIES
        ========================================================= */
-    .font-display { font-family: var(--font-display); }
-    .font-body    { font-family: var(--font-body); }
+    .font-display {
+      font-family: var(--font-display);
+    }
 
-    h1, h2, h3, h4, h5, h6 {
+    .font-body {
+      font-family: var(--font-body);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-family: var(--font-display);
       font-weight: 700;
       line-height: 1.15;
@@ -197,9 +230,17 @@
       background-clip: text;
     }
 
-    .text-accent  { color: var(--color-accent); }
-    .text-muted   { color: var(--color-text-muted); }
-    .text-center  { text-align: center; }
+    .text-accent {
+      color: var(--color-accent);
+    }
+
+    .text-muted {
+      color: var(--color-text-muted);
+    }
+
+    .text-center {
+      text-align: center;
+    }
 
     /* =========================================================
        LAYOUT UTILITIES
@@ -212,7 +253,9 @@
     }
 
     @media (max-width: 768px) {
-      .container { padding-inline: var(--space-4); }
+      .container {
+        padding-inline: var(--space-4);
+      }
     }
 
     section {
@@ -280,17 +323,23 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       opacity: 0;
       transition: opacity var(--transition-fast);
     }
 
-    .btn-primary:hover::before { opacity: 1; }
+    .btn-primary:hover::before {
+      opacity: 1;
+    }
+
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), 0 8px 25px rgba(0,0,0,0.3);
+      box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), 0 8px 25px rgba(0, 0, 0, 0.3);
     }
-    .btn-primary:active { transform: translateY(0); }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
 
     .btn-secondary {
       background: transparent;
@@ -346,7 +395,9 @@
       box-shadow: var(--shadow-accent), var(--shadow-lg);
     }
 
-    .card:hover::before { opacity: 1; }
+    .card:hover::before {
+      opacity: 1;
+    }
 
     /* =========================================================
        BADGE / TAG
@@ -396,11 +447,25 @@
       transform: translateY(0);
     }
 
-    .reveal-delay-1 { transition-delay: 100ms; }
-    .reveal-delay-2 { transition-delay: 200ms; }
-    .reveal-delay-3 { transition-delay: 300ms; }
-    .reveal-delay-4 { transition-delay: 400ms; }
-    .reveal-delay-5 { transition-delay: 500ms; }
+    .reveal-delay-1 {
+      transition-delay: 100ms;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 200ms;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 300ms;
+    }
+
+    .reveal-delay-4 {
+      transition-delay: 400ms;
+    }
+
+    .reveal-delay-5 {
+      transition-delay: 500ms;
+    }
 
     /* =========================================================
        SCROLLBAR
@@ -438,19 +503,27 @@
       position: fixed;
       inset: 0;
       background:
-        radial-gradient(ellipse 90% 60% at 50% -5%, rgba(0,212,255,0.08) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(59,130,246,0.06) 0%, transparent 60%);
+        radial-gradient(ellipse 90% 60% at 50% -5%, rgba(0, 212, 255, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(59, 130, 246, 0.06) 0%, transparent 60%);
       pointer-events: none;
       z-index: 0;
     }
 
     /* Ensure all content sits above the global bg overlay */
-    body > * { position: relative; z-index: 1; }
+    body>* {
+      position: relative;
+      z-index: 1;
+    }
 
     /* =========================================================
        SECTION SCROLL OFFSETS
        ========================================================= */
-    #hero, #features, #how-it-works, #pricing, #faq, #contact {
+    #hero,
+    #features,
+    #how-it-works,
+    #pricing,
+    #faq,
+    #contact {
       scroll-margin-top: var(--nav-height);
     }
 
@@ -476,7 +549,7 @@
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom-color: var(--color-border);
-      box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
     }
 
     .navbar__inner {
@@ -503,7 +576,10 @@
       flex-shrink: 0;
       transition: opacity var(--transition-fast);
     }
-    .navbar__logo:hover { opacity: 0.85; }
+
+    .navbar__logo:hover {
+      opacity: 0.85;
+    }
 
     .navbar__logo-icon {
       width: 32px;
@@ -514,7 +590,7 @@
       align-items: center;
       justify-content: center;
       font-size: 16px;
-      box-shadow: 0 0 16px rgba(0,212,255,0.4);
+      box-shadow: 0 0 16px rgba(0, 212, 255, 0.4);
       flex-shrink: 0;
     }
 
@@ -542,10 +618,12 @@
       text-decoration: none;
       white-space: nowrap;
     }
+
     .navbar__link:hover {
       color: var(--color-text);
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
     }
+
     .navbar__link.active {
       color: var(--color-accent);
     }
@@ -574,6 +652,7 @@
       transition: border-color var(--transition-fast), background var(--transition-fast);
       flex-shrink: 0;
     }
+
     .navbar__hamburger:hover {
       border-color: var(--color-border-hover);
       background: var(--color-accent-glow);
@@ -593,10 +672,12 @@
     .navbar__hamburger.open .hamburger__bar:nth-child(1) {
       transform: translateY(7px) rotate(45deg);
     }
+
     .navbar__hamburger.open .hamburger__bar:nth-child(2) {
       opacity: 0;
       width: 0;
     }
+
     .navbar__hamburger.open .hamburger__bar:nth-child(3) {
       transform: translateY(-7px) rotate(-45deg);
     }
@@ -638,6 +719,7 @@
       transition: color var(--transition-fast), background var(--transition-fast);
       text-decoration: none;
     }
+
     .navbar__mobile-link:hover {
       color: var(--color-accent);
       background: var(--color-accent-glow);
@@ -646,40 +728,86 @@
     .navbar__mobile-cta {
       margin-top: var(--space-2);
     }
-    .navbar__mobile-cta .btn { width: 100%; justify-content: center; }
+
+    .navbar__mobile-cta .btn {
+      width: 100%;
+      justify-content: center;
+    }
 
     /* --- Responsive breakpoints --- */
     @media (max-width: 768px) {
-      .navbar__links   { display: none; }
-      .navbar__cta > .btn { display: none; }  /* hide desktop CTA */
-      .navbar__hamburger { display: flex; }
+      .navbar__links {
+        display: none;
+      }
+
+      .navbar__cta>.btn {
+        display: none;
+      }
+
+      /* hide desktop CTA */
+      .navbar__hamburger {
+        display: flex;
+      }
     }
 
     @media (min-width: 769px) {
-      .navbar__mobile { display: none; }
+      .navbar__mobile {
+        display: none;
+      }
     }
 
     /* =========================================================
        KEYFRAMES
        ========================================================= */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(28px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(28px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes slideInRight {
-      from { opacity: 0; transform: translateX(48px); }
-      to   { opacity: 1; transform: translateX(0); }
+      from {
+        opacity: 0;
+        transform: translateX(48px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
     @keyframes typingBounce {
-      0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
-      30%            { transform: translateY(-6px); opacity: 1; }
+
+      0%,
+      60%,
+      100% {
+        transform: translateY(0);
+        opacity: 0.4;
+      }
+
+      30% {
+        transform: translateY(-6px);
+        opacity: 1;
+      }
     }
 
     @keyframes pulse-glow {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.5); }
-      50%       { box-shadow: 0 0 0 6px rgba(16,185,129,0); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+      }
+
+      50% {
+        box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+      }
     }
 
     /* =========================================================
@@ -703,7 +831,7 @@
       width: 700px;
       height: 700px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(0,212,255,0.07) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(0, 212, 255, 0.07) 0%, transparent 70%);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -732,7 +860,7 @@
       text-transform: uppercase;
       color: var(--color-accent);
       background: var(--color-accent-glow);
-      border: 1px solid rgba(0,212,255,0.2);
+      border: 1px solid rgba(0, 212, 255, 0.2);
       border-radius: var(--radius-full);
       padding: var(--space-1) var(--space-4);
       margin-bottom: var(--space-5);
@@ -775,7 +903,7 @@
       gap: var(--space-2);
       font-size: var(--text-sm);
       color: var(--color-text-muted);
-      background: rgba(255,255,255,0.03);
+      background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--color-border);
       border-radius: var(--radius-full);
       padding: var(--space-2) var(--space-5);
@@ -788,7 +916,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: slideInRight 0.8s cubic-bezier(0.4,0,0.2,1) both;
+      animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;
       animation-delay: 300ms;
     }
 
@@ -800,8 +928,8 @@
       border: 1px solid var(--color-border-hover);
       border-radius: var(--radius-xl);
       box-shadow:
-        0 0 0 1px rgba(0,212,255,0.15),
-        0 0 60px rgba(0,212,255,0.12),
+        0 0 0 1px rgba(0, 212, 255, 0.15),
+        0 0 60px rgba(0, 212, 255, 0.12),
         var(--shadow-lg);
       overflow: hidden;
       position: relative;
@@ -827,9 +955,18 @@
       height: 10px;
       border-radius: 50%;
     }
-    .mockup-dot:nth-child(1) { background: #FF5F57; }
-    .mockup-dot:nth-child(2) { background: #FFBD2E; }
-    .mockup-dot:nth-child(3) { background: #28CA41; }
+
+    .mockup-dot:nth-child(1) {
+      background: #FF5F57;
+    }
+
+    .mockup-dot:nth-child(2) {
+      background: #FFBD2E;
+    }
+
+    .mockup-dot:nth-child(3) {
+      background: #28CA41;
+    }
 
     .mockup-url {
       flex: 1;
@@ -850,20 +987,35 @@
       height: 320px;
       position: relative;
       background:
-        linear-gradient(rgba(17,24,39,0.95), rgba(17,24,39,0.95)),
-        repeating-linear-gradient(0deg, transparent, transparent 24px, rgba(255,255,255,0.02) 24px, rgba(255,255,255,0.02) 25px);
+        linear-gradient(rgba(17, 24, 39, 0.95), rgba(17, 24, 39, 0.95)),
+        repeating-linear-gradient(0deg, transparent, transparent 24px, rgba(255, 255, 255, 0.02) 24px, rgba(255, 255, 255, 0.02) 25px);
     }
 
     /* Fake website skeleton lines */
-    .mockup-skeleton { display: flex; flex-direction: column; gap: 10px; }
+    .mockup-skeleton {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
     .skel {
       height: 10px;
       border-radius: var(--radius-full);
-      background: rgba(255,255,255,0.06);
+      background: rgba(255, 255, 255, 0.06);
     }
-    .skel-title { width: 60%; height: 14px; }
-    .skel-sm    { width: 40%; }
-    .skel-xs    { width: 25%; }
+
+    .skel-title {
+      width: 60%;
+      height: 14px;
+    }
+
+    .skel-sm {
+      width: 40%;
+    }
+
+    .skel-xs {
+      width: 25%;
+    }
 
     /* Chat bubble button (bottom-right of the fake site) */
     .mockup-bubble {
@@ -878,7 +1030,7 @@
       align-items: center;
       justify-content: center;
       font-size: 22px;
-      box-shadow: 0 0 20px rgba(0,212,255,0.45);
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.45);
       cursor: pointer;
       z-index: 10;
     }
@@ -890,9 +1042,9 @@
       right: var(--space-4);
       width: 260px;
       background: #0d1320;
-      border: 1px solid rgba(0,212,255,0.25);
+      border: 1px solid rgba(0, 212, 255, 0.25);
       border-radius: var(--radius-lg);
-      box-shadow: 0 8px 40px rgba(0,0,0,0.7), 0 0 30px rgba(0,212,255,0.1);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 212, 255, 0.1);
       overflow: hidden;
       z-index: 11;
     }
@@ -937,9 +1089,9 @@
     }
 
     .chat-msg-user {
-      background: rgba(0,212,255,0.12);
+      background: rgba(0, 212, 255, 0.12);
       color: var(--color-text);
-      border: 1px solid rgba(0,212,255,0.2);
+      border: 1px solid rgba(0, 212, 255, 0.2);
       align-self: flex-end;
       border-radius: var(--radius-md) var(--radius-md) 4px var(--radius-md);
     }
@@ -967,8 +1119,14 @@
       background: var(--color-accent);
       animation: typingBounce 1.4s ease infinite;
     }
-    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
-    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+    .typing-dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .typing-dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
 
     /* --- Mobile stacking --- */
     @media (max-width: 900px) {
@@ -977,16 +1135,37 @@
         text-align: center;
         gap: var(--space-12);
       }
-      .hero__subheadline { margin-inline: auto; }
-      .hero__ctas { justify-content: center; }
-      .hero__trust-badge { margin-inline: auto; }
-      .hero__mockup { order: 2; }
-      .hero__copy   { order: 1; }
+
+      .hero__subheadline {
+        margin-inline: auto;
+      }
+
+      .hero__ctas {
+        justify-content: center;
+      }
+
+      .hero__trust-badge {
+        margin-inline: auto;
+      }
+
+      .hero__mockup {
+        order: 2;
+      }
+
+      .hero__copy {
+        order: 1;
+      }
     }
 
     @media (max-width: 480px) {
-      .mockup-frame { max-width: 320px; }
-      .mockup-chat  { width: 210px; font-size: 10px; }
+      .mockup-frame {
+        max-width: 320px;
+      }
+
+      .mockup-chat {
+        width: 210px;
+        font-size: 10px;
+      }
     }
 
     /* =========================================================
@@ -995,8 +1174,8 @@
     .trust-bar {
       padding-block: var(--space-5);
       background: var(--color-surface);
-      border-top:    1px solid rgba(0,212,255,0.08);
-      border-bottom: 1px solid rgba(0,212,255,0.08);
+      border-top: 1px solid rgba(0, 212, 255, 0.08);
+      border-bottom: 1px solid rgba(0, 212, 255, 0.08);
     }
 
     .trust-bar__inner {
@@ -1026,16 +1205,17 @@
       font-size: var(--text-xs);
       font-weight: 500;
       color: var(--color-text-muted);
-      background: rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--color-border);
       border-radius: var(--radius-full);
       padding: 3px var(--space-3);
       transition: color var(--transition-fast), border-color var(--transition-fast);
       white-space: nowrap;
     }
+
     .trust-pill:hover {
       color: var(--color-accent);
-      border-color: rgba(0,212,255,0.3);
+      border-color: rgba(0, 212, 255, 0.3);
     }
 
     .trust-bar__stat {
@@ -1044,12 +1224,25 @@
       color: var(--color-text-faint);
       white-space: nowrap;
     }
-    .trust-bar__stat span { color: var(--color-success); font-weight: 600; }
+
+    .trust-bar__stat span {
+      color: var(--color-success);
+      font-weight: 600;
+    }
 
     @media (max-width: 768px) {
-      .trust-bar__stat { display: none; }
-      .trust-bar__inner { justify-content: center; }
-      .trust-bar__label { width: 100%; text-align: center; }
+      .trust-bar__stat {
+        display: none;
+      }
+
+      .trust-bar__inner {
+        justify-content: center;
+      }
+
+      .trust-bar__label {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     /* =========================================================
@@ -1095,12 +1288,12 @@
 
     .ps-card--problem {
       background: linear-gradient(135deg, #1a0f0f 0%, var(--color-surface) 100%);
-      border: 1px solid rgba(239,68,68,0.2);
+      border: 1px solid rgba(239, 68, 68, 0.2);
     }
 
     .ps-card--solution {
       background: linear-gradient(135deg, #0a1a13 0%, var(--color-surface) 100%);
-      border: 1px solid rgba(16,185,129,0.2);
+      border: 1px solid rgba(16, 185, 129, 0.2);
     }
 
     .ps-card__label {
@@ -1118,14 +1311,14 @@
 
     .ps-card--problem .ps-card__label {
       color: #f87171;
-      background: rgba(239,68,68,0.1);
-      border: 1px solid rgba(239,68,68,0.25);
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.25);
     }
 
     .ps-card--solution .ps-card__label {
       color: var(--color-success);
-      background: rgba(16,185,129,0.1);
-      border: 1px solid rgba(16,185,129,0.25);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
     }
 
     .ps-card__list {
@@ -1150,7 +1343,9 @@
     }
 
     @media (max-width: 768px) {
-      .prob-sol__grid { grid-template-columns: 1fr; }
+      .prob-sol__grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* =========================================================
@@ -1170,7 +1365,7 @@
       left: 0;
       right: 0;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
     }
 
     .features__header {
@@ -1210,8 +1405,8 @@
 
     .feature-card:hover {
       transform: translateY(-6px);
-      border-color: rgba(0,212,255,0.6);
-      box-shadow: 0 0 30px rgba(0,212,255,0.12), 0 12px 40px rgba(0,0,0,0.5);
+      border-color: rgba(0, 212, 255, 0.6);
+      box-shadow: 0 0 30px rgba(0, 212, 255, 0.12), 0 12px 40px rgba(0, 0, 0, 0.5);
     }
 
     .feature-card:hover::before {
@@ -1241,11 +1436,15 @@
     }
 
     @media (max-width: 1024px) {
-      .features__grid { grid-template-columns: repeat(2, 1fr); }
+      .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     @media (max-width: 600px) {
-      .features__grid { grid-template-columns: 1fr; }
+      .features__grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* =========================================================
@@ -1264,8 +1463,8 @@
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+        linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
       background-size: 48px 48px;
       pointer-events: none;
     }
@@ -1305,6 +1504,7 @@
       position: relative;
       transition: border-color var(--transition-base), box-shadow var(--transition-base);
     }
+
     .step-card:hover {
       border-color: var(--color-border-hover);
       box-shadow: var(--shadow-accent);
@@ -1325,7 +1525,7 @@
       font-size: var(--text-xs);
       font-weight: 800;
       color: #fff;
-      box-shadow: 0 0 12px rgba(0,212,255,0.4);
+      box-shadow: 0 0 12px rgba(0, 212, 255, 0.4);
     }
 
     .step-icon {
@@ -1352,7 +1552,7 @@
     /* Syntax-highlighted code block */
     .code-block {
       background: #060d1a;
-      border: 1px solid rgba(0,212,255,0.15);
+      border: 1px solid rgba(0, 212, 255, 0.15);
       border-radius: var(--radius-md);
       padding: var(--space-4);
       position: relative;
@@ -1365,7 +1565,7 @@
       gap: var(--space-2);
       margin-bottom: var(--space-3);
       padding-bottom: var(--space-2);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .code-block__dot {
@@ -1373,9 +1573,18 @@
       height: 8px;
       border-radius: 50%;
     }
-    .code-block__dot:nth-child(1) { background: #FF5F57; }
-    .code-block__dot:nth-child(2) { background: #FFBD2E; }
-    .code-block__dot:nth-child(3) { background: #28CA41; }
+
+    .code-block__dot:nth-child(1) {
+      background: #FF5F57;
+    }
+
+    .code-block__dot:nth-child(2) {
+      background: #FFBD2E;
+    }
+
+    .code-block__dot:nth-child(3) {
+      background: #28CA41;
+    }
 
     .code-block__lang {
       margin-left: auto;
@@ -1397,12 +1606,30 @@
     }
 
     /* Token colours */
-    .tok-tag   { color: #00D4FF; }
-    .tok-attr  { color: #93c5fd; }
-    .tok-str   { color: #6ee7b7; }
-    .tok-cmt   { color: #4b6085; font-style: italic; }
-    .tok-kw    { color: #f472b6; }
-    .tok-fn    { color: #fbbf24; }
+    .tok-tag {
+      color: #00D4FF;
+    }
+
+    .tok-attr {
+      color: #93c5fd;
+    }
+
+    .tok-str {
+      color: #6ee7b7;
+    }
+
+    .tok-cmt {
+      color: #4b6085;
+      font-style: italic;
+    }
+
+    .tok-kw {
+      color: #f472b6;
+    }
+
+    .tok-fn {
+      color: #fbbf24;
+    }
 
     /* Copy button */
     .copy-btn {
@@ -1413,14 +1640,22 @@
       font-size: 11px;
       font-weight: 600;
       color: var(--color-text-muted);
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--color-border);
       border-radius: var(--radius-sm);
       cursor: pointer;
       transition: all var(--transition-fast);
     }
-    .copy-btn:hover  { color: var(--color-accent); border-color: rgba(0,212,255,0.3); }
-    .copy-btn.copied { color: var(--color-success); border-color: rgba(16,185,129,0.4); }
+
+    .copy-btn:hover {
+      color: var(--color-accent);
+      border-color: rgba(0, 212, 255, 0.3);
+    }
+
+    .copy-btn.copied {
+      color: var(--color-success);
+      border-color: rgba(16, 185, 129, 0.4);
+    }
 
     /* Mobile: stack steps vertically */
     @media (max-width: 900px) {
@@ -1428,7 +1663,10 @@
         grid-template-columns: 1fr;
         gap: var(--space-10);
       }
-      .step-connector { display: none; }
+
+      .step-connector {
+        display: none;
+      }
     }
 
     /* =========================================================
@@ -1443,9 +1681,11 @@
     .live-demo::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
     }
 
     .live-demo__inner {
@@ -1455,7 +1695,10 @@
       gap: var(--space-16);
     }
 
-    .live-demo__copy .section-label { display: inline-flex; margin-bottom: var(--space-4); }
+    .live-demo__copy .section-label {
+      display: inline-flex;
+      margin-bottom: var(--space-4);
+    }
 
     .live-demo__title {
       font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
@@ -1479,7 +1722,7 @@
       border: 1px solid var(--color-border-hover);
       border-radius: var(--radius-xl);
       overflow: hidden;
-      box-shadow: 0 0 60px rgba(0,212,255,0.1), var(--shadow-lg);
+      box-shadow: 0 0 60px rgba(0, 212, 255, 0.1), var(--shadow-lg);
     }
 
     /* Fake website background inside demo */
@@ -1487,14 +1730,16 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(rgba(10,15,30,0.96), rgba(10,15,30,0.96)),
-        repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(255,255,255,0.015) 30px, rgba(255,255,255,0.015) 31px);
+        linear-gradient(rgba(10, 15, 30, 0.96), rgba(10, 15, 30, 0.96)),
+        repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(255, 255, 255, 0.015) 30px, rgba(255, 255, 255, 0.015) 31px);
     }
 
     /* Fake page header bar */
     .demo-page-header {
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 44px;
       background: var(--color-surface-2);
       border-bottom: 1px solid var(--color-border);
@@ -1536,7 +1781,7 @@
     .demo-skel {
       height: 10px;
       border-radius: var(--radius-full);
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
     }
 
     /* Demo chat bubble (always visible) */
@@ -1553,12 +1798,19 @@
       justify-content: center;
       font-size: 24px;
       cursor: pointer;
-      box-shadow: 0 0 24px rgba(0,212,255,0.5);
+      box-shadow: 0 0 24px rgba(0, 212, 255, 0.5);
       z-index: 10;
       transition: transform var(--transition-spring);
     }
-    .demo-bubble:hover { transform: scale(1.1); }
-    .demo-bubble.hidden { opacity: 0; pointer-events: none; }
+
+    .demo-bubble:hover {
+      transform: scale(1.1);
+    }
+
+    .demo-bubble.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
 
     /* Demo chat window */
     .demo-chat-window {
@@ -1567,9 +1819,9 @@
       right: var(--space-5);
       width: 300px;
       background: #0d1320;
-      border: 1px solid rgba(0,212,255,0.25);
+      border: 1px solid rgba(0, 212, 255, 0.25);
       border-radius: var(--radius-xl) var(--radius-xl) var(--radius-sm) var(--radius-xl);
-      box-shadow: 0 12px 48px rgba(0,0,0,0.8), 0 0 40px rgba(0,212,255,0.1);
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 212, 255, 0.1);
       overflow: hidden;
       z-index: 11;
       transform: scale(0.92) translateY(20px);
@@ -1577,6 +1829,7 @@
       pointer-events: none;
       transition: transform var(--transition-spring), opacity var(--transition-base);
     }
+
     .demo-chat-window.open {
       transform: scale(1) translateY(0);
       opacity: 1;
@@ -1594,7 +1847,7 @@
     .demo-chat-header-icon {
       width: 28px;
       height: 28px;
-      background: rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.2);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -1602,7 +1855,10 @@
       font-size: 13px;
     }
 
-    .demo-chat-header-info { flex: 1; }
+    .demo-chat-header-info {
+      flex: 1;
+    }
+
     .demo-chat-header-name {
       font-family: var(--font-display);
       font-size: var(--text-sm);
@@ -1610,13 +1866,14 @@
       color: #fff;
       line-height: 1.2;
     }
+
     .demo-chat-header-status {
       font-size: 10px;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
 
     .demo-chat-close {
-      background: rgba(255,255,255,0.15);
+      background: rgba(255, 255, 255, 0.15);
       border: none;
       border-radius: 50%;
       width: 24px;
@@ -1629,7 +1886,10 @@
       justify-content: center;
       transition: background var(--transition-fast);
     }
-    .demo-chat-close:hover { background: rgba(255,255,255,0.3); }
+
+    .demo-chat-close:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
 
     .demo-chat-messages {
       padding: var(--space-4);
@@ -1647,6 +1907,7 @@
       line-height: 1.55;
       animation: fadeUp 0.3s ease both;
     }
+
     .demo-msg-bot {
       background: var(--color-surface-2);
       border: 1px solid var(--color-border);
@@ -1654,9 +1915,10 @@
       align-self: flex-start;
       border-radius: var(--radius-md) var(--radius-md) var(--radius-md) 4px;
     }
+
     .demo-msg-user {
-      background: rgba(0,212,255,0.12);
-      border: 1px solid rgba(0,212,255,0.2);
+      background: rgba(0, 212, 255, 0.12);
+      border: 1px solid rgba(0, 212, 255, 0.2);
       color: var(--color-text);
       align-self: flex-end;
       border-radius: var(--radius-md) var(--radius-md) 4px var(--radius-md);
@@ -1673,15 +1935,26 @@
       width: fit-content;
       align-self: flex-start;
     }
-    .demo-typing.active { display: flex; }
+
+    .demo-typing.active {
+      display: flex;
+    }
+
     .demo-typing span {
-      width: 6px; height: 6px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: var(--color-accent);
       animation: typingBounce 1.4s ease infinite;
     }
-    .demo-typing span:nth-child(2) { animation-delay: 0.2s; }
-    .demo-typing span:nth-child(3) { animation-delay: 0.4s; }
+
+    .demo-typing span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .demo-typing span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
 
     /* Chat input row */
     .demo-chat-input-row {
@@ -1689,7 +1962,7 @@
       gap: var(--space-2);
       padding: var(--space-3);
       border-top: 1px solid var(--color-border);
-      background: rgba(0,0,0,0.2);
+      background: rgba(0, 0, 0, 0.2);
     }
 
     .demo-chat-input {
@@ -1703,8 +1976,14 @@
       outline: none;
       transition: border-color var(--transition-fast);
     }
-    .demo-chat-input::placeholder { color: var(--color-text-faint); }
-    .demo-chat-input:focus { border-color: rgba(0,212,255,0.4); }
+
+    .demo-chat-input::placeholder {
+      color: var(--color-text-faint);
+    }
+
+    .demo-chat-input:focus {
+      border-color: rgba(0, 212, 255, 0.4);
+    }
 
     .demo-chat-send {
       background: var(--gradient-accent);
@@ -1719,7 +1998,10 @@
       font-size: 14px;
       transition: opacity var(--transition-fast);
     }
-    .demo-chat-send:hover { opacity: 0.85; }
+
+    .demo-chat-send:hover {
+      opacity: 0.85;
+    }
 
     /* Caption below widget */
     .demo-caption {
@@ -1733,8 +2015,14 @@
       .live-demo__inner {
         grid-template-columns: 1fr;
       }
-      .demo-widget { height: 420px; }
-      .demo-chat-window { width: 260px; }
+
+      .demo-widget {
+        height: 420px;
+      }
+
+      .demo-chat-window {
+        width: 260px;
+      }
     }
 
     /* =========================================================
@@ -1787,7 +2075,7 @@
       transform: scale(1.05);
       z-index: 2;
     }
-    
+
     .pricing-card--pro .pricing-card__header {
       background: transparent;
     }
@@ -1836,18 +2124,18 @@
       color: var(--color-text-muted);
       font-weight: 500;
     }
-    
+
     .pricing-card__tagline {
       font-size: var(--text-sm);
       color: var(--color-text-muted);
     }
-    
+
     .pricing-card__divider {
       height: 1px;
       background: #1e293b;
       margin: 0 var(--space-8) var(--space-6);
     }
-    
+
     .pricing-card--pro .pricing-card__divider {
       background: rgba(0, 212, 255, 0.2);
     }
@@ -1884,15 +2172,16 @@
       width: 100%;
       justify-content: center;
     }
-    
+
     .pricing-card .btn-outline {
       background: transparent;
       border: 1px solid #1e293b;
       color: var(--color-text);
     }
+
     .pricing-card .btn-outline:hover {
       border-color: var(--color-border-hover);
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
     }
 
     .pricing__footnote {
@@ -1908,21 +2197,43 @@
         align-items: center;
         gap: var(--space-10);
       }
-      .pricing-card { width: 100%; max-width: 400px; }
-      .pricing-card--pro { transform: none; }
-      .pricing-card--pro:hover { transform: translateY(-8px); }
+
+      .pricing-card {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .pricing-card--pro {
+        transform: none;
+      }
+
+      .pricing-card--pro:hover {
+        transform: translateY(-8px);
+      }
     }
+
     @media (min-width: 768px) and (max-width: 900px) {
       .pricing__grid {
         flex-direction: row;
         gap: 16px;
       }
+
       .pricing-card {
-        padding: 0; /* will use inner padding */
+        padding: 0;
+        /* will use inner padding */
       }
-      .pricing-card__header { padding: 24px 20px 16px; }
-      .pricing-card__divider { margin: 0 20px 24px; }
-      .pricing-card__body { padding: 0 20px 24px; }
+
+      .pricing-card__header {
+        padding: 24px 20px 16px;
+      }
+
+      .pricing-card__divider {
+        margin: 0 20px 24px;
+      }
+
+      .pricing-card__body {
+        padding: 0 20px 24px;
+      }
     }
 
     /* =========================================================
@@ -1937,9 +2248,11 @@
     .use-cases::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
     }
 
     .use-cases__header {
@@ -1964,19 +2277,35 @@
       display: flex;
       flex-direction: column;
     }
-    
-    .uc-card--shop { border-top-color: #f97316; }
-    .uc-card--docs { border-top-color: #8b5cf6; }
-    .uc-card--agency { border-top-color: #10b981; }
+
+    .uc-card--shop {
+      border-top-color: #f97316;
+    }
+
+    .uc-card--docs {
+      border-top-color: #8b5cf6;
+    }
+
+    .uc-card--agency {
+      border-top-color: #10b981;
+    }
 
     .uc-card:hover {
       transform: translateY(-6px);
       box-shadow: var(--shadow-lg);
     }
-    
-    .uc-card--shop:hover { border-color: #f97316; }
-    .uc-card--docs:hover { border-color: #8b5cf6; }
-    .uc-card--agency:hover { border-color: #10b981; }
+
+    .uc-card--shop:hover {
+      border-color: #f97316;
+    }
+
+    .uc-card--docs:hover {
+      border-color: #8b5cf6;
+    }
+
+    .uc-card--agency:hover {
+      border-color: #10b981;
+    }
 
     .uc-card__icon {
       font-size: 40px;
@@ -1999,14 +2328,14 @@
       margin-bottom: var(--space-6);
       flex: 1;
     }
-    
+
     .uc-card__tags {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       justify-content: center;
     }
-    
+
     .uc-tag {
       background: #1e293b;
       color: #94a3b8;
@@ -2016,7 +2345,9 @@
     }
 
     @media (max-width: 768px) {
-      .use-cases__grid { grid-template-columns: 1fr; }
+      .use-cases__grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* =========================================================
@@ -2084,7 +2415,7 @@
       opacity: 1;
       padding: 0 28px 24px;
     }
-    
+
     .faq-item.open .faq-item__icon {
       transform: rotate(45deg);
     }
@@ -2101,9 +2432,11 @@
     .contact::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
     }
 
     .contact__header {
@@ -2218,7 +2551,7 @@
       margin-bottom: 16px;
       transition: border-color 0.2s;
     }
-    
+
     .contact-card:hover {
       border-color: var(--color-border-hover);
     }
@@ -2392,7 +2725,7 @@
       align-items: flex-start;
       gap: 12px;
     }
-    
+
     .footer__subscribe-text {
       font-size: 14px;
       color: var(--color-text-muted);
@@ -2432,16 +2765,29 @@
     }
 
     @media (max-width: 900px) {
-      .footer__links-grid { gap: 30px; }
+      .footer__links-grid {
+        gap: 30px;
+      }
     }
 
     @media (max-width: 768px) {
-      .footer__top { flex-direction: column; }
-      .footer__links-grid { grid-template-columns: 1fr; gap: 40px; }
-      .footer__bottom { flex-direction: column; gap: 16px; text-align: center; }
+      .footer__top {
+        flex-direction: column;
+      }
+
+      .footer__links-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .footer__bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
     }
 
-  
+
     /* =========================================================
        PHASE 9 ADVANCED UX / UI
        ========================================================= */
@@ -2473,19 +2819,23 @@
       overflow: hidden;
       z-index: 1001;
     }
+
     .announcement-bar.hidden {
       height: 0;
       opacity: 0;
       padding: 0;
     }
+
     .announcement-bar__inner {
       display: flex;
       align-items: center;
       gap: 12px;
     }
+
     .announcement-bar__inner a {
       text-decoration: underline;
     }
+
     .announcement-bar__close {
       position: absolute;
       right: 16px;
@@ -2493,8 +2843,14 @@
       color: #0A0F1E;
       opacity: 0.7;
     }
-    .announcement-bar__close:hover { opacity: 1; }
-    .mobile-text { display: none; }
+
+    .announcement-bar__close:hover {
+      opacity: 1;
+    }
+
+    .mobile-text {
+      display: none;
+    }
 
     /* Mobile CTA Bar */
     .mobile-cta-bar {
@@ -2510,10 +2866,12 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .mobile-cta-bar span {
       color: var(--color-text-muted);
       font-size: 13px;
     }
+
     .mobile-cta-bar .btn {
       padding: 10px 20px;
       border-radius: 8px;
@@ -2542,11 +2900,13 @@
       transition: all 0.3s ease;
       z-index: 998;
     }
+
     .back-to-top.visible {
       opacity: 1;
       transform: translateY(0);
       pointer-events: all;
     }
+
     .back-to-top:hover {
       background: var(--color-accent);
       color: #0A0F1E;
@@ -2558,27 +2918,32 @@
       background: #0d1424;
       padding-block: 70px;
     }
+
     .stats-counter__inner {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 40px;
     }
+
     .stat-box {
       text-align: center;
       flex: 1;
     }
+
     .stat-divider {
       width: 1px;
       height: 60px;
       background: #1e293b;
     }
+
     .stat-num {
       font-size: 48px;
       font-weight: 800;
       color: #fff;
       font-family: var(--font-display);
     }
+
     .stat-label {
       font-size: 14px;
       color: #94A3B8;
@@ -2592,6 +2957,7 @@
       background: #0A0F1E;
       padding-block: 100px;
     }
+
     .comparison__wrapper {
       max-width: 860px;
       margin: 0 auto;
@@ -2599,43 +2965,64 @@
       overflow: hidden;
       border: 1px solid #1e293b;
     }
+
     .comparison__table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
     }
-    .comparison__table th, .comparison__table td {
+
+    .comparison__table th,
+    .comparison__table td {
       padding: 14px 24px;
       border-bottom: 1px solid #1e293b;
       font-size: 15px;
     }
+
     .comparison__table th {
       background: #111827;
       color: #fff;
       font-weight: 700;
       padding-block: 16px;
     }
+
     .comparison__table tbody tr:nth-child(even) {
       background: #0A0F1E;
     }
+
     .comparison__table tbody tr:nth-child(odd) {
       background: #0d1424;
     }
+
     .comparison__table tbody tr:last-child td {
       border-bottom: none;
     }
+
     .col-siteagent {
       background: rgba(0, 212, 255, 0.03);
       border-left: 3px solid var(--color-accent) !important;
       font-weight: 600;
     }
+
     .comparison__table th.col-siteagent {
       color: var(--color-accent);
       background: rgba(0, 212, 255, 0.08);
     }
-    .icon-yes { color: #10b981; margin-right: 6px; }
-    .icon-warn { color: #f59e0b; margin-right: 6px; }
-    .icon-no { color: #ef4444; margin-right: 6px; }
+
+    .icon-yes {
+      color: #10b981;
+      margin-right: 6px;
+    }
+
+    .icon-warn {
+      color: #f59e0b;
+      margin-right: 6px;
+    }
+
+    .icon-no {
+      color: #ef4444;
+      margin-right: 6px;
+    }
 
     /* Server Status Pulse */
     .server-status {
@@ -2645,28 +3032,43 @@
       margin-top: 16px;
       font-size: 12px;
       color: var(--color-text-muted);
-      background: rgba(255,255,255,0.03);
+      background: rgba(255, 255, 255, 0.03);
       padding: 6px 12px;
       border-radius: var(--radius-full);
       border: 1px solid var(--color-border);
     }
+
     .status-dot {
       width: 8px;
       height: 8px;
       border-radius: 50%;
       background: #f59e0b;
     }
+
     .status-dot.online {
       background: #10b981;
       animation: pulseGreen 1.5s infinite;
     }
+
     .status-dot.offline {
       background: #ef4444;
     }
+
     @keyframes pulseGreen {
-      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-      70% { transform: scale(1.4); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
-      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+
+      70% {
+        transform: scale(1.4);
+        box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
     }
 
     /* Media Queries for Phase 9 */
@@ -2675,35 +3077,70 @@
         flex-wrap: wrap;
         gap: 30px;
       }
-      .stat-box { flex: 1 1 40%; }
-      .stat-divider { display: none; }
+
+      .stat-box {
+        flex: 1 1 40%;
+      }
+
+      .stat-divider {
+        display: none;
+      }
     }
+
     @media (max-width: 768px) {
-      .desktop-text { display: none; }
-      .mobile-text { display: inline; }
-      .mobile-cta-bar { display: flex; }
-      .back-to-top { bottom: 90px; right: 24px; }
-      .footer { padding-bottom: 70px; }
+      .desktop-text {
+        display: none;
+      }
+
+      .mobile-text {
+        display: inline;
+      }
+
+      .mobile-cta-bar {
+        display: flex;
+      }
+
+      .back-to-top {
+        bottom: 90px;
+        right: 24px;
+      }
+
+      .footer {
+        padding-bottom: 70px;
+      }
+
       .comparison__wrapper {
         border-radius: 8px;
         overflow-x: auto;
       }
-      .comparison__table { min-width: 600px; }
+
+      .comparison__table {
+        min-width: 600px;
+      }
     }
 
-  
+
     /* Language specific overrides */
     .lang-bn {
       font-family: 'Hind Siliguri', sans-serif;
     }
-    .lang-bn h1, .lang-bn h2, .lang-bn h3,
-    .lang-bn h4, .lang-bn p, .lang-bn span,
-    .lang-bn button, .lang-bn a, .lang-bn label,
-    .lang-bn th, .lang-bn td, .lang-bn div {
+
+    .lang-bn h1,
+    .lang-bn h2,
+    .lang-bn h3,
+    .lang-bn h4,
+    .lang-bn p,
+    .lang-bn span,
+    .lang-bn button,
+    .lang-bn a,
+    .lang-bn label,
+    .lang-bn th,
+    .lang-bn td,
+    .lang-bn div {
       font-family: 'Hind Siliguri', sans-serif;
       line-height: 1.8;
     }
-    
+
     .lang-switcher {
       border: 1px solid var(--color-border);
       background: transparent;
@@ -2718,6 +3155,7 @@
       align-items: center;
       gap: 6px;
     }
+
     .lang-switcher:hover {
       border-color: var(--color-accent);
       color: var(--color-accent);
@@ -2730,13 +3168,16 @@
       background: #0d1424;
       padding: 100px 0;
     }
+
     .token-generator__header {
       margin-bottom: var(--space-20);
     }
+
     .token-generator__inner {
       max-width: 1200px;
       margin: 0 auto;
     }
+
     .token-card {
       max-width: 580px;
       margin: 0 auto;
@@ -2746,10 +3187,12 @@
       padding: 40px;
       box-shadow: 0 0 40px #00D4FF10;
     }
+
     .form-field {
       margin-bottom: 20px;
       text-align: left;
     }
+
     .form-label {
       display: block;
       margin-bottom: 8px;
@@ -2757,9 +3200,11 @@
       font-size: 13px;
       font-weight: 500;
     }
+
     .input-wrapper {
       position: relative;
     }
+
     .form-input {
       width: 100%;
       background: #0d1424;
@@ -2770,11 +3215,13 @@
       font-size: 15px;
       box-sizing: border-box;
     }
+
     .form-input:focus {
       outline: none;
       border-color: #00D4FF;
       box-shadow: 0 0 0 3px #00D4FF20;
     }
+
     .toggle-btn {
       position: absolute;
       right: 16px;
@@ -2786,15 +3233,18 @@
       cursor: pointer;
       font-size: 18px;
     }
+
     .helper-text {
       margin-top: 4px;
       font-size: 13px;
       color: #94A3B8;
     }
+
     .helper-text a {
       color: #00D4FF;
       text-decoration: none;
     }
+
     .gen-btn {
       width: 100%;
       background: #00D4FF;
@@ -2808,15 +3258,18 @@
       margin-top: 8px;
       transition: all 0.2s ease;
     }
+
     .gen-btn:hover {
       opacity: 0.9;
       transform: translateY(-1px);
     }
+
     .gen-btn:disabled {
       opacity: 0.6;
       cursor: not-allowed;
       transform: none;
     }
+
     .btn-spinner {
       display: inline-block;
       width: 16px;
@@ -2828,10 +3281,17 @@
       vertical-align: middle;
       margin-right: 8px;
     }
+
     @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
+
     .error-msg {
       display: none;
       margin-top: 12px;
@@ -2843,25 +3303,30 @@
       border-radius: 8px;
       border: 1px solid #ef444430;
     }
+
     .result-area {
       display: none;
       margin-top: 24px;
       text-align: left;
     }
+
     .result-header h3 {
       color: white;
       font-size: 18px;
       font-weight: bold;
       margin: 0;
     }
+
     .result-header p {
       color: #94A3B8;
       font-size: 14px;
       margin: 8px 0 0 0;
     }
+
     .token-row {
       margin-top: 20px;
     }
+
     .token-label {
       color: #94A3B8;
       font-size: 11px;
@@ -2869,9 +3334,11 @@
       text-transform: uppercase;
       margin-bottom: 8px;
     }
+
     .token-input-row {
       display: flex;
     }
+
     .token-input {
       flex: 1;
       background: #0d1424;
@@ -2885,6 +3352,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
+
     .copy-btn {
       background: #1e293b;
       border: 1px solid #1e293b;
@@ -2895,13 +3363,16 @@
       white-space: nowrap;
       transition: all 0.2s ease;
     }
+
     .copy-btn:hover {
       background: #00D4FF;
       color: #0A0F1E;
     }
+
     .snippet-row {
       margin-top: 20px;
     }
+
     .snippet-label {
       color: #94A3B8;
       font-size: 11px;
@@ -2909,6 +3380,7 @@
       text-transform: uppercase;
       margin-bottom: 8px;
     }
+
     .snippet-code {
       display: block;
       background: #0d1424;
@@ -2923,6 +3395,7 @@
       white-space: pre;
       margin-bottom: 12px;
     }
+
     .copy-snippet-btn {
       width: 100%;
       padding: 12px;
@@ -2934,10 +3407,12 @@
       cursor: pointer;
       transition: all 0.2s ease;
     }
+
     .copy-snippet-btn:hover {
       background: #00D4FF;
       color: #0A0F1E;
     }
+
     .reset-link {
       display: block;
       text-align: center;
@@ -2953,12 +3428,12 @@
       .token-generator {
         padding: 60px 0;
       }
+
       .token-card {
         max-width: 100%;
         padding: 24px;
       }
     }
-
   </style>
 
   <!-- JSON-LD SEO Structured Data -->
@@ -2999,7 +3474,7 @@
   </script>
 
   <!-- SiteAgent Live Chatbot -->
-<script>
+  <!-- <script>
   window.SiteAgent = {
     token: "sa_pub_v1.eyJzaXRlVXJsIjoiaHR0cHM6Ly9zaXRlYWdlbnRzZXJ2ZXIubmV0bGlmeS5hcHAiLCJkb21haW4iOiJzaXRlYWdlbnRzZXJ2ZXIubmV0bGlmeS5hcHAiLCJpc3N1ZWRBdCI6MTc3ODM0MTQ2NTA1MCwiZXhwaXJlc0F0IjoxODA5ODc3NDY1MDUwLCJwbGFuIjoiZnJlZSJ9.9_BGdKSkCBy0DM4691kL_vMgi6fvPa0IgFKfUFIejAY",
     position: "bottom-left",
@@ -3010,9 +3485,18 @@
     leadCapture: true
   };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js" async></script>
-<!-- End SiteAgent -->
+<script src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js" async></script> -->
+  <script>
+    window.SiteAgent = {
+      token: "sa_pub_v1.eyJzaXRlVXJsIjoiaHR0cHM6Ly9zaXRlYWdlbnQtc2VydmVyLWxhbmRpbmctcGFnZS52ZXJjZWwuYXBwIiwiZG9tYWluIjoic2l0ZWFnZW50LXNlcnZlci1sYW5kaW5nLXBhZ2UudmVyY2VsLmFwcCIsImlzc3VlZEF0IjoxNzc4Mzg3MDY3ODc3LCJleHBpcmVzQXQiOjE4MDk5MjMwNjc4NzcsInBsYW4iOiJmcmVlIn0.Mi5yfrrmJhkVdJTg64cpyOMXJxvsXTpwC_zWKo91wpw",
+      position: "bottom-right",
+      theme: "auto"
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js" async></script>
+  <!-- End SiteAgent -->
 </head>
+
 <body>
 
   <!-- Progress Bar -->
@@ -3021,9 +3505,11 @@
   <!-- Announcement Bar -->
   <div class="announcement-bar" id="announcementBar">
     <div class="announcement-bar__inner">
-      <span class="desktop-text" data-i18n="announcement_text">🎉 SiteAgent is now live! Start free — no credit card required.</span>
+      <span class="desktop-text" data-i18n="announcement_text">🎉 SiteAgent is now live! Start free — no credit card
+        required.</span>
       <span class="mobile-text" data-i18n="announcement_mobile">🎉 Start free today</span>
-      <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"><span data-i18n="announcement_cta">Get Started &rarr;</span></a>
+      <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"><span
+          data-i18n="announcement_cta">Get Started &rarr;</span></a>
     </div>
     <button class="announcement-bar__close" id="closeAnnouncement" aria-label="Dismiss">&times;</button>
   </div>
@@ -3043,31 +3529,22 @@
 
       <!-- Center Links (desktop) -->
       <nav class="navbar__links" aria-label="Primary navigation">
-        <a href="#features"     class="navbar__link" id="nav-link-features">Features</a>
-        <a href="#how-it-works" class="navbar__link" id="nav-link-howitworks"><span data-i18n="nav_how_it_works">How It Works</span></a>
+        <a href="#features" class="navbar__link" id="nav-link-features">Features</a>
+        <a href="#how-it-works" class="navbar__link" id="nav-link-howitworks"><span data-i18n="nav_how_it_works">How It
+            Works</span></a>
         <a href="#get-token" data-i18n="nav_get_token">Get Token</a>
-        <a href="#pricing"      class="navbar__link" id="nav-link-pricing">Pricing</a>
-        <a href="#contact"      class="navbar__link" id="nav-link-contact">Contact</a>
+        <a href="#pricing" class="navbar__link" id="nav-link-pricing">Pricing</a>
+        <a href="#contact" class="navbar__link" id="nav-link-contact">Contact</a>
       </nav>
 
       <!-- Right CTA -->
       <div class="navbar__cta">
         <button id="lang-switcher" class="lang-switcher">🇬🇧 EN</button>
-        <a
-          href="https://mcpize.com/mcp/siteagent-server"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary btn-sm"
-          id="nav-cta-btn"
-        >Start Free ↗</a>
+        <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary btn-sm" id="nav-cta-btn">Start Free ↗</a>
         <!-- Hamburger (mobile) -->
-        <button
-          class="navbar__hamburger"
-          id="hamburger-btn"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="mobile-menu">
           <span class="hamburger__bar"></span>
           <span class="hamburger__bar"></span>
           <span class="hamburger__bar"></span>
@@ -3078,19 +3555,15 @@
 
   <!-- Mobile Menu -->
   <div class="navbar__mobile" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
-    <a href="#features"     class="navbar__mobile-link" id="mob-link-features">Features</a>
-    <a href="#how-it-works" class="navbar__mobile-link" id="mob-link-howitworks"><span data-i18n="nav_how_it_works">How It Works</span></a>
+    <a href="#features" class="navbar__mobile-link" id="mob-link-features">Features</a>
+    <a href="#how-it-works" class="navbar__mobile-link" id="mob-link-howitworks"><span data-i18n="nav_how_it_works">How
+        It Works</span></a>
     <a href="#get-token" class="navbar__mobile-link" data-i18n="nav_get_token">Get Token</a>
-    <a href="#pricing"      class="navbar__mobile-link" id="mob-link-pricing">Pricing</a>
-    <a href="#contact"      class="navbar__mobile-link" id="mob-link-contact">Contact</a>
+    <a href="#pricing" class="navbar__mobile-link" id="mob-link-pricing">Pricing</a>
+    <a href="#contact" class="navbar__mobile-link" id="mob-link-contact">Contact</a>
     <div class="navbar__mobile-cta">
-      <a
-        href="https://mcpize.com/mcp/siteagent-server"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-primary"
-        id="mob-cta-btn"
-      >Start Free ↗</a>
+      <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+        class="btn btn-primary" id="mob-cta-btn">Start Free ↗</a>
     </div>
   </div>
 
@@ -3120,18 +3593,9 @@
             </p>
 
             <div class="hero__ctas">
-              <a
-                href="https://mcpize.com/mcp/siteagent-server"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-primary btn-lg"
-                id="hero-cta-primary"
-              >Start Free &nbsp;↗</a>
-              <a
-                href="#how-it-works"
-                class="btn btn-secondary btn-lg"
-                id="hero-cta-secondary"
-              >See How It Works</a>
+              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-lg" id="hero-cta-primary">Start Free &nbsp;↗</a>
+              <a href="#how-it-works" class="btn btn-secondary btn-lg" id="hero-cta-secondary">See How It Works</a>
             </div>
 
             <div class="hero__trust-badge">
@@ -3215,7 +3679,8 @@
             <span class="trust-pill" role="listitem">Next.js</span>
             <span class="trust-pill" role="listitem">Plain HTML</span>
           </div>
-          <div class="trust-bar__stat"><span>✓</span> Setup in under 5 min &nbsp;·&nbsp; <span>✓</span> No credit card required</div>
+          <div class="trust-bar__stat"><span>✓</span> Setup in under 5 min &nbsp;·&nbsp; <span>✓</span> No credit card
+            required</div>
         </div>
       </div>
     </div>
@@ -3306,37 +3771,43 @@
           <div class="feature-card reveal reveal-delay-1">
             <span class="feature-card__icon" aria-hidden="true">🤖</span>
             <h3 class="feature-card__title"><span data-i18n="feature_1_title">Auto-Crawl</span></h3>
-            <p class="feature-card__desc"><span data-i18n="feature_1_desc">Reads your entire website automatically — no manual training or setup required.</span></p>
+            <p class="feature-card__desc"><span data-i18n="feature_1_desc">Reads your entire website automatically — no
+                manual training or setup required.</span></p>
           </div>
 
           <div class="feature-card reveal reveal-delay-2">
             <span class="feature-card__icon" aria-hidden="true">⚡</span>
             <h3 class="feature-card__title"><span data-i18n="feature_2_title">Instant Answers</span></h3>
-            <p class="feature-card__desc"><span data-i18n="feature_2_desc">AI responds to visitor questions in seconds using your cached site content.</span></p>
+            <p class="feature-card__desc"><span data-i18n="feature_2_desc">AI responds to visitor questions in seconds
+                using your cached site content.</span></p>
           </div>
 
           <div class="feature-card reveal reveal-delay-3">
             <span class="feature-card__icon" aria-hidden="true">🎨</span>
             <h3 class="feature-card__title"><span data-i18n="feature_3_title">Fully Customizable</span></h3>
-            <p class="feature-card__desc"><span data-i18n="feature_3_desc">Match your brand with custom colors, position, theme, greeting, and placeholder text.</span></p>
+            <p class="feature-card__desc"><span data-i18n="feature_3_desc">Match your brand with custom colors,
+                position, theme, greeting, and placeholder text.</span></p>
           </div>
 
           <div class="feature-card reveal reveal-delay-2">
             <span class="feature-card__icon" aria-hidden="true">📧</span>
             <h3 class="feature-card__title"><span data-i18n="feature_4_title">Lead Capture</span></h3>
-            <p class="feature-card__desc"><span data-i18n="feature_4_desc">Automatically collects visitor emails after 2 messages — grow your list on autopilot.</span></p>
+            <p class="feature-card__desc"><span data-i18n="feature_4_desc">Automatically collects visitor emails after 2
+                messages — grow your list on autopilot.</span></p>
           </div>
 
           <div class="feature-card reveal reveal-delay-3">
             <span class="feature-card__icon" aria-hidden="true">🔄</span>
             <h3 class="feature-card__title"><span data-i18n="feature_5_title">Auto Re-Crawl</span></h3>
-            <p class="feature-card__desc"><span data-i18n="feature_5_desc">Keeps answers accurate and up to date as your website content changes over time.</span></p>
+            <p class="feature-card__desc"><span data-i18n="feature_5_desc">Keeps answers accurate and up to date as your
+                website content changes over time.</span></p>
           </div>
 
           <div class="feature-card reveal reveal-delay-4">
             <span class="feature-card__icon" aria-hidden="true">🌐</span>
             <h3 class="feature-card__title"><span data-i18n="feature_6_title">Works Everywhere</span></h3>
-            <p class="feature-card__desc"><span data-i18n="feature_6_desc">One snippet works on WordPress, Shopify, Webflow, Wix, Next.js, and plain HTML.</span></p>
+            <p class="feature-card__desc"><span data-i18n="feature_6_desc">One snippet works on WordPress, Shopify,
+                Webflow, Wix, Next.js, and plain HTML.</span></p>
           </div>
 
         </div><!-- /.features__grid -->
@@ -3352,7 +3823,8 @@
         <div class="how-it-works__header">
           <div class="section-label reveal">✦ &nbsp;Setup</div>
           <h2 class="section-title reveal reveal-delay-1" id="hiw-headline">Up and running in 3 steps</h2>
-          <p class="section-subtitle reveal reveal-delay-2">No developer needed. No complicated dashboard. Just copy, paste, done.</p>
+          <p class="section-subtitle reveal reveal-delay-2">No developer needed. No complicated dashboard. Just copy,
+            paste, done.</p>
         </div>
 
         <div class="steps reveal reveal-delay-1">
@@ -3382,7 +3854,8 @@
             <div class="step-number">2</div>
             <span class="step-icon" aria-hidden="true">⚡</span>
             <h3 class="step-title"><span data-i18n="hiw_step2_title">Generate Your Widget Token</span></h3>
-            <p class="step-desc">Run one command with your API key and website URL. Your unique token is returned instantly.</p>
+            <p class="step-desc">Run one command with your API key and website URL. Your unique token is returned
+              instantly.</p>
             <div class="code-block">
               <button class="copy-btn" data-copy-target="code-step2" id="copy-btn-step2">Copy</button>
               <div class="code-block__bar">
@@ -3407,7 +3880,9 @@
             <div class="step-number">3</div>
             <span class="step-icon" aria-hidden="true">🌐</span>
             <h3 class="step-title">Paste One Snippet &amp; Done</h3>
-            <p class="step-desc">Add one script tag before your closing <code style="color:var(--color-accent);font-size:12px">&lt;/body&gt;</code> tag. The chatbot appears instantly.</p>
+            <p class="step-desc">Add one script tag before your closing <code
+                style="color:var(--color-accent);font-size:12px">&lt;/body&gt;</code> tag. The chatbot appears
+              instantly.</p>
             <div class="code-block">
               <button class="copy-btn" data-copy-target="code-step3" id="copy-btn-step3">Copy</button>
               <div class="code-block__bar">
@@ -3440,7 +3915,8 @@ Webexguru-Hasan/siteagent-widget
           <div class="token-generator__header">
             <div class="section-label">✦ &nbsp;Get Token</div>
             <h2 class="section-title">Generate Your Widget Token Instantly</h2>
-            <p class="section-subtitle">No terminal needed. Enter your MCPize API key and website URL — get your chatbot snippet in seconds.</p>
+            <p class="section-subtitle">No terminal needed. Enter your MCPize API key and website URL — get your chatbot
+              snippet in seconds.</p>
           </div>
 
           <!-- Widget Card -->
@@ -3455,7 +3931,8 @@ Webexguru-Hasan/siteagent-widget
                   <button type="button" id="gen-key-toggle" class="toggle-btn">👁</button>
                 </div>
                 <div class="helper-text">
-                  Get your free key at <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer">mcpize.com/mcp/siteagent-server</a>
+                  Get your free key at <a href="https://mcpize.com/mcp/siteagent-server" target="_blank"
+                    rel="noopener noreferrer">mcpize.com/mcp/siteagent-server</a>
                 </div>
               </div>
 
@@ -3519,13 +3996,8 @@ Webexguru-Hasan/siteagent-widget
               Click the chat bubble and ask a question — this is SiteAgent
               answering in real time from your website's content.
             </p>
-            <a
-              href="https://mcpize.com/mcp/siteagent-server"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-primary btn-lg"
-              id="demo-cta-btn"
-            >Add It to My Site &nbsp;↗</a>
+            <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary btn-lg" id="demo-cta-btn">Add It to My Site &nbsp;↗</a>
           </div>
 
           <!-- RIGHT: interactive widget demo -->
@@ -3570,20 +4042,15 @@ Webexguru-Hasan/siteagent-widget
                   <span></span><span></span><span></span>
                 </div>
                 <div class="demo-chat-input-row">
-                  <input
-                    type="text"
-                    class="demo-chat-input"
-                    id="demo-chat-input"
-                    placeholder="Ask a question…"
-                    maxlength="120"
-                    aria-label="Type your question"
-                  />
+                  <input type="text" class="demo-chat-input" id="demo-chat-input" placeholder="Ask a question…"
+                    maxlength="120" aria-label="Type your question" />
                   <button class="demo-chat-send" id="demo-send-btn" aria-label="Send message">➤</button>
                 </div>
               </div>
 
               <!-- Chat bubble toggle -->
-              <button class="demo-bubble" id="demo-bubble-btn" aria-label="Open SiteAgent chat" aria-expanded="false">💬</button>
+              <button class="demo-bubble" id="demo-bubble-btn" aria-label="Open SiteAgent chat"
+                aria-expanded="false">💬</button>
             </div>
             <p class="demo-caption">👆 Click the bubble to try it — type any question about SiteAgent.</p>
           </div>
@@ -3600,11 +4067,12 @@ Webexguru-Hasan/siteagent-widget
         <div class="pricing__header reveal">
           <div class="section-label">✦ &nbsp;Pricing</div>
           <h2 class="section-title" id="pricing-headline">Simple, transparent pricing</h2>
-          <p class="section-subtitle"><span data-i18n="pricing_subtext">Start free. Upgrade when you\'re ready. No hidden fees.</span></p>
+          <p class="section-subtitle"><span data-i18n="pricing_subtext">Start free. Upgrade when you\'re ready. No
+              hidden fees.</span></p>
         </div>
 
         <div class="pricing__grid">
-          
+
           <!-- Free Plan -->
           <div class="pricing-card reveal reveal-delay-1">
             <div class="pricing-card__header">
@@ -3617,16 +4085,19 @@ Webexguru-Hasan/siteagent-widget
               <ul class="pricing-card__features" role="list">
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 200 requests/month</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 10 pages crawled</li>
-                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI question answering</li>
+                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI question answering
+                </li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Page summaries</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Email lead capture</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 1 website</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">❌</span> Site-wide search</li>
-                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">❌</span> AI content generation</li>
+                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">❌</span> AI content generation
+                </li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">❌</span> Browser DOM actions</li>
                 <li class="p-feature" style="margin-top: 8px;">Auto re-crawl: Weekly</li>
               </ul>
-              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Start Free ↗</a>
+              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline">Start Free ↗</a>
             </div>
           </div>
 
@@ -3641,18 +4112,22 @@ Webexguru-Hasan/siteagent-widget
             <div class="pricing-card__divider"></div>
             <div class="pricing-card__body">
               <ul class="pricing-card__features" role="list">
-                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 10,000 requests/month</li>
+                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 10,000 requests/month
+                </li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 50 pages crawled</li>
-                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI question answering</li>
+                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI question answering
+                </li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Page summaries</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Email lead capture</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 1 website</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Site-wide search</li>
-                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI content generation</li>
+                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI content generation
+                </li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Browser DOM actions</li>
                 <li class="p-feature" style="margin-top: 8px;">Auto re-crawl: Daily</li>
               </ul>
-              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get Pro ↗</a>
+              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary">Get Pro ↗</a>
             </div>
           </div>
 
@@ -3666,23 +4141,27 @@ Webexguru-Hasan/siteagent-widget
             <div class="pricing-card__divider"></div>
             <div class="pricing-card__body">
               <ul class="pricing-card__features" role="list">
-                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 50,000 requests/month</li>
+                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 50,000 requests/month
+                </li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 200 pages crawled</li>
-                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI question answering</li>
+                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI question answering
+                </li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Page summaries</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Email lead capture</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> 5 websites</li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Site-wide search</li>
-                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI content generation</li>
+                <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> AI content generation
+                </li>
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Browser DOM actions</li>
                 <li class="p-feature" style="margin-top: 8px;">Auto re-crawl: Hourly</li>
               </ul>
-              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Get Agency ↗</a>
+              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline">Get Agency ↗</a>
             </div>
           </div>
 
         </div><!-- /.pricing__grid -->
-        
+
         <p class="pricing__footnote reveal reveal-delay-4">
           All plans include a 14-day money-back guarantee. <br />
           Upgrade or cancel anytime.
@@ -3698,15 +4177,17 @@ Webexguru-Hasan/siteagent-widget
         <div class="use-cases__header reveal">
           <div class="section-label">✦ &nbsp;Use Cases</div>
           <h2 class="section-title" id="use-cases-headline">Built for every kind of website</h2>
-          <p class="section-subtitle"><span data-i18n="usecases_subtext">SiteAgent adapts to your content and your audience automatically.</span></p>
+          <p class="section-subtitle"><span data-i18n="usecases_subtext">SiteAgent adapts to your content and your
+              audience automatically.</span></p>
         </div>
 
         <div class="use-cases__grid">
-          
+
           <div class="uc-card uc-card--shop reveal reveal-delay-1">
             <span class="uc-card__icon" aria-hidden="true">🛒</span>
             <h3 class="uc-card__title">Online Shop</h3>
-            <p class="uc-card__desc">Answer product questions, shipping policies, and return procedures 24/7. Convert browsers into buyers without live support staff.</p>
+            <p class="uc-card__desc">Answer product questions, shipping policies, and return procedures 24/7. Convert
+              browsers into buyers without live support staff.</p>
             <div class="uc-card__tags">
               <span class="uc-tag">Shopify</span>
               <span class="uc-tag">WooCommerce</span>
@@ -3717,7 +4198,8 @@ Webexguru-Hasan/siteagent-widget
           <div class="uc-card uc-card--docs reveal reveal-delay-2">
             <span class="uc-card__icon" aria-hidden="true">👨💻</span>
             <h3 class="uc-card__title">Docs & Developer Tools</h3>
-            <p class="uc-card__desc">Let developers and users search your documentation by asking natural language questions. Reduce support tickets instantly.</p>
+            <p class="uc-card__desc">Let developers and users search your documentation by asking natural language
+              questions. Reduce support tickets instantly.</p>
             <div class="uc-card__tags">
               <span class="uc-tag">Next.js</span>
               <span class="uc-tag">Docusaurus</span>
@@ -3728,7 +4210,8 @@ Webexguru-Hasan/siteagent-widget
           <div class="uc-card uc-card--agency reveal reveal-delay-3">
             <span class="uc-card__icon" aria-hidden="true">🏢</span>
             <h3 class="uc-card__title">Agency & Portfolio</h3>
-            <p class="uc-card__desc">Capture leads and answer client questions automatically. Qualify prospects before your first call and never miss an inquiry.</p>
+            <p class="uc-card__desc">Capture leads and answer client questions automatically. Qualify prospects before
+              your first call and never miss an inquiry.</p>
             <div class="uc-card__tags">
               <span class="uc-tag">Webflow</span>
               <span class="uc-tag">Squarespace</span>
@@ -3743,101 +4226,105 @@ Webexguru-Hasan/siteagent-widget
     <!-- =====================================================
          FAQ SECTION
          ===================================================== -->
-    
-  <!-- =====================================================
+
+    <!-- =====================================================
        COMPARISON SECTION
        ===================================================== -->
-  <section class="comparison" id="comparison">
-    <div class="container">
-      <div class="text-center reveal">
-        <div class="section-label"><span data-i18n="comparison_eyebrow">COMPARISON</span></div>
-        <h2 class="section-title"><span data-i18n="comparison_headline">Why SiteAgent over the alternatives?</span></h2>
-        <p class="section-subtitle"><span data-i18n="comparison_subtext">Most chatbot tools are expensive, complex, or require manual setup. SiteAgent is different.</span></p>
+    <section class="comparison" id="comparison">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label"><span data-i18n="comparison_eyebrow">COMPARISON</span></div>
+          <h2 class="section-title"><span data-i18n="comparison_headline">Why SiteAgent over the alternatives?</span>
+          </h2>
+          <p class="section-subtitle"><span data-i18n="comparison_subtext">Most chatbot tools are expensive, complex, or
+              require manual setup. SiteAgent is different.</span></p>
+        </div>
+
+        <div class="comparison__wrapper reveal reveal-delay-2">
+          <table class="comparison__table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th class="col-siteagent">SiteAgent</th>
+                <th>Traditional Chatbots</th>
+                <th>Custom Development</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Setup Time</td>
+                <td class="col-siteagent"><span class="icon-yes">✅</span> 5 minutes</td>
+                <td><span class="icon-warn">⚠️</span> Hours</td>
+                <td><span class="icon-no">❌</span> Weeks</td>
+              </tr>
+              <tr>
+                <td>No Coding Required</td>
+                <td class="col-siteagent"><span class="icon-yes">✅</span> Yes</td>
+                <td><span class="icon-warn">⚠️</span> Some coding</td>
+                <td><span class="icon-no">❌</span> Full dev needed</td>
+              </tr>
+              <tr>
+                <td>Auto Website Crawl</td>
+                <td class="col-siteagent"><span class="icon-yes">✅</span> Automatic</td>
+                <td><span class="icon-no">❌</span> Manual upload</td>
+                <td><span class="icon-warn">⚠️</span> Custom build</td>
+              </tr>
+              <tr>
+                <td>Free Plan Available</td>
+                <td class="col-siteagent"><span class="icon-yes">✅</span> Yes</td>
+                <td><span class="icon-warn">⚠️</span> Limited trials</td>
+                <td><span class="icon-no">❌</span> No</td>
+              </tr>
+              <tr>
+                <td>Monthly Cost</td>
+                <td class="col-siteagent"><span class="icon-yes">✅</span> From </td>
+                <td><span class="icon-warn">⚠️</span> –/mo</td>
+                <td><span class="icon-no">❌</span> ,000+</td>
+              </tr>
+              <tr>
+                <td>Works on Any CMS</td>
+                <td class="col-siteagent"><span class="icon-yes">✅</span> Yes</td>
+                <td><span class="icon-warn">⚠️</span> Platform-only</td>
+                <td><span class="icon-warn">⚠️</span> Depends</td>
+              </tr>
+              <tr>
+                <td>Auto Re-Crawl</td>
+                <td class="col-siteagent"><span class="icon-yes">✅</span> Built-in</td>
+                <td><span class="icon-no">❌</span> Not available</td>
+                <td><span class="icon-warn">⚠️</span> Custom build</td>
+              </tr>
+              <tr>
+                <td>Setup in Minutes</td>
+                <td class="col-siteagent"><span class="icon-yes">✅</span> Yes</td>
+                <td><span class="icon-no">❌</span> No</td>
+                <td><span class="icon-no">❌</span> No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      
-      <div class="comparison__wrapper reveal reveal-delay-2">
-        <table class="comparison__table">
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th class="col-siteagent">SiteAgent</th>
-              <th>Traditional Chatbots</th>
-              <th>Custom Development</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Setup Time</td>
-              <td class="col-siteagent"><span class="icon-yes">✅</span> 5 minutes</td>
-              <td><span class="icon-warn">⚠️</span> Hours</td>
-              <td><span class="icon-no">❌</span> Weeks</td>
-            </tr>
-            <tr>
-              <td>No Coding Required</td>
-              <td class="col-siteagent"><span class="icon-yes">✅</span> Yes</td>
-              <td><span class="icon-warn">⚠️</span> Some coding</td>
-              <td><span class="icon-no">❌</span> Full dev needed</td>
-            </tr>
-            <tr>
-              <td>Auto Website Crawl</td>
-              <td class="col-siteagent"><span class="icon-yes">✅</span> Automatic</td>
-              <td><span class="icon-no">❌</span> Manual upload</td>
-              <td><span class="icon-warn">⚠️</span> Custom build</td>
-            </tr>
-            <tr>
-              <td>Free Plan Available</td>
-              <td class="col-siteagent"><span class="icon-yes">✅</span> Yes</td>
-              <td><span class="icon-warn">⚠️</span> Limited trials</td>
-              <td><span class="icon-no">❌</span> No</td>
-            </tr>
-            <tr>
-              <td>Monthly Cost</td>
-              <td class="col-siteagent"><span class="icon-yes">✅</span> From </td>
-              <td><span class="icon-warn">⚠️</span> –/mo</td>
-              <td><span class="icon-no">❌</span> ,000+</td>
-            </tr>
-            <tr>
-              <td>Works on Any CMS</td>
-              <td class="col-siteagent"><span class="icon-yes">✅</span> Yes</td>
-              <td><span class="icon-warn">⚠️</span> Platform-only</td>
-              <td><span class="icon-warn">⚠️</span> Depends</td>
-            </tr>
-            <tr>
-              <td>Auto Re-Crawl</td>
-              <td class="col-siteagent"><span class="icon-yes">✅</span> Built-in</td>
-              <td><span class="icon-no">❌</span> Not available</td>
-              <td><span class="icon-warn">⚠️</span> Custom build</td>
-            </tr>
-            <tr>
-              <td>Setup in Minutes</td>
-              <td class="col-siteagent"><span class="icon-yes">✅</span> Yes</td>
-              <td><span class="icon-no">❌</span> No</td>
-              <td><span class="icon-no">❌</span> No</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <section class="faq" id="faq" aria-labelledby="faq-headline">
+    <section class="faq" id="faq" aria-labelledby="faq-headline">
       <div class="container">
         <div class="faq__header reveal">
           <div class="section-label">✦ &nbsp;FAQ</div>
           <h2 class="section-title" id="faq-headline">Frequently Asked Questions</h2>
-          <p class="section-subtitle"><span data-i18n="faq_subtext">Everything you need to know before getting started.</span></p>
+          <p class="section-subtitle"><span data-i18n="faq_subtext">Everything you need to know before getting
+              started.</span></p>
         </div>
 
         <div class="faq__list reveal reveal-delay-1">
-          
+
           <div class="faq-item">
             <div class="faq-item__question">
               Do I need coding skills to use SiteAgent?
               <span class="faq-item__icon" aria-hidden="true">+</span>
             </div>
             <div class="faq-item__answer">
-              No coding skills required. Just copy and paste one snippet into your website's head section. If you can edit a webpage, you can install SiteAgent.
+              No coding skills required. Just copy and paste one snippet into your website's head section. If you can
+              edit a webpage, you can install SiteAgent.
             </div>
           </div>
 
@@ -3847,7 +4334,8 @@ Webexguru-Hasan/siteagent-widget
               <span class="faq-item__icon" aria-hidden="true">+</span>
             </div>
             <div class="faq-item__answer">
-              Under 5 minutes. Subscribe on MCPize, generate your token with one command, paste the snippet — done. The chatbot goes live instantly.
+              Under 5 minutes. Subscribe on MCPize, generate your token with one command, paste the snippet — done. The
+              chatbot goes live instantly.
             </div>
           </div>
 
@@ -3857,7 +4345,8 @@ Webexguru-Hasan/siteagent-widget
               <span class="faq-item__icon" aria-hidden="true">+</span>
             </div>
             <div class="faq-item__answer">
-              SiteAgent works on every platform — WordPress, Shopify, Webflow, Wix, Squarespace, React, Next.js, and plain HTML. Any site that allows custom code in the head section is supported.
+              SiteAgent works on every platform — WordPress, Shopify, Webflow, Wix, Squarespace, React, Next.js, and
+              plain HTML. Any site that allows custom code in the head section is supported.
             </div>
           </div>
 
@@ -3867,7 +4356,8 @@ Webexguru-Hasan/siteagent-widget
               <span class="faq-item__icon" aria-hidden="true">+</span>
             </div>
             <div class="faq-item__answer">
-              No. SiteAgent automatically crawls and reads your website content. There is no manual training, no uploading documents, and no configuration required. It learns from your site directly.
+              No. SiteAgent automatically crawls and reads your website content. There is no manual training, no
+              uploading documents, and no configuration required. It learns from your site directly.
             </div>
           </div>
 
@@ -3877,7 +4367,8 @@ Webexguru-Hasan/siteagent-widget
               <span class="faq-item__icon" aria-hidden="true">+</span>
             </div>
             <div class="faq-item__answer">
-              SiteAgent re-crawls your website automatically. Free plan re-crawls weekly, Pro re-crawls daily, and Agency re-crawls hourly. You can also trigger a manual re-crawl anytime via the API.
+              SiteAgent re-crawls your website automatically. Free plan re-crawls weekly, Pro re-crawls daily, and
+              Agency re-crawls hourly. You can also trigger a manual re-crawl anytime via the API.
             </div>
           </div>
 
@@ -3887,7 +4378,8 @@ Webexguru-Hasan/siteagent-widget
               <span class="faq-item__icon" aria-hidden="true">+</span>
             </div>
             <div class="faq-item__answer">
-              Yes. The Free plan gives you 200 requests per month and crawls up to 10 pages — completely free, no credit card required. Upgrade anytime when you need more.
+              Yes. The Free plan gives you 200 requests per month and crawls up to 10 pages — completely free, no credit
+              card required. Upgrade anytime when you need more.
             </div>
           </div>
 
@@ -3897,7 +4389,8 @@ Webexguru-Hasan/siteagent-widget
               <span class="faq-item__icon" aria-hidden="true">+</span>
             </div>
             <div class="faq-item__answer">
-              Go to mcpize.com/mcp/siteagent-server, choose any plan including Free, and your API key is shown immediately after signup. Save it — you will need it to generate your widget token.
+              Go to mcpize.com/mcp/siteagent-server, choose any plan including Free, and your API key is shown
+              immediately after signup. Save it — you will need it to generate your widget token.
             </div>
           </div>
 
@@ -3913,25 +4406,29 @@ Webexguru-Hasan/siteagent-widget
         <div class="contact__header reveal">
           <div class="section-label">✦ &nbsp;Contact</div>
           <h2 class="section-title" id="contact-headline">Get in Touch</h2>
-          <p class="section-subtitle"><span data-i18n="contact_subtext">Have a question, a feature request, or need help? We\'d love to hear from you.</span></p>
+          <p class="section-subtitle"><span data-i18n="contact_subtext">Have a question, a feature request, or need
+              help? We\'d love to hear from you.</span></p>
         </div>
 
         <div class="contact__inner">
-          
+
           <!-- LEFT: Form -->
           <div class="contact__form-wrap reveal reveal-delay-1">
-            <form class="contact-form" id="contact-form" action="mailto:webexguruhasan95@gmail.com" method="POST" enctype="text/plain">
-              
+            <form class="contact-form" id="contact-form" action="mailto:webexguruhasan95@gmail.com" method="POST"
+              enctype="text/plain">
+
               <div class="form-group">
                 <label for="c-name"><span data-i18n="contact_name_label">Your Name</span></label>
-                <input type="text" id="c-name" name="name" class="form-control" placeholder="" data-i18n="contact_name_placeholder" required>
+                <input type="text" id="c-name" name="name" class="form-control" placeholder=""
+                  data-i18n="contact_name_placeholder" required>
               </div>
-              
+
               <div class="form-group">
                 <label for="c-email"><span data-i18n="contact_email_label">Email Address</span></label>
-                <input type="email" id="c-email" name="email" class="form-control" placeholder="" data-i18n="contact_email_placeholder" required>
+                <input type="email" id="c-email" name="email" class="form-control" placeholder=""
+                  data-i18n="contact_email_placeholder" required>
               </div>
-              
+
               <div class="form-group">
                 <label for="c-subject"><span data-i18n="contact_subject_label">Subject</span></label>
                 <select id="c-subject" name="subject" class="form-control" required>
@@ -3942,12 +4439,13 @@ Webexguru-Hasan/siteagent-widget
                   <option value="Partnership">Partnership</option>
                 </select>
               </div>
-              
+
               <div class="form-group">
                 <label for="c-message"><span data-i18n="contact_message_label">Message</span></label>
-                <textarea id="c-message" name="message" class="form-control" placeholder="" data-i18n="contact_message_placeholder" required></textarea>
+                <textarea id="c-message" name="message" class="form-control" placeholder=""
+                  data-i18n="contact_message_placeholder" required></textarea>
               </div>
-              
+
               <button type="submit" class="btn-submit">Send Message →</button>
               <div class="form-success" id="form-success">✅ Message sent! We'll reply within 24 hours.</div>
             </form>
@@ -3956,7 +4454,7 @@ Webexguru-Hasan/siteagent-widget
           <!-- RIGHT: Info -->
           <div class="contact__info-wrap reveal reveal-delay-2">
             <h3 class="contact-info__title">Other ways to reach us</h3>
-            
+
             <div class="contact-card">
               <span class="contact-card__icon" aria-hidden="true">📧</span>
               <div class="contact-card__details">
@@ -3969,7 +4467,8 @@ Webexguru-Hasan/siteagent-widget
               <span class="contact-card__icon" aria-hidden="true">🌐</span>
               <div class="contact-card__details">
                 <span class="contact-card__label">Live Server</span>
-                <a href="https://wazidhasan-siteagent-mcp.hf.space" target="_blank" rel="noopener noreferrer" class="contact-card__value">wazidhasan-siteagent-mcp.hf.space</a>
+                <a href="https://wazidhasan-siteagent-mcp.hf.space" target="_blank" rel="noopener noreferrer"
+                  class="contact-card__value">wazidhasan-siteagent-mcp.hf.space</a>
               </div>
             </div>
 
@@ -3980,7 +4479,7 @@ Webexguru-Hasan/siteagent-widget
                 <span class="contact-card__value">Within 24 hours</span>
               </div>
             </div>
-            
+
             <p class="contact-note">🔒 Your message goes directly to our team. No bots, no spam.</p>
           </div>
 
@@ -3995,8 +4494,10 @@ Webexguru-Hasan/siteagent-widget
       <div class="container">
         <div class="cta-banner__inner reveal">
           <h2 class="cta-banner__title">Ready to add <span class="text-gradient">AI</span> to your website?</h2>
-          <p class="cta-banner__desc"><span data-i18n="cta_subtext">Join for free. No credit card required. Setup in 5 minutes.</span></p>
-          <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn-large">Start Free Now →</a>
+          <p class="cta-banner__desc"><span data-i18n="cta_subtext">Join for free. No credit card required. Setup in 5
+              minutes.</span></p>
+          <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+            class="btn-large">Start Free Now →</a>
           <p class="cta-banner__note">✦ Free forever plan available · No credit card · Cancel anytime</p>
         </div>
       </div>
@@ -4005,28 +4506,29 @@ Webexguru-Hasan/siteagent-widget
     <!-- =====================================================
          FOOTER
          ===================================================== -->
-    
-  <!-- Floating Actions -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
 
-  <div class="mobile-cta-bar">
-    <span><span data-i18n="mobile_cta">Free plan available</span></span>
-    <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><span data-i18n="mobile_cta_btn">Start Free &rarr;</span></a>
-  </div>
+    <!-- Floating Actions -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
 
-<footer class="footer" id="footer" role="contentinfo">
+    <div class="mobile-cta-bar">
+      <span><span data-i18n="mobile_cta">Free plan available</span></span>
+      <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+        class="btn btn-primary"><span data-i18n="mobile_cta_btn">Start Free &rarr;</span></a>
+    </div>
+
+    <footer class="footer" id="footer" role="contentinfo">
       <div class="container">
-        
+
         <div class="footer__top">
           <div class="footer__brand">
             <a href="#hero" class="footer__logo">✦ SiteAgent</a>
             <p class="footer__tagline"><span data-i18n="footer_tagline">AI chatbot for every website.</span></p>
 
-          <!-- Live Server Status -->
-          <div class="server-status" id="serverStatus">
-            <div class="status-dot"></div>
-            <span class="status-text"><span data-i18n="footer_status_checking">Checking status...</span></span>
-          </div>
+            <!-- Live Server Status -->
+            <div class="server-status" id="serverStatus">
+              <div class="status-dot"></div>
+              <span class="status-text"><span data-i18n="footer_status_checking">Checking status...</span></span>
+            </div>
 
           </div>
 
@@ -4060,7 +4562,8 @@ Webexguru-Hasan/siteagent-widget
 
           <div class="footer__subscribe">
             <span class="footer__subscribe-text">Start building for free</span>
-            <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn-footer">Get Started →</a>
+            <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
+              class="btn-footer">Get Started →</a>
           </div>
         </div>
 
@@ -4135,7 +4638,7 @@ Webexguru-Hasan/siteagent-widget
          HAMBURGER MENU — TOGGLE
          ------------------------------------------------------- */
       const hamburgerBtn = document.getElementById('hamburger-btn');
-      const mobileMenu   = document.getElementById('mobile-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
 
       const closeMobileMenu = () => {
         hamburgerBtn.classList.remove('open');
@@ -4202,13 +4705,13 @@ Webexguru-Hasan/siteagent-widget
       /* -------------------------------------------------------
          INTERACTIVE DEMO CHAT WIDGET
          ------------------------------------------------------- */
-      const demoBubble   = document.getElementById('demo-bubble-btn');
-      const demoChatWin  = document.getElementById('demo-chat-window');
+      const demoBubble = document.getElementById('demo-bubble-btn');
+      const demoChatWin = document.getElementById('demo-chat-window');
       const demoCloseBtn = document.getElementById('demo-close-btn');
       const demoMessages = document.getElementById('demo-messages');
-      const demoInput    = document.getElementById('demo-chat-input');
-      const demoSendBtn  = document.getElementById('demo-send-btn');
-      const demoTyping   = document.getElementById('demo-typing');
+      const demoInput = document.getElementById('demo-chat-input');
+      const demoSendBtn = document.getElementById('demo-send-btn');
+      const demoTyping = document.getElementById('demo-typing');
 
       if (demoBubble && demoChatWin) {
         // Toggle chat window
@@ -4278,19 +4781,19 @@ Webexguru-Hasan/siteagent-widget
         const question = item.querySelector('.faq-item__question');
         question.addEventListener('click', () => {
           const isOpen = item.classList.contains('open');
-          
+
           // Close all
           faqItems.forEach(faq => {
             faq.classList.remove('open');
             const icon = faq.querySelector('.faq-item__icon');
-            if(icon) icon.textContent = '+';
+            if (icon) icon.textContent = '+';
           });
-          
+
           // Open clicked if it wasn't already open
           if (!isOpen) {
             item.classList.add('open');
             const icon = item.querySelector('.faq-item__icon');
-            if(icon) icon.textContent = '−';
+            if (icon) icon.textContent = '−';
           }
         });
       });
@@ -4310,7 +4813,7 @@ Webexguru-Hasan/siteagent-widget
         });
       }
 
-    
+
       // Phase 9: Announcement Bar
       const annBar = document.getElementById('announcementBar');
       const closeAnn = document.getElementById('closeAnnouncement');
@@ -4329,7 +4832,7 @@ Webexguru-Hasan/siteagent-widget
       // Phase 9: Scroll Progress & Back to Top
       const progressBar = document.getElementById('scrollProgress');
       const backToTopBtn = document.getElementById('backToTop');
-      
+
       let ticking = false;
       window.addEventListener('scroll', () => {
         if (!ticking) {
@@ -4363,7 +4866,7 @@ Webexguru-Hasan/siteagent-widget
       const counters = document.querySelectorAll('.count-up');
       const countUp = (el) => {
         const target = parseInt(el.getAttribute('data-target'), 10);
-        const duration = 2000; 
+        const duration = 2000;
         const start = performance.now();
         const update = (currentTime) => {
           const elapsed = currentTime - start;
@@ -4390,7 +4893,7 @@ Webexguru-Hasan/siteagent-widget
           }
         });
       }, { threshold: 0.5 });
-      
+
       const statsSection = document.getElementById('stats');
       if (statsSection) statObserver.observe(statsSection);
 
@@ -4399,10 +4902,10 @@ Webexguru-Hasan/siteagent-widget
       if (statusEl) {
         const dot = statusEl.querySelector('.status-dot');
         const text = statusEl.querySelector('.status-text');
-        
+
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 5000);
-        
+
         fetch('https://wazidhasan-siteagent-mcp.hf.space/api/health', { signal: controller.signal })
           .then(res => {
             clearTimeout(timeoutId);
@@ -4420,7 +4923,7 @@ Webexguru-Hasan/siteagent-widget
           });
       }
 
-    
+
       // Phase 10: Multilanguage System
       const translations = {
         en: {
@@ -4753,7 +5256,7 @@ Webexguru-Hasan/siteagent-widget
 
         // ── NAVBAR ──
         const navLinks = qa('a.navbar__link');
-        const navKeys = ['nav_features','nav_how_it_works','nav_get_token','nav_pricing','nav_contact'];
+        const navKeys = ['nav_features', 'nav_how_it_works', 'nav_get_token', 'nav_pricing', 'nav_contact'];
         navLinks.forEach((el, i) => { if (navKeys[i]) el.innerHTML = get(navKeys[i]); });
 
         const mobileLinks = qa('a.navbar__mobile-link');
@@ -4786,7 +5289,7 @@ Webexguru-Hasan/siteagent-widget
 
         // ── STATS ──
         const statLabels = qa('.stat-label');
-        ['stat_1_label','stat_2_label','stat_3_label','stat_4_label'].forEach((k,i) => {
+        ['stat_1_label', 'stat_2_label', 'stat_3_label', 'stat_4_label'].forEach((k, i) => {
           if (statLabels[i]) statLabels[i].innerHTML = get(k);
         });
 
@@ -4809,12 +5312,12 @@ Webexguru-Hasan/siteagent-widget
         if (featSub) featSub.innerHTML = get('features_subtext');
 
         const fCardTitles = qa('.feature-card__title');
-        ['feature_1_title','feature_2_title','feature_3_title','feature_4_title','feature_5_title','feature_6_title']
-          .forEach((k,i) => { if (fCardTitles[i]) fCardTitles[i].innerHTML = get(k); });
+        ['feature_1_title', 'feature_2_title', 'feature_3_title', 'feature_4_title', 'feature_5_title', 'feature_6_title']
+          .forEach((k, i) => { if (fCardTitles[i]) fCardTitles[i].innerHTML = get(k); });
 
         const fCardDescs = qa('.feature-card__desc');
-        ['feature_1_desc','feature_2_desc','feature_3_desc','feature_4_desc','feature_5_desc','feature_6_desc']
-          .forEach((k,i) => { if (fCardDescs[i]) fCardDescs[i].innerHTML = get(k); });
+        ['feature_1_desc', 'feature_2_desc', 'feature_3_desc', 'feature_4_desc', 'feature_5_desc', 'feature_6_desc']
+          .forEach((k, i) => { if (fCardDescs[i]) fCardDescs[i].innerHTML = get(k); });
 
         // ── HOW IT WORKS ──
         const hiwLabel = q('#how-it-works .section-label');
@@ -4933,8 +5436,8 @@ Webexguru-Hasan/siteagent-widget
 
         // FAQ items: question div contains text + icon span. Replace text node only.
         const faqItems = qa('.faq-item');
-        const faqQKeys = ['faq_q1','faq_q2','faq_q3','faq_q4','faq_q5','faq_q6','faq_q7'];
-        const faqAKeys = ['faq_a1','faq_a2','faq_a3','faq_a4','faq_a5','faq_a6','faq_a7'];
+        const faqQKeys = ['faq_q1', 'faq_q2', 'faq_q3', 'faq_q4', 'faq_q5', 'faq_q6', 'faq_q7'];
+        const faqAKeys = ['faq_a1', 'faq_a2', 'faq_a3', 'faq_a4', 'faq_a5', 'faq_a6', 'faq_a7'];
         faqItems.forEach((item, i) => {
           const qEl = item.querySelector('.faq-item__question');
           const aEl = item.querySelector('.faq-item__answer');
@@ -5184,4 +5687,5 @@ Webexguru-Hasan/siteagent-widget
   </script>
   <script defer src="/_vercel/insights/view.js"></script>
 </body>
+
 </html>
