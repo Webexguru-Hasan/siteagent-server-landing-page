@@ -345,7 +345,143 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Phase 10: Multilanguage System
       const translations = {
-        en: {
+  en: {
+
+    // === DOCS PAGE ENGLISH TRANSLATIONS ===
+    docs_hero_eyebrow: "DOCUMENTATION",
+    docs_hero_headline: "Get Started with SiteAgent",
+    docs_hero_subtext: "Everything you need to add an AI chatbot to your website in under 5 minutes.",
+    docs_hero_cta_quickstart: "📖 Quick Start",
+    docs_hero_cta_token: "🔑 Generate Token",
+    docs_hero_video_title: "▶ SiteAgent — Full Setup Tutorial",
+    docs_hero_video_sub: "5 min · Full walkthrough",
+    docs_hero_video_watch: "Watch Setup Tutorial",
+    docs_hero_video_caption: "▶ Watch: Full Setup Tutorial (5 min)",
+    docs_toc_title: "ON THIS PAGE",
+    docs_toc_quickstart: "Quick Start",
+    docs_toc_token: "Generate Token",
+    docs_toc_add: "Add to Website",
+    docs_toc_platforms: "Platforms",
+    docs_toc_customize: "Customize",
+    docs_toc_plans: "Plans & Pricing",
+    docs_toc_troubleshooting: "Troubleshooting",
+    docs_toc_status: "Server Status",
+    docs_sidebar_cta: "Generate Token →",
+
+    docs_qs_eyebrow: "QUICK START",
+    docs_qs_title: "Up and running in 4 steps",
+    docs_step1_title: "Subscribe on MCPize",
+    docs_step1_item1: "Go to: mcpize.com/mcp/siteagent-server",
+    docs_step1_item2: "Choose your plan — Free, Pro, or Agency",
+    docs_step1_item3: "Click Start Free or Subscribe",
+    docs_step1_item4: "After signup, your MCPize API Key appears on screen — starts with sk_",
+    docs_step1_note: "💾 Save this key — you need it in Step 2.",
+
+    docs_step2_title: "Generate Your Widget Token",
+    docs_step2_intro: "Your token links the chatbot to your specific website.",
+    docs_optionA_label: "✅ Option A — Using the Landing Page (No terminal needed)",
+    docs_optionA_item1: "Go to: siteagent-server-landing-page.vercel.app",
+    docs_optionA_item2: "Scroll to \"Generate Your Widget Token Instantly\" section",
+    docs_optionA_item3: "Enter your MCPize API Key (sk_...) and your website URL",
+    docs_optionA_item4: "Click \"Generate My Token →\"",
+    docs_optionA_item5: "Copy the ready-made snippet — token already filled in",
+    docs_optionB_label: "⌨️ Option B — Using Terminal",
+
+    docs_step3_title: "Paste One Snippet & Done",
+    docs_step3_intro: "Add this snippet before your closing <head> or <body> tag.",
+    docs_step3_note: "⚠️ If the snippet does not work, remove the async attribute from the script tag.",
+
+    docs_step4_title: "You're All Set!",
+    docs_step4_intro: "Refresh your website. The chat bubble will appear in the bottom right corner.",
+    docs_step4_pill1: "⏱ First visit: 30–60s crawl",
+    docs_step4_pill2: "⚡ Afterwards: Instant cache",
+    docs_step4_success: "✅ Your chatbot is now live and answering visitor questions!",
+
+    docs_platforms_title: "Platform-Specific Instructions",
+    docs_platforms_sub: "Step-by-step guides for common website builders.",
+    docs_wp_optionA: "Option A — No coding (recommended):",
+    docs_wp_optionA_1: "Install the \"Insert Headers and Footers\" plugin",
+    docs_wp_optionA_2: "Go to Settings → Insert Headers and Footers",
+    docs_wp_optionA_3: "Paste the snippet into the \"Scripts in Footer\" section",
+    docs_wp_optionA_4: "Click Save",
+    docs_wp_optionB: "Option B — Manual:",
+    docs_wp_optionB_1: "Go to Appearance → Theme Editor → open header.php",
+    docs_wp_optionB_2: "Paste the snippet just before the closing",
+    docs_wp_optionB_3: "Click Update File",
+    docs_shopify_1: "Go to Online Store → Themes → Actions → Edit Code",
+    docs_shopify_2: "Open theme.liquid under Layout",
+    docs_shopify_3: "Paste the snippet just before the closing",
+    docs_shopify_4: "Save",
+    docs_webflow_1: "Go to Project Settings → Custom Code tab",
+    docs_webflow_2: "Paste the snippet in the Head Code section",
+    docs_webflow_3: "Save and Publish",
+    docs_wix_1: "Go to Settings → Custom Code",
+    docs_wix_2: "Click + Add Custom Code",
+    docs_wix_3: "Paste the snippet in the code box",
+    docs_wix_4: "Set Place Code in to Head",
+    docs_wix_5: "Set Add Code to Pages to All Pages",
+    docs_wix_6: "Click Apply",
+    docs_sq_1: "Go to Settings → Advanced → Code Injection",
+    docs_sq_2: "Paste the snippet into the Header box",
+    docs_sq_3: "Save",
+
+    docs_customize_title: "Customize Your Chatbot",
+    docs_customize_sub: "The chatbot works out-of-the-box with just the token. Use these options to match your brand.",
+    docs_quickref_title: "Quick Reference",
+    docs_col_option: "Property",
+    docs_col_default: "Default",
+    docs_col_required: "Required",
+    docs_col_desc: "Description",
+    docs_token_desc: "Your unique widget token — copy from Step 2.",
+    docs_color_desc: "Theme color for bubble, header, and buttons.",
+    docs_position_desc: "Position on screen.",
+    docs_theme_desc: "Chat window background style.",
+    docs_greeting_desc: "First message shown to visitor when opening.",
+    docs_placeholder_desc: "Input box hint text.",
+    docs_lead_desc: "Ask for email after 2 messages.",
+    docs_examples_title: "Examples",
+    docs_example1_title: "Online Shop",
+    docs_example2_title: "Developer Docs",
+    docs_example3_title: "Agency / Portfolio",
+
+    docs_plans_title: "Plans and Features",
+    docs_plans_guarantee: "All plans come with a 14-day money-back guarantee.",
+    docs_plans_cta_text: "Ready to get started?",
+    docs_plans_cta_sub: "Pick your plan and get your API key instantly.",
+    docs_plans_cta_btn: "Subscribe on MCPize →",
+
+    docs_ts_title: "Troubleshooting",
+    docs_ts_item1_title: "Chat bubble is not appearing",
+    docs_ts_item1_1: "Press F12 → click the Console tab",
+    docs_ts_item1_2: "Look for red error messages",
+    docs_ts_item1_3: "Ensure the snippet is inside your",
+    docs_ts_item1_4: "Check that there are no extra spaces or line breaks",
+    docs_ts_item1_5: "Try a hard refresh:",
+    docs_ts_item2_title: "\"Could not extract content\" error",
+    docs_ts_item2_intro: "The chatbot could not read your website. Check that:",
+    docs_ts_item2_1: "Your page has at least 30 words of visible text",
+    docs_ts_item2_2: "Your website is publicly accessible (not behind a login)",
+    docs_ts_item2_3: "Your site does not require JavaScript to render content",
+    docs_ts_item3_title: "Chatbot is giving wrong or outdated answers",
+    docs_ts_item3_intro: "Trigger a manual re-crawl:",
+    docs_ts_item4_title: "\"Sorry, something went wrong\"",
+    docs_ts_item4_content: "Your token has expired (tokens are valid for 1 year). Repeat Step 2 to generate a new token.",
+    docs_ts_item4_link: "Generate a new token →",
+    docs_ts_item5_title: "Rate limit exceeded",
+    docs_ts_item5_content: "You have used all requests for this month. Upgrade at mcpize.com/mcp/siteagent-server or wait until the 1st of next month.",
+
+    docs_status_title: "Server Status",
+    docs_status_intro: "Check if the SiteAgent API is online and responding.",
+    docs_status_ok: "All systems operational",
+    docs_status_checking: "Checking status...",
+    docs_status_expected: "Expected Response:",
+    docs_support_title: "Need more help?",
+    docs_support_email: "Email:",
+    docs_support_website: "Landing Page:",
+
+    docs_copy: "Copy",
+    docs_copied: "Copied! ✓",
+
           announcement_text: "🎉 SiteAgent is now live! Start free — no credit card required.",
           announcement_mobile: "🎉 Start free today",
           announcement_cta: "Get Started →",
@@ -492,6 +628,143 @@ document.addEventListener('DOMContentLoaded', () => {
           mobile_cta_btn: "Start Free &rarr;"
         },
         bn: {
+
+    // === DOCS PAGE BENGALI TRANSLATIONS ===
+    docs_hero_eyebrow: "ডকুমেন্টেশন",
+    docs_hero_headline: "SiteAgent দিয়ে শুরু করুন",
+    docs_hero_subtext: "মাত্র ৫ মিনিটে আপনার ওয়েবসাইটে AI চ্যাটবট যোগ করতে যা যা দরকার সব এখানে আছে।",
+    docs_hero_cta_quickstart: "📖 দ্রুত শুরু",
+    docs_hero_cta_token: "🔑 টোকেন তৈরি করুন",
+    docs_hero_video_title: "▶ SiteAgent — সম্পূর্ণ সেটআপ টিউটোরিয়াল",
+    docs_hero_video_sub: "৫ মিনিট · সম্পূর্ণ গাইড",
+    docs_hero_video_watch: "সেটআপ টিউটোরিয়াল দেখুন",
+    docs_hero_video_caption: "▶ দেখুন: সম্পূর্ণ সেটআপ টিউটোরিয়াল (৫ মিনিট)",
+
+    docs_toc_title: "এই পাতায়",
+    docs_toc_quickstart: "দ্রুত শুরু",
+    docs_toc_token: "টোকেন তৈরি",
+    docs_toc_add: "ওয়েবসাইটে যোগ করুন",
+    docs_toc_platforms: "প্ল্যাটফর্ম",
+    docs_toc_customize: "কাস্টমাইজ",
+    docs_toc_plans: "প্ল্যান ও মূল্য",
+    docs_toc_troubleshooting: "সমস্যা সমাধান",
+    docs_toc_status: "সার্ভার স্ট্যাটাস",
+    docs_sidebar_cta: "টোকেন তৈরি করুন →",
+
+    docs_qs_eyebrow: "দ্রুত শুরু",
+    docs_qs_title: "৪টি ধাপে শুরু করুন",
+    docs_step1_title: "MCPize এ সাবস্ক্রাইব করুন",
+    docs_step1_item1: "এই লিংকে যান: mcpize.com/mcp/siteagent-server",
+    docs_step1_item2: "আপনার প্ল্যান বেছে নিন — Free, Pro, বা Agency",
+    docs_step1_item3: "Start Free বা Subscribe এ ক্লিক করুন",
+    docs_step1_item4: "সাইনআপের পর আপনার MCPize API Key দেখাবে — শুরু হবে sk_ দিয়ে",
+    docs_step1_note: "💾 এই key সেভ করুন — পরের ধাপে লাগবে।",
+
+    docs_step2_title: "Widget Token তৈরি করুন",
+    docs_step2_intro: "আপনার token আপনার ওয়েবসাইটের সাথে চ্যাটবট সংযুক্ত করে।",
+    docs_optionA_label: "✅ Option A — Landing Page ব্যবহার করুন (Terminal লাগবে না)",
+    docs_optionA_item1: "এই লিংকে যান: siteagent-server-landing-page.vercel.app",
+    docs_optionA_item2: "\"আপনার Widget Token তৈরি করুন\" সেকশনে যান",
+    docs_optionA_item3: "আপনার MCPize API Key (sk_...) ও ওয়েবসাইট URL দিন",
+    docs_optionA_item4: "\"Generate My Token →\" তে ক্লিক করুন",
+    docs_optionA_item5: "তৈরি snippet কপি করুন — token আগে থেকেই ভরা আছে",
+    docs_optionB_label: "⌨️ Option B — Terminal ব্যবহার করুন",
+
+    docs_step3_title: "ওয়েবসাইটে Snippet যোগ করুন",
+    docs_step3_intro: "এটি আপনার ওয়েবসাইটের <head> ট্যাগে paste করুন।",
+    docs_step3_note: "⚠️ Snippet কাজ না করলে script ট্যাগ থেকে async সরিয়ে দিন।",
+
+    docs_step4_title: "আপনি সফল!",
+    docs_step4_intro: "আপনার ওয়েবসাইট refresh করুন। Chat bubble নিচে-ডানে দেখাবে।",
+    docs_step4_pill1: "⏱ প্রথম ভিজিট: ৩০–৬০ সেকেন্ড crawl হবে",
+    docs_step4_pill2: "⚡ এরপর: cache থেকে তাৎক্ষণিক উত্তর",
+    docs_step4_success: "✅ আপনার চ্যাটবট এখন live এবং ভিজিটরদের প্রশ্নের উত্তর দিচ্ছে!",
+
+    docs_platforms_title: "প্ল্যাটফর্ম-ভিত্তিক নির্দেশনা",
+    docs_platforms_sub: "প্রতিটি প্ল্যাটফর্মের জন্য ধাপে ধাপে নির্দেশনা।",
+    docs_wp_optionA: "Option A — কোডিং ছাড়া (সুপারিশকৃত):",
+    docs_wp_optionA_1: "\"Insert Headers and Footers\" plugin ইনস্টল করুন",
+    docs_wp_optionA_2: "Settings → Insert Headers and Footers এ যান",
+    docs_wp_optionA_3: "Footer সেকশনে snippet paste করুন",
+    docs_wp_optionA_4: "Save করুন",
+    docs_wp_optionB: "Option B — ম্যানুয়াল:",
+    docs_wp_optionB_1: "Appearance → Theme Editor → header.php খুলুন",
+    docs_wp_optionB_2: "</head> লাইনের আগে snippet paste করুন",
+    docs_wp_optionB_3: "Update File এ ক্লিক করুন",
+    docs_shopify_1: "Online Store → Themes → ... → Edit Code এ যান",
+    docs_shopify_2: "layout/theme.liquid খুলুন",
+    docs_shopify_3: "</head> এর আগে snippet paste করুন",
+    docs_shopify_4: "Save করুন",
+    docs_webflow_1: "Project Settings → Custom Code ট্যাবে যান",
+    docs_webflow_2: "Head Code সেকশনে snippet paste করুন",
+    docs_webflow_3: "Save → Publish করুন",
+    docs_wix_1: "Settings → Custom Code এ যান",
+    docs_wix_2: "+ Add Custom Code এ ক্লিক করুন",
+    docs_wix_3: "Snippet paste করুন",
+    docs_wix_4: "Place Code in → Head সেট করুন",
+    docs_wix_5: "Add to Pages → All Pages সেট করুন",
+    docs_wix_6: "Apply করুন",
+    docs_sq_1: "Settings → Advanced → Code Injection এ যান",
+    docs_sq_2: "Header ফিল্ডে snippet paste করুন",
+    docs_sq_3: "Save করুন",
+
+    docs_customize_title: "আপনার চ্যাটবট কাস্টমাইজ করুন",
+    docs_customize_sub: "চ্যাটবট শুধু token দিয়েই কাজ করে। এই options দিয়ে আপনার brand এর সাথে মেলান।",
+    docs_quickref_title: "দ্রুত রেফারেন্স",
+    docs_col_option: "Option",
+    docs_col_default: "Default",
+    docs_col_required: "আবশ্যিক",
+    docs_col_desc: "বিবরণ",
+    docs_token_desc: "আপনার unique widget token — Step 2 থেকে কপি করুন।",
+    docs_color_desc: "Chat bubble, header ও বাটনের রং।",
+    docs_position_desc: "স্ক্রিনে bubble কোথায় দেখাবে।",
+    docs_theme_desc: "Chat window এর background style।",
+    docs_greeting_desc: "Chat খুললে visitor যে প্রথম বার্তা দেখে।",
+    docs_placeholder_desc: "Message input box এর hint text।",
+    docs_lead_desc: "২টি message এর পর email collection form দেখাবে।",
+    docs_examples_title: "উদাহরণ",
+    docs_example1_title: "অনলাইন শপ",
+    docs_example2_title: "ডেভেলপার ডকস",
+    docs_example3_title: "এজেন্সি",
+
+    docs_plans_title: "প্ল্যান ও ফিচারসমূহ",
+    docs_plans_guarantee: "সব প্ল্যানে ১৪ দিনের মানি-ব্যাক গ্যারান্টি।",
+    docs_plans_cta_text: "শুরু করতে প্রস্তুত?",
+    docs_plans_cta_sub: "আপনার প্ল্যান বেছে নিন এবং সাথে সাথে API key পান।",
+    docs_plans_cta_btn: "MCPize এ সাবস্ক্রাইব করুন →",
+
+    docs_ts_title: "সমস্যা সমাধান",
+    docs_ts_item1_title: "Chat bubble দেখা যাচ্ছে না",
+    docs_ts_item1_1: "F12 চাপুন → Console ট্যাবে ক্লিক করুন",
+    docs_ts_item1_2: "লাল error message খুঁজুন",
+    docs_ts_item1_3: "Snippet টি <head> ট্যাগের ভেতরে আছে কিনা নিশ্চিত করুন",
+    docs_ts_item1_4: "Token এ কোনো extra space বা line break নেই তা চেক করুন",
+    docs_ts_item1_5: "Hard refresh: Ctrl + Shift + R (Windows) বা Cmd + Shift + R (Mac)",
+    docs_ts_item2_title: "\"Could not extract content\" error",
+    docs_ts_item2_intro: "চ্যাটবট আপনার ওয়েবসাইট পড়তে পারেনি। চেক করুন:",
+    docs_ts_item2_1: "আপনার পেজে কমপক্ষে ৩০ শব্দের visible text আছে",
+    docs_ts_item2_2: "আপনার ওয়েবসাইট publicly accessible (login এর পিছনে না)",
+    docs_ts_item2_3: "আপনার সাইটে content দেখাতে JavaScript লাগে না",
+    docs_ts_item3_title: "চ্যাটবট ভুল বা পুরনো উত্তর দিচ্ছে",
+    docs_ts_item3_intro: "Manual re-crawl trigger করুন:",
+    docs_ts_item4_title: "\"Sorry, something went wrong\"",
+    docs_ts_item4_content: "আপনার token মেয়াদ শেষ হয়ে গেছে (token ১ বছর valid)। Step 2 পুনরাবৃত্তি করে নতুন token তৈরি করুন।",
+    docs_ts_item4_link: "নতুন token তৈরি করুন →",
+    docs_ts_item5_title: "Rate limit শেষ হয়ে গেছে",
+    docs_ts_item5_content: "এই মাসের সব request ব্যবহার হয়ে গেছে। mcpize.com/mcp/siteagent-server এ আপগ্রেড করুন অথবা পরের মাসের ১ তারিখ পর্যন্ত অপেক্ষা করুন।",
+
+    docs_status_title: "সার্ভার স্ট্যাটাস",
+    docs_status_intro: "সার্ভার চলছে কিনা চেক করুন:",
+    docs_status_ok: "সব সিস্টেম চালু আছে",
+    docs_status_checking: "স্ট্যাটাস চেক হচ্ছে...",
+    docs_status_expected: "প্রত্যাশিত response:",
+    docs_support_title: "আরো সাহায্য দরকার?",
+    docs_support_email: "ইমেইল করুন:",
+    docs_support_website: "ওয়েবসাইট:",
+
+    docs_copy: "কপি",
+    docs_copied: "কপি হয়েছে! ✓",
+
           announcement_text: "🎉 SiteAgent এখন লাইভ! বিনামূল্যে শুরু করুন — কোনো ক্রেডিট কার্ড দরকার নেই।",
           announcement_mobile: "🎉 বিনামূল্যে শুরু করুন",
           announcement_cta: "শুরু করুন &rarr;",
@@ -1177,3 +1450,90 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
     
+// === DOCS PAGE JS ===
+document.addEventListener('DOMContentLoaded', () => {
+  // Docs sidebar active state
+  const docsSections = document.querySelectorAll('#docs-main section[id]');
+  const sidebarLinks = document.querySelectorAll('#docs-sidebar a[href^="#"]');
+
+  if (docsSections.length > 0 && sidebarLinks.length > 0) {
+    const docsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          sidebarLinks.forEach(link => {
+            link.classList.remove('sidebar-active');
+            if (link.getAttribute('href') === '#' + entry.target.id) {
+              link.classList.add('sidebar-active');
+            }
+          });
+        }
+      });
+    }, { threshold: 0.3, rootMargin: '-80px 0px -60% 0px' });
+
+    docsSections.forEach(section => docsObserver.observe(section));
+  }
+
+  // Docs Platform Accordion Fix
+  const accBtns = document.querySelectorAll('.acc-btn');
+  if (accBtns.length > 0) {
+    // Only apply if we are on a page with platforms (like docs.html)
+    // Make sure we only have one open at a time.
+    
+    // First, let's close all by default EXCEPT the first one (WordPress)
+    const accItems = document.querySelectorAll('.acc-item');
+    accItems.forEach((item, index) => {
+      const btn = item.querySelector('.acc-btn');
+      const body = item.querySelector('.acc-body');
+      const icon = item.querySelector('.acc-icon');
+      
+      if (index === 0) {
+        // Open first
+        btn.classList.add('active');
+        body.style.display = 'block';
+        if(icon) icon.textContent = '−';
+      } else {
+        // Close others
+        btn.classList.remove('active');
+        body.style.display = 'none';
+        if(icon) icon.textContent = '+';
+      }
+
+      // Override the click logic
+      // Remove old listeners by cloning node if necessary, but actually we can just overwrite the onclick
+      btn.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const isActive = btn.classList.contains('active');
+        
+        // Close all
+        accItems.forEach(i => {
+          const b = i.querySelector('.acc-btn');
+          const bd = i.querySelector('.acc-body');
+          const ic = i.querySelector('.acc-icon');
+          b.classList.remove('active');
+          bd.style.display = 'none';
+          if(ic) ic.textContent = '+';
+        });
+
+        // Toggle the clicked one
+        if (!isActive) {
+          btn.classList.add('active');
+          body.style.display = 'block';
+          if(icon) icon.textContent = '−';
+        }
+      };
+    });
+  }
+});
+
+
+// Initialize language on docs.html load
+if (window.location.pathname.includes('docs.html') || document.title.includes('Documentation')) {
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('siteagent_lang') || 'en';
+    if (typeof switchLanguage === 'function') {
+      switchLanguage(savedLang);
+    }
+  });
+}
