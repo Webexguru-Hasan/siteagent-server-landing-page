@@ -1475,99 +1475,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 // === DOCS PAGE JS ===
-document.addEventListener('DOMContentLoaded', () => {
-  // Docs sidebar active state
-  const docsSections = document.querySelectorAll('#docs-main section[id]');
-  const sidebarLinks = document.querySelectorAll('#docs-sidebar a[href^="#"]');
 
-  if (docsSections.length > 0 && sidebarLinks.length > 0) {
-    const docsObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          sidebarLinks.forEach(link => {
-            link.classList.remove('sidebar-active');
-            if (link.getAttribute('href') === '#' + entry.target.id) {
-              link.classList.add('sidebar-active');
-            }
-          });
-        }
-      });
-    }, { threshold: 0.3, rootMargin: '-80px 0px -60% 0px' });
+// Platform accordion — one open at a time
+const docsAccordionHeaders = document.querySelectorAll(
+  '#platforms .docs-accordion-header'
+);
 
-    docsSections.forEach(section => docsObserver.observe(section));
-  }
+docsAccordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const body = header.nextElementSibling;
+    const icon = header.querySelector('.docs-accordion-icon');
+    const isOpen = body.classList.contains('open');
 
-  // Docs Platform Accordion Fix
-  const accBtns = document.querySelectorAll('#docs-main .faq-item__question, #docs-main .acc-btn');
-  if (accBtns.length > 0) {
-    // Only apply if we are on a page with platforms (like docs.html)
-    // Make sure we only have one open at a time.
-    
-    // First, let's close all by default EXCEPT the first one (WordPress)
-    const accItems = document.querySelectorAll('#docs-main .faq-item, #docs-main .acc-item');
-    accItems.forEach((item, index) => {
-      const btn = item.querySelector('.faq-item__question, .acc-btn');
-      const body = item.querySelector('.faq-item__answer, .acc-body');
-      const icon = item.querySelector('.faq-item__icon, .acc-icon');
-      
-      if (index === 0) {
-        // Open first
-        btn.classList.add('active');
-        body.style.display = 'block';
-        if(icon) icon.textContent = '−';
-      } else {
-        // Close others
-        btn.classList.remove('active');
-        body.style.display = 'none';
-        if(icon) icon.textContent = '+';
-      }
+    // Close all
+    document.querySelectorAll(
+      '#platforms .docs-accordion-body'
+    ).forEach(b => b.classList.remove('open'));
+    document.querySelectorAll(
+      '#platforms .docs-accordion-icon'
+    ).forEach(i => i.textContent = '+');
 
-      // Override the click logic
-      // Remove old listeners by cloning node if necessary, but actually we can just overwrite the onclick
-      btn.onclick = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        const isActive = btn.classList.contains('active');
-        
-        // Close all
-        accItems.forEach(i => {
-          const b = i.querySelector('.faq-item__question, .acc-btn');
-          const bd = i.querySelector('.faq-item__answer, .acc-body');
-          const ic = i.querySelector('.faq-item__icon, .acc-icon');
-          b.classList.remove('active');
-          bd.style.display = 'none';
-          if(ic) ic.textContent = '+';
-        });
-
-        // Toggle the clicked one
-        if (!isActive) {
-          btn.classList.add('active');
-          body.style.display = 'block';
-          if(icon) icon.textContent = '−';
-        }
-      };
-    });
-  }
+    // Open clicked if was closed
+    if (!isOpen) {
+      body.classList.add('open');
+      icon.textContent = '−';
+    }
+  });
 });
 
-
-// Initialize language on docs.html load
-if (window.location.pathname.includes('docs.html') || document.title.includes('Documentation')) {
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('siteagent_lang') || 'en';
-    if (typeof switchLanguage === 'function') {
-      switchLanguage(savedLang);
-    }
-  });
+// Open WordPress by default
+const firstPlatform = document.querySelector(
+  '#platforms .docs-accordion-body'
+);
+const firstIcon = document.querySelector(
+  '#platforms .docs-accordion-icon'
+);
+if (firstPlatform) {
+  firstPlatform.classList.add('open');
+  if (firstIcon) firstIcon.textContent = '−';
 }
 
-// Docs language init on load
-if (document.getElementById('docs-layout')) {
-  document.addEventListener('DOMContentLoaded', function() {
-    const savedLang = localStorage.getItem('siteagent_lang') || 'en';
-    if (savedLang === 'bn') {
-      switchLanguage('bn');
+// Troubleshooting accordion
+const tsHeaders = document.querySelectorAll(
+  '#troubleshooting .docs-accordion-header'
+);
+
+tsHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const body = header.nextElementSibling;
+    const icon = header.querySelector('.docs-accordion-icon');
+    const isOpen = body.classList.contains('open');
+
+    document.querySelectorAll(
+      '#troubleshooting .docs-accordion-body'
+    ).forEach(b => b.classList.remove('open'));
+    document.querySelectorAll(
+      '#troubleshooting .docs-accordion-icon'
+    ).forEach(i => i.textContent = '+');
+
+    if (!isOpen) {
+      body.classList.add('open');
+      icon.textContent = '−';
     }
   });
-}
+});
