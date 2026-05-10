@@ -125,7 +125,7 @@
       <!-- Center Links (desktop) -->
       <nav class="navbar__links" aria-label="Primary navigation">
         <a href="#features" class="navbar__link" id="nav-link-features">Features</a>
-          <a href="docs.html" class="navbar__link">Docs</a>
+        <a href="docs.html" class="navbar__link">Docs</a>
         <a href="#get-token" class="navbar__link" id="nav-link-token" data-i18n="nav_get_token">Get Token</a>
         <a href="#pricing" class="navbar__link" id="nav-link-pricing">Pricing</a>
         <a href="#contact" class="navbar__link" id="nav-link-contact">Contact</a>
@@ -188,7 +188,7 @@
             <div class="hero__ctas">
               <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
                 class="btn btn-primary btn-lg" id="hero-cta-primary">Start Free &nbsp;↗</a>
-              </div>
+            </div>
 
             <div class="hero__trust-badge">
               ⚡ Works on WordPress, Shopify, Webflow, Wix &amp; more &mdash; setup in 5 minutes
@@ -409,92 +409,7 @@
     <!-- =====================================================
          HOW IT WORKS SECTION
          ===================================================== -->
-    <section class="how-it-works" id="how-it-works" aria-labelledby="hiw-headline">
-      <div class="container">
 
-        <div class="how-it-works__header">
-          <div class="section-label reveal">✦ &nbsp;Setup</div>
-          <h2 class="section-title reveal reveal-delay-1" id="hiw-headline">Up and running in 3 steps</h2>
-          <p class="section-subtitle reveal reveal-delay-2">No developer needed. No complicated dashboard. Just copy,
-            paste, done.</p>
-        </div>
-
-        <div class="steps reveal reveal-delay-1">
-
-          <!-- Step 1 -->
-          <div class="step-card" id="step-1">
-            <div class="step-number">1</div>
-            <span class="step-icon" aria-hidden="true">🔑</span>
-            <h3 class="step-title"><span data-i18n="hiw_step1_title">Subscribe on MCPize</span></h3>
-            <p class="step-desc">Go to mcpize.com, choose your plan, and get your API key instantly after signup.</p>
-            <div class="code-block">
-              <div class="code-block__bar">
-                <span class="code-block__dot"></span>
-                <span class="code-block__dot"></span>
-                <span class="code-block__dot"></span>
-                <span class="code-block__lang">URL</span>
-              </div>
-              <pre><span class="tok-str">mcpize.com/mcp/siteagent-server</span></pre>
-            </div>
-          </div>
-
-          <!-- Connector -->
-          <div class="step-connector" aria-hidden="true">→</div>
-
-          <!-- Step 2 -->
-          <div class="step-card" id="step-2">
-            <div class="step-number">2</div>
-            <span class="step-icon" aria-hidden="true">⚡</span>
-            <h3 class="step-title"><span data-i18n="hiw_step2_title">Generate Your Widget Token</span></h3>
-            <p class="step-desc">Run one command with your API key and website URL. Your unique token is returned
-              instantly.</p>
-            <div class="code-block">
-              <button class="copy-btn" data-copy-target="code-step2" id="copy-btn-step2">Copy</button>
-              <div class="code-block__bar">
-                <span class="code-block__dot"></span>
-                <span class="code-block__dot"></span>
-                <span class="code-block__dot"></span>
-                <span class="code-block__lang">bash</span>
-              </div>
-              <pre id="code-step2"><span class="tok-fn">curl</span> -X POST \
-  <span class="tok-str">https://wazidhasan-siteagent-mcp.hf.space</span><span class="tok-tag">/api/token</span> \
-  -H <span class="tok-str">"Content-Type: application/json"</span> \
-  -d <span class="tok-str">'{ "apiKey": "YOUR_API_KEY",
-    "siteUrl": "https://yoursite.com" }'</span></pre>
-            </div>
-          </div>
-
-          <!-- Connector -->
-          <div class="step-connector" aria-hidden="true">→</div>
-
-          <!-- Step 3 -->
-          <div class="step-card" id="step-3">
-            <div class="step-number">3</div>
-            <span class="step-icon" aria-hidden="true">🌐</span>
-            <h3 class="step-title">Paste One Snippet &amp; Done</h3>
-            <p class="step-desc">Add one script tag before your closing <code
-                style="color:var(--color-accent);font-size:12px">&lt;/body&gt;</code> tag. The chatbot appears
-              instantly.</p>
-            <div class="code-block">
-              <button class="copy-btn" data-copy-target="code-step3" id="copy-btn-step3">Copy</button>
-              <div class="code-block__bar">
-                <span class="code-block__dot"></span>
-                <span class="code-block__dot"></span>
-                <span class="code-block__dot"></span>
-                <span class="code-block__lang">html</span>
-              </div>
-              <pre id="code-step3"><span class="tok-tag">&lt;script</span>
-  <span class="tok-attr">src</span>=<span class="tok-str">"https://cdn.jsdelivr.net/gh/
-Webexguru-Hasan/siteagent-widget
-@v1.0.3/siteagent.js"</span>
-  <span class="tok-attr">data-token</span>=<span class="tok-str">"YOUR_TOKEN"</span>
-<span class="tok-tag">&gt;&lt;/script&gt;</span></pre>
-            </div>
-          </div>
-
-        </div><!-- /.steps -->
-      </div><!-- /.container -->
-    </section>
 
     <!-- =====================================================
          TOKEN GENERATOR SECTION
