@@ -3354,3 +3354,13 @@
 .code-wrapper { position: relative; margin-bottom: 16px; }
 
 #docs-token-widget { max-width: 580px; margin: 40px auto; }
+
+/* === MOBILE STICKY CTA PADDING (index.html only) === */
+@media (max-width: 768px) {
+  body.has-mobile-cta {
+    padding-bottom: 70px;
+  }
+  body.has-mobile-cta footer {
+    margin-bottom: 70px;
+  }
+}
