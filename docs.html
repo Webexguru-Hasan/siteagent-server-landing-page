@@ -342,8 +342,8 @@
 <section class="docs-section " id="add-to-website">
       <div class="container docs-container">
         <div class="step-badge">03</div>
-        <h2>Add Snippet to Your Website</h2>
-        <p>Paste this into your website's &lt;head&gt; tag.</p>
+        <h2 data-i18n="docs_step3_title">Add Snippet to Your Website</h2>
+        <p data-i18n="docs_step3_intro">Paste this into your website's &lt;head&gt; tag.</p>
         <div class="code-wrapper">
           <button class="copy-btn" data-copy-target="code-snippet-docs" data-i18n="docs_copy">Copy</button>
           <pre class="snippet-code" id="code-snippet-docs">&lt;!-- SiteAgent AI Chatbot --&gt;
@@ -361,24 +361,24 @@
 &lt;!-- End SiteAgent --&gt;</pre>
         </div>
         <div class="note-box note-box--yellow">
-          ⚠️ If the snippet is not working, try removing async from the script tag.
+          <span data-i18n="docs_step3_note">⚠️ If the snippet is not working, try removing async from the script tag.</span>
         </div>
 
         <br>
         <div class="step-badge" style="position:relative; margin-bottom: 20px;">04</div>
-        <h2 style="display:inline-block; vertical-align:middle; margin-bottom: 20px;">Done</h2>
-        <p>Refresh your website. The chat bubble appears in the bottom-right corner.</p>
+        <h2 style="display:inline-block; vertical-align:middle; margin-bottom: 20px;" data-i18n="docs_step4_title">Done</h2>
+        <p data-i18n="docs_step4_intro">Refresh your website. The chat bubble appears in the bottom-right corner.</p>
         <div class="pills-row">
-          <div class="pill">⏱ First visit: 30–60 seconds to crawl</div>
-          <div class="pill">⚡ After that: instant from cache</div>
+          <div class="pill" data-i18n="docs_step4_pill1">⏱ First visit: 30–60 seconds to crawl</div>
+          <div class="pill" data-i18n="docs_step4_pill2">⚡ After that: instant from cache</div>
         </div>
       </div>
     </section>
 
 <section class="docs-section " id="platforms">
       <div class="container docs-container">
-        <h2 class="docs-title">Platform-Specific Instructions</h2>
-        <p class="docs-subtitle">Step-by-step for every major platform</p>
+        <h2 class="docs-title" data-i18n="docs_platforms_title">Platform-Specific Instructions</h2>
+        <p class="docs-subtitle" data-i18n="docs_platforms_sub">Step-by-step for every major platform</p>
 
         <div class="docs-accordion">
           <div class="faq-item open docs-accordion-item">
@@ -499,9 +499,8 @@ export default function Layout({ children }) {
 
 <section class="docs-section " id="customize">
       <div class="container docs-container">
-        <h2 class="docs-title">Customize Your Chatbot (Optional)</h2>
-        <p class="docs-subtitle">The chatbot works out of the box with just a token. Use these options to match your
-          brand.</p>
+        <h2 class="docs-title" data-i18n="docs_customize_title">Customize Your Chatbot (Optional)</h2>
+        <p class="docs-subtitle" data-i18n="docs_customize_sub">The chatbot works out of the box with just a token. Use these options to match your brand.</p>
 
         <h3 style="margin-top: 40px; margin-bottom: 20px;">All Options Explained</h3>
         <div class="code-wrapper">
@@ -676,7 +675,7 @@ leadCapture: true</pre>
 
 <section class="docs-section " id="plans">
       <div class="container docs-container">
-        <h2 class="docs-title">Plans and Features</h2>
+        <h2 class="docs-title" data-i18n="docs_plans_title">Plans and Features</h2>
 
         <div class="table-wrapper">
           <table class="docs-table">
@@ -712,34 +711,34 @@ leadCapture: true</pre>
         </div>
 
         <div style="text-align: center; margin-top: 40px;">
-          <h3 style="margin-bottom: 16px;">Ready to get started?</h3>
+          <h3 style="margin-bottom: 16px;" data-i18n="docs_plans_cta_text">Ready to get started?</h3>
           <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
-            class="btn btn-primary">Subscribe on MCPize &rarr;</a>
+            class="btn btn-primary" data-i18n="docs_plans_cta_btn">Subscribe on MCPize →</a>
         </div>
       </div>
     </section>
 
 <section class="docs-section " id="troubleshooting">
       <div class="container docs-container">
-        <h2 class="docs-title">Troubleshooting</h2>
+        <h2 class="docs-title" data-i18n="docs_ts_title">Troubleshooting</h2>
 
         <div class="docs-accordion">
           <div class="faq-item docs-accordion-item">
-            <div class="faq-item__question">Chat bubble is not appearing<span class="faq-item__icon"
+            <div class="faq-item__question" data-i18n="docs_ts_item1_title">Chat bubble is not appearing<span class="faq-item__icon"
                 aria-hidden="true">+</span></div>
             <div class="faq-item__answer">
               <p>Verify that your snippet is placed correctly in the &lt;head&gt; tag and your token is valid.</p>
             </div>
           </div>
           <div class="faq-item docs-accordion-item">
-            <div class="faq-item__question">"Could not extract content" error<span class="faq-item__icon"
+            <div class="faq-item__question" data-i18n="docs_ts_item2_title">"Could not extract content" error<span class="faq-item__icon"
                 aria-hidden="true">+</span></div>
             <div class="faq-item__answer">
               <p>Your website might be blocking bots. Ensure your robots.txt allows generic crawlers.</p>
             </div>
           </div>
           <div class="faq-item docs-accordion-item">
-            <div class="faq-item__question">Chatbot is giving wrong or outdated answers<span class="faq-item__icon"
+            <div class="faq-item__question" data-i18n="docs_ts_item3_title">Chatbot is giving wrong or outdated answers<span class="faq-item__icon"
                 aria-hidden="true">+</span></div>
             <div class="faq-item__answer">
               <p>Your site content may have changed since the last crawl.</p>
@@ -760,14 +759,14 @@ leadCapture: true</pre>
           </div>
         </div>
         <div class="faq-item docs-accordion-item">
-          <div class="faq-item__question">"Sorry, something went wrong"<span class="faq-item__icon"
+          <div class="faq-item__question" data-i18n="docs_ts_item4_title">"Sorry, something went wrong"<span class="faq-item__icon"
               aria-hidden="true">+</span></div>
           <div class="faq-item__answer">
             <p>Your token may have expired (tokens are valid for 1 year). Generate a new token by repeating Step 2.</p>
           </div>
         </div>
         <div class="faq-item docs-accordion-item">
-          <div class="faq-item__question">Rate limit reached<span class="faq-item__icon" aria-hidden="true">+</span>
+          <div class="faq-item__question" data-i18n="docs_ts_item5_title">Rate limit reached<span class="faq-item__icon" aria-hidden="true">+</span>
           </div>
           <div class="faq-item__answer">
             <p>You have exceeded your plan's monthly requests. Please upgrade your plan on MCPize.</p>
@@ -779,8 +778,8 @@ leadCapture: true</pre>
 
 <section class="docs-section " id="server-status">
       <div class="container docs-container">
-        <h2 class="docs-title">Server Status</h2>
-        <p>Check if the server is running:</p>
+        <h2 class="docs-title" data-i18n="docs_status_title">Server Status</h2>
+        <p data-i18n="docs_status_intro">Check if the server is running:</p>
 
         <div class="status-check-card">
           <div class="server-status" id="docsServerStatus"
@@ -907,7 +906,6 @@ leadCapture: true</pre>
 
     </div>
   </footer>
-  </main>
 
   <script src="assets/js/main.js" defer></script>
 

@@ -3362,3 +3362,221 @@ body { padding-bottom: 0; }
   body { padding-bottom: 70px; }
   footer { margin-bottom: 70px; }
 }
+
+
+/* === NEW DOCS LAYOUT OVERRIDES === */
+.mobile-cta-bar { display: none !important; }
+
+#docs-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  gap: 48px;
+  align-items: flex-start;
+  background: #0A0F1E;
+}
+
+#docs-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding-right: 16px;
+}
+
+.docs-sidebar__title {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #94A3B8;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.docs-sidebar__nav a {
+  display: block;
+  padding: 8px 12px;
+  border-left: 2px solid transparent;
+  color: #94A3B8;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.docs-sidebar__nav a:hover {
+  color: white;
+  border-left-color: #1e293b;
+}
+
+.docs-sidebar__nav a.sidebar-active {
+  border-left-color: #00D4FF;
+  color: #00D4FF;
+  background: #00D4FF08;
+}
+
+.docs-sidebar__divider {
+  border-bottom: 1px solid #1e293b;
+  margin: 20px 0;
+}
+
+.docs-sidebar__cta {
+  display: block;
+  width: 100%;
+  background: #00D4FF;
+  color: #0A0F1E;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: opacity 0.2s;
+}
+
+.docs-sidebar__cta:hover {
+  opacity: 0.9;
+}
+
+#docs-main {
+  flex: 1;
+  min-width: 0;
+}
+
+#docs-main section {
+  background: transparent !important;
+  padding: 60px 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+#docs-main section:last-child {
+  border-bottom: none;
+}
+
+/* Fix Hero Layout */
+.docs-hero__inner {
+  display: flex !important;
+  align-items: center !important;
+  gap: 60px !important;
+  max-width: 100%;
+}
+
+.docs-hero__text {
+  flex: 1 !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.docs-hero__text .docs-headline {
+  font-size: clamp(28px, 3.5vw, 48px) !important;
+}
+
+.docs-hero__video {
+  flex: 0 0 460px !important;
+  max-width: 460px !important;
+}
+
+.docs-hero__video .video-card {
+  aspect-ratio: 16/9 !important;
+  height: auto !important;
+  padding-bottom: 0 !important;
+}
+
+#docs-mobile-toc {
+  display: none;
+}
+
+/* Fix Spacing inside docs main */
+#docs-main h2.docs-title, #docs-main h2 {
+  margin-bottom: 24px !important;
+}
+
+#docs-main .step-card, #docs-main .option-card {
+  margin-bottom: 32px !important;
+}
+
+@media (max-width: 900px) {
+  .docs-hero__inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .docs-hero__video {
+    flex: 1 1 auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #docs-sidebar {
+    display: none;
+  }
+  #docs-layout {
+    flex-direction: column;
+    padding: 24px 16px;
+  }
+  #docs-mobile-toc {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding: 16px 0;
+    margin-bottom: 32px;
+    width: 100%;
+    /* Hide scrollbar for clean look */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  #docs-mobile-toc::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+/* === DOCS PAGE CRITICAL FIXES === */
+/* Prevent docs-container from conflicting with sidebar layout */
+#docs-main .docs-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove extra container padding inside docs-main */
+#docs-main .container {
+  max-width: 100%;
+  padding-inline: 0;
+}
+
+/* Ensure docs background extends to full page */
+main, body {
+  background: #0A0F1E;
+}
+
+/* Docs main sections - clean */
+#docs-main section {
+  background: transparent !important;
+  padding: 60px 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+#docs-main section:last-child {
+  border-bottom: none;
+}
+
+/* Fix faq-item accordion inside docs */
+#docs-main .faq-item__answer {
+  display: none;
+}
+
+#docs-main .faq-item.open .faq-item__answer {
+  display: block;
+}
+
+/* Sidebar active link style */
+#docs-sidebar .docs-sidebar__nav a.sidebar-active {
+  border-left-color: #00D4FF !important;
+  color: #00D4FF !important;
+  background: rgba(0, 212, 255, 0.03);
+}

@@ -348,6 +348,30 @@ document.addEventListener('DOMContentLoaded', () => {
   en: {
 
     // === DOCS PAGE ENGLISH TRANSLATIONS ===
+
+    docs_step3_title: "Add Snippet to Your Website",
+    docs_step3_intro: "Paste this into your website's head tag.",
+    docs_step3_note: "⚠️ If the snippet is not working, try removing async from the script tag.",
+    docs_step4_title: "Done!",
+    docs_step4_intro: "Refresh your website. The chat bubble appears in the bottom-right corner.",
+    docs_step4_pill1: "⏱ First visit: 30–60 seconds to crawl",
+    docs_step4_pill2: "⚡ After that: instant from cache",
+    docs_step4_success: "✅ Your chatbot is live!",
+    docs_ts_item1_title: "Chat bubble is not appearing",
+    docs_ts_item2_title: "\"Could not extract content\" error",
+    docs_ts_item3_title: "Chatbot is giving wrong or outdated answers",
+    docs_ts_item4_title: "\"Sorry, something went wrong\"",
+    docs_ts_item5_title: "Rate limit reached",
+    docs_plans_cta_btn: "Subscribe on MCPize →",
+    docs_plans_cta_text: "Ready to get started?",
+    docs_customize_title: "Customize Your Chatbot (Optional)",
+    docs_customize_sub: "The chatbot works out of the box with just a token. Use these options to match your brand.",
+    docs_platforms_title: "Platform-Specific Instructions",
+    docs_platforms_sub: "Step-by-step for every major platform",
+    docs_status_title: "Server Status",
+    docs_status_intro: "Check if the server is running:",
+    docs_ts_title: "Troubleshooting",
+    docs_plans_title: "Plans and Features",
     docs_hero_eyebrow: "DOCUMENTATION",
     docs_hero_headline: "Get Started with SiteAgent",
     docs_hero_subtext: "Everything you need to add an AI chatbot to your website in under 5 minutes.",
@@ -1474,17 +1498,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Docs Platform Accordion Fix
-  const accBtns = document.querySelectorAll('.acc-btn');
+  const accBtns = document.querySelectorAll('#docs-main .faq-item__question, #docs-main .acc-btn');
   if (accBtns.length > 0) {
     // Only apply if we are on a page with platforms (like docs.html)
     // Make sure we only have one open at a time.
     
     // First, let's close all by default EXCEPT the first one (WordPress)
-    const accItems = document.querySelectorAll('.acc-item');
+    const accItems = document.querySelectorAll('#docs-main .faq-item, #docs-main .acc-item');
     accItems.forEach((item, index) => {
-      const btn = item.querySelector('.acc-btn');
-      const body = item.querySelector('.acc-body');
-      const icon = item.querySelector('.acc-icon');
+      const btn = item.querySelector('.faq-item__question, .acc-btn');
+      const body = item.querySelector('.faq-item__answer, .acc-body');
+      const icon = item.querySelector('.faq-item__icon, .acc-icon');
       
       if (index === 0) {
         // Open first
@@ -1508,9 +1532,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Close all
         accItems.forEach(i => {
-          const b = i.querySelector('.acc-btn');
-          const bd = i.querySelector('.acc-body');
-          const ic = i.querySelector('.acc-icon');
+          const b = i.querySelector('.faq-item__question, .acc-btn');
+          const bd = i.querySelector('.faq-item__answer, .acc-body');
+          const ic = i.querySelector('.faq-item__icon, .acc-icon');
           b.classList.remove('active');
           bd.style.display = 'none';
           if(ic) ic.textContent = '+';
@@ -1534,6 +1558,16 @@ if (window.location.pathname.includes('docs.html') || document.title.includes('D
     const savedLang = localStorage.getItem('siteagent_lang') || 'en';
     if (typeof switchLanguage === 'function') {
       switchLanguage(savedLang);
+    }
+  });
+}
+
+// Docs language init on load
+if (document.getElementById('docs-layout')) {
+  document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('siteagent_lang') || 'en';
+    if (savedLang === 'bn') {
+      switchLanguage('bn');
     }
   });
 }
