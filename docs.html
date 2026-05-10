@@ -166,6 +166,7 @@
     <section class="docs-toc" id="docs-toc">
       <div class="container">
         <div class="toc-links">
+          <a href="#intro" class="toc-pill">Intro</a>
           <a href="#quick-start" class="toc-pill">Quick Start</a>
           <a href="#get-token-docs" class="toc-pill">Generate Token</a>
           <a href="#add-to-website" class="toc-pill">Add to Website</a>
@@ -180,6 +181,29 @@
 
     <!-- Section 3 - Content -->
     
+    
+    <!-- 3a Intro -->
+    <section class="docs-section bg-surface" id="intro">
+      <div class="container docs-container">
+        <h2 class="docs-title">What is SiteAgent?</h2>
+        <p>SiteAgent adds an AI-powered chatbot to any website in under 5 minutes. It automatically reads your website content and answers visitor questions in real time — no manual training, no coding skills needed.</p>
+        <p>Works on every platform: WordPress, Shopify, Webflow, Wix, Squarespace, React, Next.js, and plain HTML.</p>
+        <p>🌐 <strong>Landing Page:</strong> <a href="https://siteagent-server-landing-page.vercel.app/" target="_blank" rel="noopener noreferrer" class="docs-link">https://siteagent-server-landing-page.vercel.app/</a></p>
+        
+        <div class="note-box note-box--yellow" style="margin-top: 24px;">
+          <strong>NOTE:</strong> Before adding the chat widget, make sure your website has enough content for the AI to read.
+        </div>
+
+        <h2 class="docs-title" style="margin-top: 48px;">How It Works</h2>
+        <div class="code-wrapper">
+          <pre class="snippet-code">Your Website  →  loads widget from CDN (jsDelivr)
+Widget        →  sends visitor questions to SiteAgent API
+API           →  crawls your site content → AI generates answer
+Visitor       →  receives accurate answer in seconds</pre>
+        </div>
+      </div>
+    </section>
+
     <!-- 3a Quick Start -->
     <section class="docs-section bg-dark" id="quick-start">
       <div class="container docs-container">
@@ -291,6 +315,18 @@
               <pre class="snippet-code" id="code-curl-docs">curl -s -X POST https://wazidhasan-siteagent-mcp.hf.space/api/token -H "Content-Type: application/json" -H "x-api-key: YOUR_MCPIZE_API_KEY" -d '{"website_url":"https://yourwebsite.com"}' | python3 -m json.tool</pre>
             </div>
           </div>
+          <br>
+          <div class="snippet-label" style="margin-top: 24px; margin-bottom: 8px;">Expected Response:</div>
+          <div class="code-wrapper">
+            <button class="copy-btn" data-copy-target="code-expected">Copy</button>
+            <pre class="snippet-code" id="code-expected">{
+  "success": true,
+  "token": "sa_pub_v1.eyJ...",
+  "siteUrl": "https://yourwebsite.com"
+}</pre>
+          </div>
+          <p style="color: #94A3B8; font-size: 14px; margin-top: 12px;">Copy the full <code>token</code> value — it is long, copy all of it.</p>
+
         </div>
       </div>
     </section>
@@ -342,9 +378,16 @@
           <div class="faq-item open docs-accordion-item">
             <div class="faq-item__question">WordPress<span class="faq-item__icon" aria-hidden="true">+</span></div>
             <div class="faq-item__answer">
-              <p>1. Go to Appearance > Theme File Editor > header.php</p>
-              <p>2. Paste the snippet right before the closing &lt;/head&gt; tag</p>
-              <p>3. Update File</p>
+              <p><strong>Option A — No coding (recommended):</strong></p>
+              <p>1. Install the free plugin <strong>"Insert Headers and Footers"</strong> → Plugins → Add New → search for it</p>
+              <p>2. Settings → Insert Headers and Footers</p>
+              <p>3. Paste the snippet in the <strong>Footer</strong> section</p>
+              <p>4. Save</p>
+              <br>
+              <p><strong>Option B — Manual:</strong></p>
+              <p>1. Appearance → Theme Editor → open <code>header.php</code></p>
+              <p>2. Paste snippet just before the <code>&lt;/head&gt;</code> line</p>
+              <p>3. Click Update File</p>
             </div>
           </div>
           <div class="faq-item docs-accordion-item">
@@ -384,13 +427,62 @@
           <div class="faq-item docs-accordion-item">
             <div class="faq-item__question">React / Next.js<span class="faq-item__icon" aria-hidden="true">+</span></div>
             <div class="faq-item__answer">
-              <p>Add the scripts to your _document.js or layout component inside the Head component.</p>
+              <p>Add this to <code>app/layout.js</code> or <code>pages/_app.js</code>:</p>
+              <div class="code-wrapper" style="margin-top:16px;">
+                <button class="copy-btn" data-copy-target="code-react">Copy</button>
+                <pre class="snippet-code" id="code-react">import Script from "next/script"
+
+export default function Layout({ children }) {
+  return (
+    &lt;html&gt;
+      &lt;body&gt;
+        &lt;Script id="siteagent-config" strategy="beforeInteractive"&gt;
+          {`window.SiteAgent = {
+            token: "YOUR_FULL_TOKEN",
+            position: "bottom-right",
+            theme: "auto"
+          }`}
+        &lt;/Script&gt;
+        &lt;Script
+          src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js"
+          strategy="lazyOnload"
+        /&gt;
+        {children}
+      &lt;/body&gt;
+    &lt;/html&gt;
+  )
+}</pre>
+              </div>
             </div>
           </div>
           <div class="faq-item docs-accordion-item">
             <div class="faq-item__question">Plain HTML<span class="faq-item__icon" aria-hidden="true">+</span></div>
             <div class="faq-item__answer">
-              <p>Simply copy and paste the snippet directly into your &lt;head&gt; tag.</p>
+              <div class="code-wrapper">
+                <button class="copy-btn" data-copy-target="code-html">Copy</button>
+                <pre class="snippet-code" id="code-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My Website&lt;/title&gt;
+
+  &lt;script&gt;
+    window.SiteAgent = {
+      token: "YOUR_FULL_TOKEN",
+      position: "bottom-right",
+      theme: "auto"
+    };
+  &lt;/script&gt;
+  &lt;script
+    src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js"
+    async&gt;
+  &lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- your page content --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+              </div>
             </div>
           </div>
         </div>
@@ -400,67 +492,153 @@
     <!-- 3e Customize -->
     <section class="docs-section bg-dark" id="customize">
       <div class="container docs-container">
-        <h2 class="docs-title">Customize Your Chatbot</h2>
-        <p class="docs-subtitle">Match your brand with these optional settings.</p>
+                <h2 class="docs-title">Customize Your Chatbot (Optional)</h2>
+        <p class="docs-subtitle">The chatbot works out of the box with just a token. Use these options to match your brand.</p>
 
+        <h3 style="margin-top: 40px; margin-bottom: 20px;">All Options Explained</h3>
         <div class="code-wrapper">
           <button class="copy-btn" data-copy-target="code-config-docs">Copy</button>
           <pre class="snippet-code" id="code-config-docs">&lt;script&gt;
   window.SiteAgent = {
-    token: "sa_pub_v1_YOUR_TOKEN",
-    position: "bottom-right", // bottom-right, bottom-left
-    theme: "auto", // auto, light, dark
-    primaryColor: "#00D4FF", // any valid CSS color
-    greeting: "👋 Hi! Ask me anything...",
-    placeholder: "Type a message...",
-    leadCapture: true // enables asking for email after 2 messages
+
+    token: "YOUR_FULL_TOKEN",
+    // Required. Copy from Step 2. Do not share publicly.
+
+    primaryColor: "#2563EB",
+    // Color of the chat bubble, header, and buttons.
+    // Use any hex color to match your brand.
+    //
+    // Examples:
+    //   Blue       "#2563EB"  (default)
+    //   Green      "#38A169"
+    //   Red        "#E53E3E"
+    //   Purple     "#805AD5"
+    //   Orange     "#DD6B20"
+    //   Black      "#1A202C"
+    //   Pink       "#D53F8C"
+    //
+    // Find your brand color at: https://colorpicker.me
+
+    position: "bottom-right",
+    // Where the bubble appears on screen.
+    //
+    // "bottom-right"  →  bottom right corner (default)
+    // "bottom-left"   →  bottom left corner
+    // "top-right"     →  top right corner
+    // "top-left"      →  top left corner
+
+    theme: "auto",
+    // Chat window background style.
+    //
+    // "auto"   →  follows the visitor's device setting
+    // "light"  →  always white background
+    // "dark"   →  always dark background
+
+    greeting: "Hi! How can I help you today?",
+    // First message visitors see when chat opens.
+    // Write in your language and brand voice.
+
+    placeholder: "Ask me anything...",
+    // Hint text in the message input box.
+
+    leadCapture: true
+    // Show an email collection form after 2 messages.
+    // true = show, false = hide
+
   };
+&lt;/script&gt;
+&lt;script
+  src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js"
+  async&gt;
 &lt;/script&gt;</pre>
         </div>
 
+        <h3 style="margin-top: 40px; margin-bottom: 20px;">Quick Reference</h3>
         <div class="table-wrapper">
           <table class="docs-table">
-            <thead>
+                        <thead>
               <tr>
-                <th>Property</th>
-                <th>Type</th>
-                <th>Default</th>
-                <th>Description</th>
+                <th>Feature</th>
+                <th>Free</th>
+                <th>Pro — $19/mo</th>
+                <th>Agency — $49/mo</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>token</td>
-                <td>String</td>
-                <td>(Required)</td>
-                <td>Your unique widget token.</td>
+                <td>Requests per month</td>
+                <td>200</td>
+                <td>10,000</td>
+                <td>50,000</td>
               </tr>
               <tr>
-                <td>position</td>
-                <td>String</td>
-                <td>bottom-right</td>
-                <td>Sets chatbot position.</td>
+                <td>Pages crawled per site</td>
+                <td>10</td>
+                <td>50</td>
+                <td>200</td>
               </tr>
               <tr>
-                <td>theme</td>
-                <td>String</td>
-                <td>auto</td>
-                <td>auto matches system pref. light or dark forces theme.</td>
+                <td>AI question answering</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
               </tr>
               <tr>
-                <td>primaryColor</td>
-                <td>String</td>
-                <td>#000000</td>
-                <td>Accent color for headers, bubbles, and send button.</td>
+                <td>Page summaries</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
               </tr>
               <tr>
-                <td>greeting</td>
-                <td>String</td>
-                <td>"👋 Hi..."</td>
-                <td>Initial message shown to users.</td>
+                <td>Email lead capture</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td>Site-wide search</td>
+                <td>❌</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td>Browser DOM actions</td>
+                <td>❌</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td>AI content generation</td>
+                <td>❌</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td>Auto re-crawl</td>
+                <td>Weekly</td>
+                <td>Daily</td>
+                <td>Hourly</td>
+              </tr>
+              <tr>
+                <td>Number of websites</td>
+                <td>1</td>
+                <td>1</td>
+                <td>5</td>
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <h3 style="margin-top: 40px; margin-bottom: 20px;">Minimal — Token Only</h3>
+        <div class="code-wrapper">
+          <button class="copy-btn" data-copy-target="code-minimal">Copy</button>
+          <pre class="snippet-code" id="code-minimal">&lt;script&gt;
+  window.SiteAgent = { token: "YOUR_FULL_TOKEN" };
+&lt;/script&gt;
+&lt;script
+  src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js"
+  async&gt;
+&lt;/script&gt;</pre>
         </div>
 
         <h3 style="margin-top: 40px; margin-bottom: 20px;">Examples</h3>
@@ -468,19 +646,20 @@
           <div class="example-card">
             <h4>Online Shop</h4>
             <pre>theme: "light",
-primaryColor: "#f97316",
-greeting: "👋 Need help finding a product?"</pre>
+primaryColor: "#E53E3E",
+greeting: "Welcome! 🛒 How can I help you today?"</pre>
           </div>
           <div class="example-card">
             <h4>Developer / Docs</h4>
             <pre>theme: "dark",
-primaryColor: "#8b5cf6",
-greeting: "Search the docs..."</pre>
+primaryColor: "#805AD5",
+greeting: "Hey dev! 👨‍💻 Ask me anything about the docs."</pre>
           </div>
           <div class="example-card">
             <h4>Agency / Portfolio</h4>
             <pre>theme: "auto",
-primaryColor: "#10b981",
+primaryColor: "#1A202C",
+position: "bottom-left",
 leadCapture: true</pre>
           </div>
         </div>
@@ -553,17 +732,25 @@ leadCapture: true</pre>
           <div class="faq-item docs-accordion-item">
             <div class="faq-item__question">Chatbot is giving wrong or outdated answers<span class="faq-item__icon" aria-hidden="true">+</span></div>
             <div class="faq-item__answer">
-              <p>You can force a manual re-crawl using our API.</p>
-              <div class="code-wrapper" style="margin-top: 10px;">
-                <button class="copy-btn" data-copy-target="code-recrawl">Copy</button>
-                <pre class="snippet-code" id="code-recrawl">curl -X POST https://wazidhasan-siteagent-mcp.hf.space/api/recrawl -H "x-api-key: YOUR_API_KEY"</pre>
+              <p>Your site content may have changed since the last crawl.</p>
+              <p>Trigger a manual re-crawl:</p>
+              <p style="margin-top: 12px; font-weight: bold;">PowerShell:</p>
+              <div class="code-wrapper" style="margin-top: 4px; margin-bottom: 12px;">
+                <button class="copy-btn" data-copy-target="code-recrawl-ps">Copy</button>
+                <pre class="snippet-code" id="code-recrawl-ps">Invoke-RestMethod -Uri "https://wazidhasan-siteagent-mcp.hf.space/api/crawl" -Method POST -Headers @{"Content-Type"="application/json"} -Body '{"token":"YOUR_FULL_TOKEN","force":true}'</pre>
+              </div>
+              <p style="font-weight: bold;">cURL:</p>
+              <div class="code-wrapper" style="margin-top: 4px;">
+                <button class="copy-btn" data-copy-target="code-recrawl-curl">Copy</button>
+                <pre class="snippet-code" id="code-recrawl-curl">curl -X POST https://wazidhasan-siteagent-mcp.hf.space/api/crawl -H "Content-Type: application/json" -d '{"token":"YOUR_FULL_TOKEN","force":true}'</pre>
               </div>
             </div>
+          </div>
           </div>
           <div class="faq-item docs-accordion-item">
             <div class="faq-item__question">"Sorry, something went wrong"<span class="faq-item__icon" aria-hidden="true">+</span></div>
             <div class="faq-item__answer">
-              <p>This usually indicates a temporary server issue. Check the server status below.</p>
+              <p>Your token may have expired (tokens are valid for 1 year). Generate a new token by repeating Step 2.</p>
             </div>
           </div>
           <div class="faq-item docs-accordion-item">
@@ -596,8 +783,8 @@ leadCapture: true</pre>
 
         <div class="support-card" style="margin-top: 40px;">
           <h3>Need more help?</h3>
-          <p style="margin-top: 8px;">Email: <a href="mailto:webexguruhasan95@gmail.com" class="docs-link">webexguruhasan95@gmail.com</a></p>
-          <p>Website: <a href="https://siteagent-server-landing-page.vercel.app/" target="_blank" rel="noopener noreferrer" class="docs-link">siteagent-server-landing-page.vercel.app</a></p>
+          <p style="margin-top: 8px;">🌐 Landing Page: <a href="https://siteagent-server-landing-page.vercel.app/" target="_blank" rel="noopener noreferrer" class="docs-link">https://siteagent-server-landing-page.vercel.app/</a></p>
+          <p>📧 Email: <a href="mailto:webexguruhasan95@gmail.com" class="docs-link">webexguruhasan95@gmail.com</a></p>
         </div>
       </div>
     </section>
