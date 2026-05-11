@@ -347,6 +347,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const translations = {
   en: {
 
+    footer_more_tools: "More MCP Tools",
+    products_eyebrow: "MORE TOOLS",
+    products_headline: "More Powerful MCP Servers",
+    products_subtext: "Built by the same team. Each tool connects your AI agent to a different part of your business.",
+    product_woo_title: "WooCommerce Whisperer",
+    product_woo_desc: "Get real-time WooCommerce analytics in your AI agent. Query revenue, top products, pending orders, and customer data without touching your dashboard.",
+    product_stripe_title: "Stripe Subscription Whisperer",
+    product_stripe_desc: "Ask your AI agent about your Stripe data. Get MRR, churn risks, failed payments, top customers, and cancellations — all through natural language.",
+    product_github_title: "GitHub Repository Manager",
+    product_github_desc: "Automate your GitHub workflow with AI. Manage issues, pull requests, projects, workflows, and security alerts directly from your AI agent.",
+    product_view_btn: "View on MCPize →",
+    product_stats_woo: "👁 11 views · 👤 1 user",
+    product_stats_stripe: "👁 67 views · 👤 6 users",
+    product_stats_github: "👁 23 views · 👤 5 users",
+
+
     // Token Generator
     token_eyebrow: "GET YOUR TOKEN",
     token_headline: "Generate Your Widget Token Instantly",
@@ -694,6 +710,22 @@ document.addEventListener('DOMContentLoaded', () => {
           mobile_cta_btn: "Start Free &rarr;"
         },
         bn: {
+
+    footer_more_tools: "আরো টুলস",
+    products_eyebrow: "আরো টুলস",
+    products_headline: "আরো শক্তিশালী MCP সার্ভার",
+    products_subtext: "একই টিম দ্বারা তৈরি। প্রতিটি টুল আপনার AI agent কে আপনার ব্যবসার একটি আলাদা অংশের সাথে সংযুক্ত করে।",
+    product_woo_title: "WooCommerce Whisperer",
+    product_woo_desc: "আপনার AI agent এ real-time WooCommerce analytics পান। Dashboard না খুলেই revenue, top products, pending orders ও customer data জানুন।",
+    product_stripe_title: "Stripe Subscription Whisperer",
+    product_stripe_desc: "আপনার AI agent কে Stripe data সম্পর্কে জিজ্ঞেস করুন। MRR, churn risks, failed payments, top customers সব natural language এ পান।",
+    product_github_title: "GitHub Repository Manager",
+    product_github_desc: "AI দিয়ে আপনার GitHub workflow স্বয়ংক্রিয় করুন। Issues, pull requests, projects ও security alerts সরাসরি AI agent থেকে পরিচালনা করুন।",
+    product_view_btn: "MCPize এ দেখুন →",
+    product_stats_woo: "👁 ১১ ভিউ · 👤 ১ ইউজার",
+    product_stats_stripe: "👁 ৬৭ ভিউ · 👤 ৬ ইউজার",
+    product_stats_github: "👁 ২৩ ভিউ · 👤 ৫ ইউজার",
+
 
     // Token Generator
     token_eyebrow: "আপনার টোকেন নিন",

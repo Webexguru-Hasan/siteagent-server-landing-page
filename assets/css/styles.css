@@ -3302,6 +3302,118 @@
   max-width: 600px;
 }
 
+
+/* ==========================================================================
+   OTHER PRODUCTS SECTION
+   ========================================================================== */
+#other-products {
+  background: #0A0F1E;
+  padding: 100px 0;
+}
+
+.other-products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.other-card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.other-card__icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.other-card__badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.other-card__title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.other-card__desc {
+  color: #94A3B8;
+  font-size: 15px;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.other-card__stats {
+  margin-top: 16px;
+  color: #94A3B8;
+  font-size: 13px;
+}
+
+.other-card__cta {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.other-card:hover .other-card__cta {
+  transform: translateY(-6px);
+  transition: all 0.3s ease;
+}
+
+/* Card Themes */
+/* WooCommerce */
+.other-card--woo { border-top: 3px solid #8b5cf6; }
+.other-card--woo .other-card__badge { background: #8b5cf620; color: #8b5cf6; border: 1px solid #8b5cf640; }
+.other-card--woo .other-card__cta { border-color: #8b5cf6; color: #8b5cf6; }
+.other-card--woo:hover .other-card__cta { background: #8b5cf6; color: #ffffff; }
+.other-card--woo:hover { border-color: #8b5cf6; }
+
+/* Stripe */
+.other-card--stripe { border-top: 3px solid #10b981; }
+.other-card--stripe .other-card__badge { background: #10b98120; color: #10b981; border: 1px solid #10b98140; }
+.other-card--stripe .other-card__cta { border-color: #10b981; color: #10b981; }
+.other-card--stripe:hover .other-card__cta { background: #10b981; color: #ffffff; }
+.other-card--stripe:hover { border-color: #10b981; }
+
+/* GitHub */
+.other-card--github { border-top: 3px solid #f97316; }
+.other-card--github .other-card__badge { background: #f9731620; color: #f97316; border: 1px solid #f9731640; }
+.other-card--github .other-card__cta { border-color: #f97316; color: #f97316; }
+.other-card--github:hover .other-card__cta { background: #f97316; color: #ffffff; }
+.other-card--github:hover { border-color: #f97316; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .other-products__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* === DOCS PAGE === */
 
 /* Hide mobile sticky CTA on docs page */
