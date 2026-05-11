@@ -3286,6 +3286,22 @@
       }
     }
 
+
+
+/* Center align Token Generator section header */
+#get-token .token-generator__header,
+#get-token .section-label,
+#get-token .section-title,
+#get-token .section-subtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#get-token .section-subtitle {
+  max-width: 600px;
+}
+
 /* === DOCS PAGE === */
 
 /* Hide mobile sticky CTA on docs page */

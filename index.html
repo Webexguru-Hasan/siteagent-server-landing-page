@@ -416,10 +416,9 @@
 
           <!-- Section Header -->
           <div class="token-generator__header">
-            <div class="section-label">✦ &nbsp;Get Token</div>
-            <h2 class="section-title">Generate Your Widget Token Instantly</h2>
-            <p class="section-subtitle">No terminal needed. Enter your MCPize API key and website URL — get your chatbot
-              snippet in seconds.</p>
+            <div class="section-label" data-i18n="token_eyebrow">✦ &nbsp;Get Token</div>
+            <h2 class="section-title" data-i18n="token_headline">Generate Your Widget Token Instantly</h2>
+            <p class="section-subtitle" data-i18n="token_subtext">No terminal needed. Enter your MCPize API key and website URL — get your chatbot snippet in seconds.</p>
           </div>
 
           <!-- Widget Card -->
@@ -428,27 +427,27 @@
 
               <!-- API Key Field -->
               <div class="form-field">
-                <label for="gen-api-key" class="form-label">Your MCPize API Key</label>
+                <label for="gen-api-key" class="form-label" data-i18n="token_key_label">Your MCPize API Key</label>
                 <div class="input-wrapper">
                   <input type="password" id="gen-api-key" placeholder="sk_xxxxxxxxxxxxxxxxxxxxxxxx" class="form-input">
                   <button type="button" id="gen-key-toggle" class="toggle-btn">👁</button>
                 </div>
                 <div class="helper-text">
-                  Get your free key at <a href="https://mcpize.com/mcp/siteagent-server" target="_blank"
+                  <span data-i18n="token_helper_text">Get your free key at</span> <a href="https://mcpize.com/mcp/siteagent-server" target="_blank"
                     rel="noopener noreferrer">mcpize.com/mcp/siteagent-server</a>
                 </div>
               </div>
 
               <!-- Website URL Field -->
               <div class="form-field">
-                <label for="gen-website-url" class="form-label">Your Website URL</label>
+                <label for="gen-website-url" class="form-label" data-i18n="token_url_label">Your Website URL</label>
                 <input type="url" id="gen-website-url" placeholder="https://yourwebsite.com" class="form-input">
               </div>
 
             </div>
 
             <!-- Generate Button -->
-            <button id="gen-btn" class="gen-btn">Generate My Token →</button>
+            <button id="gen-btn" class="gen-btn" data-i18n="token_generate_btn">Generate My Token →</button>
 
             <!-- Error Message -->
             <div id="gen-error" class="error-msg"></div>
@@ -456,25 +455,25 @@
             <!-- Result Area -->
             <div id="gen-result" class="result-area">
               <div class="result-header">
-                <h3>✅ Your token is ready!</h3>
-                <p>Copy the snippet below and paste it into your website's &lt;head&gt; tag.</p>
+                <h3 data-i18n="token_success_title">✅ Your token is ready!</h3>
+                <p data-i18n="token_success_sub">Copy the snippet below and paste it into your website's &lt;head&gt; tag.</p>
               </div>
 
               <div class="token-row">
                 <div class="token-label">YOUR TOKEN</div>
                 <div class="token-input-row">
                   <input type="text" id="gen-token-value" readonly class="token-input">
-                  <button id="gen-copy-token" class="copy-btn">Copy</button>
+                  <button id="gen-copy-token" class="copy-btn" data-i18n="token_copy_token">Copy</button>
                 </div>
               </div>
 
               <div class="snippet-row">
                 <div class="snippet-label">PASTE INTO YOUR WEBSITE'S &lt;HEAD&gt; TAG</div>
                 <pre id="gen-snippet-code" class="snippet-code"></pre>
-                <button id="gen-copy-snippet" class="copy-snippet-btn">Copy Snippet</button>
+                <button id="gen-copy-snippet" class="copy-snippet-btn" data-i18n="token_copy_snippet">Copy Snippet</button>
               </div>
 
-              <a href="#" id="gen-reset" class="reset-link">← Generate another token</a>
+              <a href="#" id="gen-reset" class="reset-link" data-i18n="token_reset">← Generate another token</a>
             </div>
           </div>
 
@@ -491,14 +490,11 @@
 
           <!-- LEFT: copy -->
           <div class="live-demo__copy reveal">
-            <div class="section-label">✦ &nbsp;Live Demo</div>
-            <h2 class="live-demo__title" id="demo-headline">
+            <div class="section-label" data-i18n="demo_eyebrow">✦ &nbsp;Live Demo</div>
+            <h2 class="live-demo__title" id="demo-headline" data-i18n="demo_headline">
               See it <span class="text-gradient">in action</span>
             </h2>
-            <p class="live-demo__desc">
-              Click the chat bubble and ask a question — this is SiteAgent
-              answering in real time from your website's content.
-            </p>
+            <p class="live-demo__desc" data-i18n="demo_subtext">This is exactly what your visitors will experience on your website.</p>
             <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
               class="btn btn-primary btn-lg" id="demo-cta-btn">Add It to My Site &nbsp;↗</a>
           </div>
@@ -539,7 +535,7 @@
                   <button class="demo-chat-close" id="demo-close-btn" aria-label="Close chat">✕</button>
                 </div>
                 <div class="demo-chat-messages" id="demo-messages">
-                  <div class="demo-msg demo-msg-bot">👋 Hi! I'm SiteAgent. Ask me anything about this website.</div>
+                  <div class="demo-msg demo-msg-bot"><span data-i18n="demo_chat_greeting"><span data-i18n="demo_chat_greeting">👋 Hi! I'm SiteAgent. Ask me anything about this website.</span></span></div>
                 </div>
                 <div class="demo-typing" id="demo-typing">
                   <span></span><span></span><span></span>
@@ -568,8 +564,8 @@
     <section class="pricing" id="pricing" aria-labelledby="pricing-headline">
       <div class="container">
         <div class="pricing__header reveal">
-          <div class="section-label">✦ &nbsp;Pricing</div>
-          <h2 class="section-title" id="pricing-headline">Simple, transparent pricing</h2>
+          <div class="section-label" data-i18n="pricing_eyebrow">✦ &nbsp;Pricing</div>
+          <h2 class="section-title" id="pricing-headline" data-i18n="pricing_headline">Simple, transparent pricing</h2>
           <p class="section-subtitle"><span data-i18n="pricing_subtext">Start free. Upgrade when you\'re ready. No
               hidden fees.</span></p>
         </div>
@@ -579,9 +575,9 @@
           <!-- Free Plan -->
           <div class="pricing-card reveal reveal-delay-1">
             <div class="pricing-card__header">
-              <h3 class="pricing-card__name">Free</h3>
+              <h3 class="pricing-card__name" data-i18n="plan_free_name">Free</h3>
               <div class="pricing-card__price">$0<span class="pricing-card__period">/month</span></div>
-              <p class="pricing-card__tagline">Perfect to get started</p>
+              <p class="pricing-card__tagline" data-i18n="plan_free_tagline">Perfect to get started</p>
             </div>
             <div class="pricing-card__divider"></div>
             <div class="pricing-card__body">
@@ -599,8 +595,7 @@
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">❌</span> Browser DOM actions</li>
                 <li class="p-feature" style="margin-top: 8px;">Auto re-crawl: Weekly</li>
               </ul>
-              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
-                class="btn btn-outline">Start Free ↗</a>
+              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="pricing_cta_free">Start Free ↗</a>
             </div>
           </div>
 
@@ -608,9 +603,9 @@
           <div class="pricing-card pricing-card--pro reveal reveal-delay-2">
             <div class="pricing-card__popular-badge">Most Popular</div>
             <div class="pricing-card__header">
-              <h3 class="pricing-card__name">Pro</h3>
+              <h3 class="pricing-card__name" data-i18n="plan_pro_name">Pro</h3>
               <div class="pricing-card__price">$19<span class="pricing-card__period">/month</span></div>
-              <p class="pricing-card__tagline">For growing websites</p>
+              <p class="pricing-card__tagline" data-i18n="plan_pro_tagline">For growing websites</p>
             </div>
             <div class="pricing-card__divider"></div>
             <div class="pricing-card__body">
@@ -629,17 +624,16 @@
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Browser DOM actions</li>
                 <li class="p-feature" style="margin-top: 8px;">Auto re-crawl: Daily</li>
               </ul>
-              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
-                class="btn btn-primary">Get Pro ↗</a>
+              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="pricing_cta_pro">Get Pro ↗</a>
             </div>
           </div>
 
           <!-- Agency Plan -->
           <div class="pricing-card reveal reveal-delay-3">
             <div class="pricing-card__header">
-              <h3 class="pricing-card__name">Agency</h3>
+              <h3 class="pricing-card__name" data-i18n="plan_agency_name">Agency</h3>
               <div class="pricing-card__price">$49<span class="pricing-card__period">/month</span></div>
-              <p class="pricing-card__tagline">For agencies and power users</p>
+              <p class="pricing-card__tagline" data-i18n="plan_agency_tagline">For agencies and power users</p>
             </div>
             <div class="pricing-card__divider"></div>
             <div class="pricing-card__body">
@@ -658,8 +652,7 @@
                 <li class="p-feature"><span class="p-feature__icon" aria-hidden="true">✅</span> Browser DOM actions</li>
                 <li class="p-feature" style="margin-top: 8px;">Auto re-crawl: Hourly</li>
               </ul>
-              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer"
-                class="btn btn-outline">Get Agency ↗</a>
+              <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="pricing_cta_agency">Get Agency ↗</a>
             </div>
           </div>
 

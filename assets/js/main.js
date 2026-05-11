@@ -347,6 +347,48 @@ document.addEventListener('DOMContentLoaded', () => {
       const translations = {
   en: {
 
+    // Token Generator
+    token_eyebrow: "GET YOUR TOKEN",
+    token_headline: "Generate Your Widget Token Instantly",
+    token_subtext: "No terminal needed. Enter your MCPize API key and website URL — get your chatbot snippet in seconds.",
+    token_key_label: "Your MCPize API Key",
+    token_helper_text: "Get your key at →",
+    token_url_label: "Your Website URL",
+    token_generate_btn: "Generate My Token →",
+    token_loading: "Generating...",
+    token_success_title: "✅ Your token is ready!",
+    token_success_sub: "Copy the snippet below and paste it into your website's <head> tag.",
+    token_copy_token: "Copy Token",
+    token_copy_snippet: "Copy Snippet",
+    token_reset: "← Generate another token",
+
+    // Demo Section
+    demo_eyebrow: "SEE IT LIVE",
+    demo_headline: "See it in action",
+    demo_subtext: "This is exactly what your visitors will experience on your website.",
+    demo_caption: "✦ Powered by your website content — no manual training needed",
+    demo_chat_greeting: "👋 Hi! I'm SiteAgent. Ask me anything about this website.",
+    demo_chat_question: "What plans do you offer?",
+    demo_chat_answer1: "We have 3 plans — Free (200 req/mo), Pro at $19/mo, and Agency at $49/mo. Free plan needs no credit card!",
+    demo_chat_answer2: "Would you like to start with the free plan? 🚀",
+
+    // Pricing
+    pricing_eyebrow: "PRICING",
+    pricing_headline: "Simple, transparent pricing",
+    pricing_subtext: "Start free. Upgrade when you're ready. No hidden fees.",
+    pricing_footnote: "All plans include a 14-day money-back guarantee. Upgrade or cancel anytime.",
+    plan_free_name: "Free",
+    plan_free_tagline: "Perfect to get started",
+    pricing_cta_free: "Start Free",
+    plan_pro_name: "Pro",
+    plan_pro_tagline: "For growing websites",
+    plan_pro_badge: "Most Popular",
+    pricing_cta_pro: "Get Pro",
+    plan_agency_name: "Agency",
+    plan_agency_tagline: "For agencies and power users",
+    pricing_cta_agency: "Get Agency",
+
+
     // === DOCS PAGE ENGLISH TRANSLATIONS ===
 
     docs_step3_title: "Add Snippet to Your Website",
@@ -652,6 +694,48 @@ document.addEventListener('DOMContentLoaded', () => {
           mobile_cta_btn: "Start Free &rarr;"
         },
         bn: {
+
+    // Token Generator
+    token_eyebrow: "আপনার টোকেন নিন",
+    token_headline: "এখনই আপনার Widget Token তৈরি করুন",
+    token_subtext: "Terminal লাগবে না। আপনার MCPize API Key ও ওয়েবসাইট URL দিন — সেকেন্ডের মধ্যে chatbot snippet পাবেন।",
+    token_key_label: "আপনার MCPize API Key",
+    token_helper_text: "এখানে আপনার key পান →",
+    token_url_label: "আপনার ওয়েবসাইট URL",
+    token_generate_btn: "আমার Token তৈরি করুন →",
+    token_loading: "তৈরি হচ্ছে...",
+    token_success_title: "✅ আপনার token প্রস্তুত!",
+    token_success_sub: "নিচের snippet কপি করুন এবং আপনার ওয়েবসাইটের <head> ট্যাগে paste করুন।",
+    token_copy_token: "Token কপি করুন",
+    token_copy_snippet: "Snippet কপি করুন",
+    token_reset: "← আরেকটি token তৈরি করুন",
+
+    // Demo Section
+    demo_eyebrow: "লাইভ দেখুন",
+    demo_headline: "কীভাবে কাজ করে দেখুন",
+    demo_subtext: "আপনার ভিজিটররা ঠিক এটাই অভিজ্ঞতা পাবেন আপনার ওয়েবসাইটে।",
+    demo_caption: "✦ আপনার ওয়েবসাইটের কন্টেন্ট দিয়ে চলে — কোনো ম্যানুয়াল ট্রেনিং দরকার নেই",
+    demo_chat_greeting: "👋 হ্যালো! আমি SiteAgent। এই ওয়েবসাইট সম্পর্কে যেকোনো কিছু জিজ্ঞেস করুন।",
+    demo_chat_question: "আপনাদের কোন কোন প্ল্যান আছে?",
+    demo_chat_answer1: "আমাদের ৩টি প্ল্যান আছে — Free (২০০ req/মাস), Pro মাত্র $১৯/মাস, এবং Agency $৪৯/মাস। Free প্ল্যানে কোনো ক্রেডিট কার্ড লাগে না!",
+    demo_chat_answer2: "বিনামূল্যে প্ল্যান দিয়ে শুরু করতে চান? 🚀",
+
+    // Pricing
+    pricing_eyebrow: "মূল্য তালিকা",
+    pricing_headline: "সহজ ও স্বচ্ছ মূল্য",
+    pricing_subtext: "বিনামূল্যে শুরু করুন। প্রস্তুত হলে আপগ্রেড করুন। কোনো লুকানো চার্জ নেই।",
+    pricing_footnote: "সব প্ল্যানে ১৪ দিনের মানি-ব্যাক গ্যারান্টি। যেকোনো সময় আপগ্রেড বা বাতিল করুন।",
+    plan_free_name: "বিনামূল্যে",
+    plan_free_tagline: "শুরু করার জন্য পারফেক্ট",
+    pricing_cta_free: "বিনামূল্যে শুরু",
+    plan_pro_name: "Pro",
+    plan_pro_tagline: "বড় হওয়া ওয়েবসাইটের জন্য",
+    plan_pro_badge: "সবচেয়ে জনপ্রিয়",
+    pricing_cta_pro: "Pro নিন",
+    plan_agency_name: "Agency",
+    plan_agency_tagline: "এজেন্সি ও পাওয়ার ইউজারদের জন্য",
+    pricing_cta_agency: "Agency নিন",
+
 
     // === DOCS PAGE BENGALI TRANSLATIONS ===
     docs_hero_eyebrow: "ডকুমেন্টেশন",
