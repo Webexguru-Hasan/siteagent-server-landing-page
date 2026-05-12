@@ -1349,7 +1349,7 @@ document.addEventListener('DOMContentLoaded', () => {
     theme: "auto"
   };
 <\/script>
-<script src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js" async><\/script>`;
+<script src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.4/siteagent.js" async><\/script>`;
 
           document.getElementById("gen-token-value").value = data.token;
           document.getElementById("gen-snippet-code").textContent = snippet;
@@ -1538,7 +1538,7 @@ document.addEventListener('DOMContentLoaded', () => {
     theme: "auto"
   };
 <\/script>
-<script src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.3/siteagent.js" async><\/script>`;
+<script src="https://cdn.jsdelivr.net/gh/Webexguru-Hasan/siteagent-widget@v1.0.4/siteagent.js" async><\/script>`;
 
           document.getElementById("gen-token-value-docs").value = data.token;
           document.getElementById("gen-snippet-code-docs").textContent = snippet;
