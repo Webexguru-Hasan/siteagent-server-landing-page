@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://siteagent-server-landing-page.vercel.app/sitemap.xml
