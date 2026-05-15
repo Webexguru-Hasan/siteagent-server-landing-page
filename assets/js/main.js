@@ -569,6 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
           announcement_cta: "Get Started →",
           nav_features: "Features",
           nav_how_it_works: "How It Works",
+          nav_blog: "Blog",
           nav_get_token: "Get Token",
           nav_pricing: "Pricing",
           nav_contact: "Contact",
@@ -797,6 +798,7 @@ document.addEventListener('DOMContentLoaded', () => {
     docs_step1_item1: "এই লিংকে যান: mcpize.com/mcp/siteagent-server",
     docs_step1_item2: "আপনার প্ল্যান বেছে নিন — Free, Pro, বা Agency",
     docs_step1_item3: "Start Free বা Subscribe এ ক্লিক করুন",
+    nav_blog: "ব্লগ",
     docs_step1_item4: "সাইনআপের পর আপনার MCPize API Key দেখাবে — শুরু হবে sk_ দিয়ে",
     docs_step1_note: "💾 এই key সেভ করুন — পরের ধাপে লাগবে।",
 
