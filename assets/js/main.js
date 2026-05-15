@@ -568,6 +568,7 @@ document.addEventListener('DOMContentLoaded', () => {
           announcement_mobile: "🎉 Start free today",
           announcement_cta: "Get Started →",
           nav_features: "Features",
+          nav_docs: "Docs",
           nav_how_it_works: "How It Works",
           nav_blog: "Blog",
           nav_get_token: "Get Token",
@@ -911,6 +912,7 @@ document.addEventListener('DOMContentLoaded', () => {
           announcement_mobile: "🎉 বিনামূল্যে শুরু করুন",
           announcement_cta: "শুরু করুন &rarr;",
           nav_features: "ফিচার",
+          nav_docs: "ডকুমেন্টেশন",
           nav_how_it_works: "কীভাবে কাজ করে",
           nav_get_token: "টোকেন পান",
           nav_pricing: "মূল্য",
@@ -1089,12 +1091,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (annMobile) annMobile.innerHTML = get('announcement_mobile');
 
         // ── NAVBAR ──
-        const navLinks = qa('a.navbar__link');
-        const navKeys = ['nav_features', 'nav_how_it_works', 'nav_get_token', 'nav_pricing', 'nav_contact'];
-        navLinks.forEach((el, i) => { if (navKeys[i]) el.innerHTML = get(navKeys[i]); });
-
-        const mobileLinks = qa('a.navbar__mobile-link');
-        mobileLinks.forEach((el, i) => { if (navKeys[i]) el.innerHTML = get(navKeys[i]); });
+        // Navbar links are handled by the general [data-i18n] loop above.
+        // We just need to ensure all navbar links have the data-i18n attribute.
 
         // navbar CTA - the .btn inside .navbar__cta that is NOT the lang switcher
         const navCtaBtn = q('.navbar__cta a.btn');
