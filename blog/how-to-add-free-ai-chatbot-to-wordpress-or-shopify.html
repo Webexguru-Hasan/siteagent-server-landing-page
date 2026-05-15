@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to Add a Free AI Chatbot to WordPress or Shopify | SiteAgent Blog</title>
-  <meta name="description" content="Learn how to add an AI-powered chatbot to your WordPress or Shopify site in under 5 minutes using SiteAgent. No coding required.">
+  <meta name="description" content="Complete guide to adding an AI-powered chatbot to your WordPress, Shopify, or any website in under 5 minutes. No coding required.">
   <meta name="keywords" content="AI chatbot, website chatbot, chatbot widget, SiteAgent, WordPress AI Chatbot, Shopify AI Chatbot, No coding required AI Chatbot, AI customer support, lead capture chatbot">
   
   <meta property="og:title" content="How to Add a Free AI Chatbot to WordPress or Shopify in Under 5 Minutes">
-  <meta property="og:description" content="Add an AI-powered chatbot to your website in 5 minutes. No coding required.">
+  <meta property="og:description" content="Full tutorial: Add an AI assistant that auto-crawls your site. No coding required.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://siteagent-server-landing-page.vercel.app/blog/how-to-add-free-ai-chatbot-to-wordpress-or-shopify.html">
   
@@ -22,7 +22,7 @@
     window.SiteAgent = {
       token: "sa_pub_v1.eyJzaXRlVXJsIjoiaHR0cHM6Ly9zaXRlYWdlbnQtc2VydmVyLWxhbmRpbmctcGFnZS52ZXJjZWwuYXBwIiwiZG9tYWluIjoic2l0ZWFnZW50LXNlcnZlci1sYW5kaW5nLXBhZ2UudmVyY2VsLmFwcCIsImlzc3VlZEF0IjoxNzc4Mzg3MDY3ODc3LCJleHBpcmVzQXQiOjE4MDk5MjMwNjc4NzcsInBsYW4iOiJmcmVlIn0.Mi5yfrrmJhkVdJTg64cpyOMXJxvsXTpwC_zWKo91wpw",
       position: "bottom-right", theme: "dark", primaryColor: "#00D4FF",
-      greeting: "👋 Hi! Reading our blog? Ask me anything about SiteAgent setup.",
+      greeting: "👋 Reading the guide? Ask me anything about the setup process!",
       placeholder: "Ask about pricing, setup, features...", leadCapture: true
     };
   </script>
@@ -36,7 +36,7 @@
       background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
     }
     .blog-content {
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto;
       padding: 0 20px 80px;
       line-height: 1.8;
@@ -52,18 +52,18 @@
     }
     .blog-content h2 {
       font-family: 'Syne', sans-serif;
-      font-size: 2rem;
-      margin-top: 3.5rem;
+      font-size: 2.25rem;
+      margin-top: 4rem;
       margin-bottom: 1.5rem;
       color: #fff;
-      border-left: 4px solid #00D4FF;
-      padding-left: 20px;
+      border-left: 5px solid #00D4FF;
+      padding-left: 24px;
     }
     .blog-content h3 {
       font-family: 'Syne', sans-serif;
-      font-size: 1.5rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.65rem;
+      margin-top: 3rem;
+      margin-bottom: 1.25rem;
       color: #00D4FF;
     }
     .blog-content p {
@@ -72,23 +72,44 @@
     }
     .blog-content ul, .blog-content ol {
       margin-bottom: 2rem;
-      padding-left: 1.5rem;
       background: rgba(255, 255, 255, 0.02);
       padding: 30px 30px 30px 50px;
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.05);
     }
     .blog-content li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
     .blog-content strong {
       color: #fff;
     }
+    .blog-content code {
+      background: rgba(0, 212, 255, 0.1);
+      color: #00D4FF;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .blog-content .code-block-wrapper {
+      position: relative;
+      margin: 2rem 0;
+    }
+    .blog-content pre {
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 24px;
+      border-radius: 16px;
+      overflow-x: auto;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
     .blog-content .intro-text {
-      font-size: 1.35rem;
+      font-size: 1.4rem;
       color: #e2e8f0;
       margin-bottom: 3.5rem;
       font-weight: 500;
+      line-height: 1.6;
     }
     .blog-cta {
       background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
@@ -124,6 +145,31 @@
     .back-link:hover {
       transform: translateX(-5px);
     }
+    .docs-note {
+      padding: 20px 24px;
+      border-radius: 12px;
+      margin: 2rem 0;
+      font-size: 1rem;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .docs-note-blue { background: rgba(37, 99, 235, 0.1); border: 1px solid rgba(37, 99, 235, 0.2); color: #93c5fd; }
+    .docs-note-yellow { background: rgba(234, 179, 8, 0.1); border: 1px solid rgba(234, 179, 8, 0.2); color: #fde047; }
+    .docs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .docs-table th, .docs-table td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .docs-table th { background: rgba(255, 255, 255, 0.05); color: #fff; font-weight: 600; }
   </style>
 </head>
 <body class="docs-page">
@@ -139,7 +185,6 @@
         <a href="../index.html#features" class="navbar__link" data-i18n="nav_features">Features</a>
         <a href="../docs.html" class="navbar__link" data-i18n="nav_docs">Docs</a>
         <a href="../blog.html" class="navbar__link" data-i18n="nav_blog" style="color:#00D4FF;">Blog</a>
-        <a href="../index.html#get-token" class="navbar__link" data-i18n="nav_get_token">Get Token</a>
         <a href="../index.html#pricing" class="navbar__link" data-i18n="nav_pricing">Pricing</a>
         <a href="../index.html#contact" class="navbar__link" data-i18n="nav_contact">Contact</a>
       </nav>
@@ -155,62 +200,132 @@
         <a href="../blog.html" class="back-link">← Back to Blog</a>
         <div class="blog-meta">
           <span>📅 May 15, 2026</span>
-          <span>⏱ 5 min read</span>
-          <span>🏷 SEO & Integration</span>
+          <span>⏱ 8 min read</span>
+          <span>🏷 Detailed Guide</span>
         </div>
-        <h1 style="font-family: 'Syne', sans-serif; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; color: #fff;">How to Add a Free <span class="text-gradient">AI Chatbot</span> to WordPress or Shopify</h1>
+        <h1>How to Add a Free <span class="text-gradient">AI Chatbot</span> to WordPress or Shopify</h1>
       </div>
     </div>
 
     <article class="blog-content">
       <div class="intro-text">
-        In the fast-paced world of e-commerce and digital services, your visitors don't want to wait hours for a support ticket response. They want answers <strong>now</strong>.
+        In the fast-paced world of digital business, your visitors don't want to wait hours for a support ticket response. They want answers <strong>now</strong>. This guide will show you how to set up SiteAgent—the ultimate <strong>no-coding AI chatbot</strong>—on your website in record time.
       </div>
 
-      <p>Traditional chatbots often frustrate users with rigid "if-this-then-that" trees that fail to answer specific questions, leading to lost sales and high bounce rates. Enter <strong>SiteAgent</strong>—the modern <strong>AI chatbot</strong> solution that transforms how you interact with your audience.</p>
+      <p>Traditional chatbots often frustrate users with rigid "if-this-then-that" trees. <strong>SiteAgent</strong> is different. It uses <strong>Auto-crawl</strong> technology to read your entire website, turning your existing content into a brain for your AI assistant. Whether you use WordPress, Shopify, or a custom builder, here is exactly how to get it done.</p>
 
-      <p>By leveraging an advanced <strong>website chatbot</strong> framework, SiteAgent eliminates the need for manual training. Its "Auto-crawl" feature reads your website automatically, turning your existing content into a brain for your new <strong>AI customer support</strong> assistant. Best of all? It’s a <strong>no coding required AI chatbot</strong>, meaning you can get it live in the time it takes to brew a cup of coffee.</p>
+      <h2>Step 1: Get Your MCPize API Key</h2>
+      <p>Before you can generate a chatbot widget, you need to subscribe to the SiteAgent server. SiteAgent is hosted on the <strong>MCPize</strong> marketplace, which handles the AI infrastructure for you.</p>
+      <ol>
+        <li>Go to <strong><a href="https://mcpize.com/mcp/siteagent-server" target="_blank" class="docs-link">mcpize.com/mcp/siteagent-server</a></strong>.</li>
+        <li>Choose a plan. The <strong>Free Plan</strong> is perfect for starters, offering 200 requests/mo and up to 10 pages crawled.</li>
+        <li>After signing up, your <strong>MCPize API Key</strong> (starting with <code>sk_</code>) will be shown on the screen.</li>
+      </ol>
+      <div class="docs-note docs-note-blue">
+        <span>💾</span> <strong>Pro Tip:</strong> Save this key securely. You will need it to generate your unique widget token in the next step.
+      </div>
 
-      <h2>Why Choose SiteAgent?</h2>
-      <p>Building a custom AI solution used to require a team of developers. With the <strong>SiteAgent chatbot widget</strong>, you get enterprise-level technology with a "plug-and-play" experience. Here is why website owners are making the switch:</p>
+      <h2>Step 2: Generate Your Widget Token</h2>
+      <p>Your token is the unique identifier that links the chatbot widget to your specific website content. You have two ways to generate this:</p>
 
+      <h3>Option A: Using the Landing Page (Easiest)</h3>
+      <ol>
+        <li>Scroll down on the <a href="../index.html#get-token" class="docs-link">SiteAgent Landing Page</a> to the "Generate Token" section.</li>
+        <li>Paste your <code>sk_</code> API Key and enter your website's URL (e.g., <code>https://yoursite.com</code>).</li>
+        <li>Click <strong>Generate My Token →</strong>. The tool will provide you with a ready-to-use script snippet.</li>
+      </ol>
+
+      <h3>Option B: Using Terminal (For Developers)</h3>
+      <p>If you prefer using the command line, you can generate a token using cURL or PowerShell:</p>
+      <div class="code-block-wrapper">
+        <pre><code># cURL Command
+curl -X POST https://wazidhasan-siteagent-mcp.hf.space/api/token \
+     -H "Content-Type: application/json" \
+     -H "x-api-key: YOUR_MCPIZE_API_KEY" \
+     -d '{"website_url":"https://yourwebsite.com"}'</code></pre>
+      </div>
+
+      <h2>Step 3: Platform-Specific Installation</h2>
+      <p>Now that you have your snippet, it's time to paste it into your website. SiteAgent works everywhere, but the "how" varies slightly by platform.</p>
+
+      <h3>WordPress AI Chatbot Setup</h3>
+      <p>For WordPress, the most reliable method is using the <strong>"Insert Headers and Footers"</strong> plugin:</p>
       <ul>
-        <li><strong>Smart Re-crawl:</strong> Your website changes, and so should your chatbot. SiteAgent automatically stays up to date with your latest products, blog posts, and documentation.</li>
-        <li><strong>24/7 Instant Support:</strong> Provide high-quality answers to visitor questions at 3:00 AM without hiring a support team.</li>
-        <li><strong>Instant Setup:</strong> No complex API integrations or data labeling. If you can copy and paste, you can use SiteAgent.</li>
-        <li><strong>A Stealthy Lead Magnet:</strong> It's not just for support; it’s a powerful <strong>lead capture chatbot</strong> that collects visitor details naturally during conversations.</li>
+        <li>Install the plugin from the WordPress repository.</li>
+        <li>Go to <strong>Settings → Insert Headers and Footers</strong>.</li>
+        <li>Paste your SiteAgent snippet into the <strong>Scripts in Footer</strong> section and save.</li>
+        <li><em>Manual method:</em> Paste the code just before the <code>&lt;/head&gt;</code> tag in your <code>header.php</code> file.</li>
       </ul>
 
-      <hr style="border: 0; height: 1px; background: rgba(255,255,255,0.1); margin: 4rem 0;">
+      <h3>Shopify AI Chatbot Setup</h3>
+      <p>Adding AI to your Shopify store helps answer product questions instantly:</p>
+      <ul>
+        <li>Go to <strong>Online Store > Themes > Actions > Edit Code</strong>.</li>
+        <li>Locate the <code>theme.liquid</code> file under the <strong>Layout</strong> folder.</li>
+        <li>Paste the snippet just before the closing <code>&lt;/head&gt;</code> tag and click <strong>Save</strong>.</li>
+      </ul>
 
-      <h2>Step-by-Step Guide: From Zero to AI in 5 Minutes</h2>
-      <p>Setting up your <strong>website chatbot</strong> is a straightforward process designed for busy entrepreneurs.</p>
+      <h3>Other Builders (Wix, Webflow, Squarespace)</h3>
+      <p>SiteAgent is fully compatible with these platforms as well:</p>
+      <ul>
+        <li><strong>Webflow:</strong> Go to Project Settings > Custom Code and paste the snippet in the <strong>Head Code</strong> section.</li>
+        <li><strong>Wix:</strong> Go to Settings > Custom Code, click "+ Add Custom Code", paste the snippet, and set "Place Code in" to <strong>Head</strong>.</li>
+        <li><strong>Squarespace:</strong> Go to Settings > Advanced > Code Injection and paste into the <strong>Header</strong> box.</li>
+      </ul>
 
-      <h3>Step 1: Sign Up and Start the Auto-Crawl</h3>
-      <p>First, head over to SiteAgent and create your account. Once you're in, simply enter your website URL. SiteAgent’s AI will immediately begin to "crawl" your pages. It reads your FAQ, product descriptions, and service pages to understand exactly what your business does.</p>
+      <h2>Step 4: Customizing Your Assistant</h2>
+      <p>Don't settle for the defaults. You can customize your <strong>AI customer support</strong> widget by adding properties to the <code>window.SiteAgent</code> object in your script:</p>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>primaryColor</code></td>
+            <td>Match your brand color.</td>
+            <td><code>"#2563EB"</code></td>
+          </tr>
+          <tr>
+            <td><code>greeting</code></td>
+            <td>The first message users see.</td>
+            <td><code>"Welcome! How can I help?"</code></td>
+          </tr>
+          <tr>
+            <td><code>leadCapture</code></td>
+            <td>Automatically collect emails.</td>
+            <td><code>true</code></td>
+          </tr>
+          <tr>
+            <td><code>position</code></td>
+            <td>Screen placement.</td>
+            <td><code>"bottom-left"</code></td>
+          </tr>
+        </tbody>
+      </table>
 
-      <h3>Step 2: Customize Your Widget Design</h3>
-      <p>Brand consistency is key. Within the dashboard, you can customize the <strong>chatbot widget</strong> to match your site’s aesthetic. Change the primary colors, update the greeting (e.g., <em>"Hi! I'm your AI shop assistant"</em>), and choose whether you want the widget to appear on the bottom-right or bottom-left of the screen.</p>
+      <h2>Troubleshooting Common Issues</h2>
+      <p>If your <strong>chatbot widget</strong> isn't appearing as expected, check these common fixes found in our documentation:</p>
+      <ul>
+        <li><strong>Bubble not appearing?</strong> Press <code>F12</code> to check for console errors. Ensure your token is correct and that the script is within the <code>&lt;head&gt;</code> tag.</li>
+        <li><strong>Outdated answers?</strong> SiteAgent re-crawls automatically (weekly on Free, daily on Pro). You can trigger a manual re-crawl using the API if you've recently updated your content.</li>
+        <li><strong>"Could not extract content"?</strong> Make sure your site is public and has at least 30 words of readable text. SiteAgent needs content to "learn" from!</li>
+      </ul>
 
-      <h3>Step 3: Copy Your One-Line Snippet</h3>
-      <p>Once you are happy with the preview, SiteAgent will generate a unique, one-line JavaScript code snippet. This single line of code is the "brain" that connects your website to your new AI assistant.</p>
-
-      <h2>Platform Specific Instructions</h2>
-      <p>Integrating SiteAgent into your favorite platform is remarkably simple. Here is how to handle the two most popular builders:</p>
-
-      <h3>1. WordPress AI Chatbot Integration</h3>
-      <p>For a <strong>WordPress AI chatbot</strong>, the easiest method is using a "Headers and Footers" plugin. Simply navigate to your plugin settings and paste your SiteAgent snippet into the <strong>Footer</strong> section. Alternatively, if you're comfortable with code, you can paste it directly into your theme's <code>footer.php</code> file just before the closing <code>&lt;/body&gt;</code> tag.</p>
-
-      <h3>2. Shopify AI Chatbot Integration</h3>
-      <p>To set up your <strong>Shopify AI chatbot</strong>, go to <strong>Online Store > Themes > Edit Code</strong>. Find your <code>theme.liquid</code> file and paste the snippet just before the closing <code>&lt;/head&gt;</code> or <code>&lt;/body&gt;</code> tag. Save your changes, and your AI assistant will be live on every page of your store instantly.</p>
+      <div class="docs-note docs-note-yellow">
+        <span>⚠️</span> <strong>Note:</strong> If the snippet isn't working on your specific platform, try removing the <code>async</code> attribute from the script tag.
+      </div>
 
       <section class="blog-cta">
-        <h2 class="section-title">Automate Your Growth</h2>
-        <p>Adding an <strong>AI chatbot</strong> shouldn't be a months-long development project. With SiteAgent, you bridge the gap between your content and your customers in minutes.</p>
+        <h2 class="section-title">Ready to Automate?</h2>
+        <p>SiteAgent is the easiest way to add an <strong>AI chatbot</strong> that actually knows your business. Start for free and see the difference in your customer engagement.</p>
         <div style="margin-top: 2.5rem;">
-          <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Try SiteAgent for Free Today ↗</a>
+          <a href="https://mcpize.com/mcp/siteagent-server" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Start Free Now ↗</a>
         </div>
-        <p style="margin-top: 1.5rem; font-size: 0.875rem; color: #94a3b8;">No credit card required · Live in under 5 minutes</p>
+        <p style="margin-top: 1.5rem; font-size: 0.875rem; color: #94a3b8;">No credit card required · Full Documentation available</p>
       </section>
     </article>
   </main>
