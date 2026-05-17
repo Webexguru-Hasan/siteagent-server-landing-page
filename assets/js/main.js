@@ -1439,7 +1439,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('docs-modal');
     const closeBtn = document.getElementById('docs-modal-close');
     const iframe = document.getElementById('docs-iframe');
-    const YOUTUBE_URL = "https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_HERE?autoplay=1";
+    const YOUTUBE_URL = "https://www.youtube.com/embed/gg3Ni5f-QX4?autoplay=1&rel=0";
 
     if (playBtn && modal) {
       playBtn.addEventListener('click', () => {
